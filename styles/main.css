@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --black:rgb(64, 42, 42);
+    --font1:
+    --font
+}
+
+a{
+    text-decoration: none;
+    cursor:pointer;
+    color:var(--black)
+}
+
+.btn{
+   cursor: pointer;
+}
+
+ul,ol{
+    list-style: none;
+}
