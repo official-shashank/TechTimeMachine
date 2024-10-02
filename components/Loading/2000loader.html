@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2000s Flash-Based Loader</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; height: 100vh;">
+
+<div class="loader-container" style="text-align: center;">
+    <!-- Company Logo -->
+    
+    <!-- Loading Bar -->
+    <div class="loading-bar" style="width: 300px; height: 30px; border: 2px solid #000; background: linear-gradient(to right, #e8e6e4, #ff6600); border-radius: 5px; overflow: hidden;">
+        <div class="progress" id="progress" style="height: 100%; width: 0; background-color: #908888;"></div>
+    </div>
+    
+    <!-- Percentage -->
+    <div class="percentage" id="percentage" style="margin-top: 10px; font-size: 18px; font-weight: bold;">0%</div>
+</div>
+
+<script>
+    let progress = 0;
+    let progressBar = document.getElementById('progress');
+    let percentageText = document.getElementById('percentage');
+
+    let interval = setInterval(function() {
+        if (progress < 100) {
+            progress++;
+            progressBar.style.width = progress + '%';
+            percentageText.innerText = progress + '%';
+        } else {
+            clearInterval(interval);
+        }
+    }, 100); // Increment every 100ms (total: 10 seconds to complete)
+</script>
+
+</body>
+</html>
