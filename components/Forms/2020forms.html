@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020s Login Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f2f5; margin: 0;">
+    <div class="form-container" style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: 300px;">
+        <h2 style="text-align: center; margin-bottom: 20px;">Login</h2>
+        <form>
+            <label for="username" style="margin-bottom: 5px; display: block;">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required style="width: 93%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; transition: border-color 0.3s;">
+            <label for="password" style="margin-bottom: 5px; display: block;">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required style="width: 93%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; transition: border-color 0.3s;">
+            <input type="submit" value="Login" style="width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+        </form>
+    </div>
+    <script>
+        // Adding focus effects with JavaScript
+        const inputs = document.querySelectorAll('.form-container input[type="text"], .form-container input[type="password"]');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.style.borderColor = '#4CAF50';
+            });
+            input.addEventListener('blur', () => {
+                input.style.borderColor = '#ddd';
+            });
+        });
+    </script>
+</body>
+</html>
