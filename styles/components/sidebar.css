@@ -2,15 +2,19 @@
     box-sizing: border-box;
     width: 250px;
     padding: 5px 1em;
-    background-color: var(--base-clr);
     border-right: 1px solid var(--line-clr);
     position: sticky;
     top: 0;
-    height: 100vh;
+    left: 0;
     align-self: start;
     transition: 300ms ease-in-out;
-    overflow: scroll;
+    height: 100vh;
+    overflow-y: scroll;
     text-wrap: nowrap;
+    z-index: 10000;
+  }
+  ::-webkit-scrollbar {
+    display: none;
   }
   #sidebar.close{
     padding: 5px;
