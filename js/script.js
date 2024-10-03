@@ -1,11 +1,9 @@
 let codeEditor = document.getElementById('codeEditor')
 let output = document.getElementById('output')
 
+let contentToBeShown
 
-
-let contentToBeShown;
-
-async function loaddata(){
+async function loaddata() {
   codeEditor = document.getElementById('codeEditor')
   output = document.getElementById('output')
   // console.log(contentToBeShown["1990"]['code'])
@@ -13,7 +11,7 @@ async function loaddata(){
   output.innerHTML = contentToBeShown['1990']['code']
 }
 
-document.getElementById('btn1')?.addEventListener('click',loaddata)
+document.getElementById('btn1')?.addEventListener('click', loaddata)
 
 // codeEditor.addEventListener('change', () => {
 //   codeEditor.value = button['1990']['code']
@@ -48,44 +46,40 @@ document.getElementById('btn5')?.addEventListener('click', function () {
 //   alert('Next button clicked')
 // })
 
-
-
-
 // sidebar content desplay
 
-const links = document.querySelectorAll('.sub-menu a');
-const mainLayout=document.getElementById("mainLayout");
+const links = document.querySelectorAll('.sub-menu a')
+const mainLayout = document.getElementById('mainLayout')
 
-async function loadLayout(){
-  mainLayout.innerHTML=editorLayout;
+async function loadLayout() {
+  mainLayout.innerHTML = editorLayout
 }
 
-links.forEach(link =>{
-  link.addEventListener('click', async function(event) {
-    event.preventDefault();
-    mainLayout.classList.remove("main-container")
-    await loadLayout();
+links.forEach((link) => {
+  link.addEventListener('click', async function (event) {
+    event.preventDefault()
+    mainLayout.classList.remove('main-container')
+    await loadLayout()
     // console.log(this.text);
-    const title = document.getElementById('title');
-    title.innerText=this.text;
-    title.text=this.text;
-    contentToBeShown=compoenents[this.text]
-    btnStateManage();
-    await loaddata();
+    const title = document.getElementById('title')
+    title.innerText = this.text
+    title.text = this.text
+    contentToBeShown = compoenents[this.text]
+    btnStateManage()
+    await loaddata()
     // console.log(contentToBeShown)
-  });
-});
-
+  })
+})
 
 // load iconic website data
 
-function loadIconicWebsite(){
-  let res=""
-  let mainLayout=document.getElementById("mainLayout");
-  console.log("clicked")
-  if(mainLayout){
-    iconicWebsites.map((item,index)=>{
-      res+=`
+function loadIconicWebsite() {
+  let res = ''
+  let mainLayout = document.getElementById('mainLayout')
+  console.log('clicked')
+  if (mainLayout) {
+    iconicWebsites.map((item, index) => {
+      res += `
       <div class="max-w-sm rounded-lg overflow-hidden shadow-lg bg-[var(--base-color)]">
           <img class="w-full h-72 object-cover" src="https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/61ddb9ed6a207484123b7ce6_ozGFnp_ISpPaG6c1r8YFqwGkIh4PmFw7j5urAvjrn77noblCnIxkasfLbnY97-xb_KFVma-3GLxqSwMbeF37DUkV3QQuUq3measnlpRLICiPBjVY9irpljWH48fnZN9tpBcUdfsw.jpeg" alt="Sunset in the mountains">
           
@@ -114,11 +108,31 @@ function loadIconicWebsite(){
       
       
       `
-    });
-    mainLayout.classList.add("main-container");
-    mainLayout.innerHTML=res;
+    })
+    mainLayout.classList.add('main-container')
+    mainLayout.innerHTML = res
   }
-
 }
 
-loadIconicWebsite();
+loadIconicWebsite()
+
+// slider
+
+let next = document.querySelector('.next')
+let prev = document.querySelector('.prev')
+
+next.addEventListener('click', function () {
+  let items = document.querySelectorAll('.item')
+  document.querySelector('.slide').appendChild(items[0])
+})
+
+prev.addEventListener('click', function () {
+  let items = document.querySelectorAll('.item')
+  document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+})
+
+// footer
+
+document.addEventListener('load', () => {
+  document.getElementById('footer').innerHTML = footer
+})
