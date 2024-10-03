@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2000s Style Scroll Page</title>
+</head>
+
+<body >
+    <div class="sc1" style="font-family: 'Verdana', sans-serif; background-color: #e4e4e4; margin: 0; padding: 0;">
+        <header style="background-color: #4682b4; color: white; text-align: center; padding: 15px 0;">
+            <h1 style="margin: 0; font-size: 2.5em;">Scroll-Based Animation Showcase</h1>
+        </header>
+
+        <div class="content" style="padding: 20px; line-height: 1.6; max-width: 800px; margin: auto; background: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">
+            <h2>Welcome to the 2000s Style Web</h2>
+            <p style="margin: 20px 0;">
+                This is a simple page to demonstrate scroll effects reminiscent of the 2000s web design. Scroll down to see the "Scroll to Top" button in action!
+            </p>
+
+            <p style="margin: 20px 0;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Cras purus odio, vestibulum in suscipit at, pharetra a odio. Sed aliquam, nunc in bibendum ultrices, nisi nulla scelerisque enim, at tristique dolor nulla ac nulla. In tincidunt, urna nec porttitor vehicula, quam nisi pharetra massa, a scelerisque nisi lacus sit amet nulla. Duis non sodales magna. Etiam malesuada ut libero at efficitur.
+            </p>
+
+            <p style="margin: 20px 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p style="margin: 20px 0;">Morbi facilisis nisi eu sollicitudin volutpat.</p>
+            <p style="margin: 20px 0;">Phasellus quis nisi sed magna feugiat bibendum ut quis metus.</p>
+            <p style="margin: 20px 0;">Praesent vel elit eu dolor feugiat varius vel at purus.</p>
+            <p style="margin: 20px 0;">In vitae nisi non est tempor interdum ac sit amet eros.</p>
+            <p style="margin: 20px 0;">Mauris ultricies sapien vitae nibh blandit, et venenatis felis pretium.</p>
+            <p style="margin: 20px 0;">Sed vestibulum dolor ac suscipit malesuada.</p>
+            <p style="margin: 20px 0;">Duis vel massa ac enim blandit tempor.</p>
+            <p style="margin: 20px 0;">Curabitur semper ligula sed nisi cursus, nec pulvinar risus consequat.</p>
+            <p style="margin: 20px 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p style="margin: 20px 0;">Morbi facilisis nisi eu sollicitudin volutpat.</p>
+            <p style="margin: 20px 0;">Phasellus quis nisi sed magna feugiat bibendum ut quis metus.</p>
+            <p style="margin: 20px 0;">Praesent vel elit eu dolor feugiat varius vel at purus.</p>
+            <p style="margin: 20px 0;">In vitae nisi non est tempor interdum ac sit amet eros.</p>
+            <p style="margin: 20px 0;">Mauris ultricies sapien vitae nibh blandit, et venenatis felis pretium.</p>
+            <p style="margin: 20px 0;">Sed vestibulum dolor ac suscipit malesuada.</p>
+        </div>
+
+        <button class="scroll-to-top" id="scrollToTopBtn" style="position: fixed; bottom: 20px; right: 20px; display: none; background-color: #4682b4; color: white; border: none; border-radius: 5px; padding: 10px; cursor: pointer; font-size: 1em; box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); transition: background-color 0.3s ease;">
+            ↑ Scroll to Top
+        </button>
+    </div>
+
+    <script>
+        // Get the button
+        const mybutton = document.getElementById("scrollToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block"; // Show the button
+            } else {
+                mybutton.style.display = "none"; // Hide the button
+            }
+        };
+
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top
+        };
+    </script>
+
+</body>
+
+</html>
