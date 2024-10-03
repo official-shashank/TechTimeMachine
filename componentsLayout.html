@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/components/sidebar.css">
     <link rel="stylesheet" href="./styles/main.css">
     <style type="text/tailwindcss">
         @layer utilities {
@@ -14,8 +15,9 @@
     </style>
 </head>
 <body>
+    
   <div id="navbar">
-    <header class="absolute inset-x-0 top-0 z-50 text-white">
+    <header class="inset-x-0 top-0 z-50 text-white">
       <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
@@ -75,53 +77,83 @@
       </div>
     </header>
   </div>
-
-  <div id="home">
-    <div class="bg-white">
-      <div class="mx-auto max-w-full ">
-        <div class="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl  sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-30">
-          <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0" aria-hidden="true">
-            <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
-            <defs>
-              <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-                <stop stop-color="#7775D6" />
-                <stop offset="1" stop-color="#E935C1" />
-              </radialGradient>
-            </defs>
-          </svg>
-          <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Boost your productivity.<br>Start using our app today.</h2>
-            <p class="mt-6 text-lg leading-8 text-gray-300">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla.</p>
-            <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-              <a href="#" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white custom-btn">Get started</a>
-              <a href="#" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
-          <div class="relative mt-16 h-80 lg:mt-8">
-            <img class="absolute left-8 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10" src="./assets/images/layout.png" alt="App screenshot" width="1824" height="1080">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
- 
   
+
+     <div class="codeEditorLayoutContainer">
+      
+      
+      <nav id="sidebar">
+        <ul>
+          <li>
+            <span class="logo">TechTimeMachine</span>
+            <button onclick=toggleSidebar() id="toggle-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m313-480 155 156q11 11 11.5 27.5T468-268q-11 11-28 11t-28-11L228-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T468-692q11 11 11 28t-11 28L313-480Zm264 0 155 156q11 11 11.5 27.5T732-268q-11 11-28 11t-28-11L492-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T732-692q11 11 11 28t-11 28L577-480Z"/></svg>
+            </button>
+          </li>
+          <li class="">
+            <button onclick="loadIconicWebsite()" class="dropdown-btn active-custom-btn">
+              <span>Websites</span>
+            </button>
+          </li>
+          
+          <li>
+            <button onclick=toggleSubMenu(this) class="dropdown-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h207q16 0 30.5 6t25.5 17l57 57h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H447l-80-80H160v480Zm0 0v-480 480Zm400-160v40q0 17 11.5 28.5T600-320q17 0 28.5-11.5T640-360v-40h40q17 0 28.5-11.5T720-440q0-17-11.5-28.5T680-480h-40v-40q0-17-11.5-28.5T600-560q-17 0-28.5 11.5T560-520v40h-40q-17 0-28.5 11.5T480-440q0 17 11.5 28.5T520-400h40Z"/></svg>
+              <span>Components</span>
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z"/></svg>
+            </button>
+            <ul class="sub-menu">
+              <div>
+                <li><a href="#">Typography</a></li>
+                <li><a href="#">Buttons</a></li>
+                <li><a href="#">Loading Animations</a></li>
+                <li><a href="#">Forms</a></li>
+                <li><a href="#">Inputs</a></li>
+                <li><a href="#">Cards</a></li>
+                <li><a href="#">Tooltips</a></li>
+                <li><a href="#">Popups</a></li>
+                <li><a href="#">Footers</a></li>
+                <li><a href="#">Progress Bars</a></li>
+                <li><a href="#">Progress Bars</a></li>
+                <li><a href="#">Sliders / Carousels</a></li>
+                <li><a href="#">Scrool Effects</a></li>
+                <li><a href="#">Scrool Effects</a></li>
+                <li><a href="#">Light / Dark Mode</a></li>
+                <li><a href="#">Icons and Imagery</a></li>
+                <li><a href="#">Hero Banner</a></li>
+                <li><a href="#">Background Patterns and Effects</a></li>
+                <li><a href="#">Animations</a></li>
+                <li><a href="#">Transitions </a></li>
+              </div>
+            </ul>
+          </li>
+        </ul>
+    </nav>
+      <main id="mainLayout" class="main-container">
+
+      </main>   
+     </div> 
+ 
+      
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  clifford: '#da373d',
+                }
+              }
+            }
+          }
+      </script>
+      <script src="./js/layouts/componentEditorLayout.js"></script>
+      <script src="./js/data/data.js"></script> 
+      <script src="./js/components/activeBtn.js"></script> 
+      <script src="./js/script.js"></script> 
+      <script src="./js/components/sidebar.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.0/beautify-html.min.js"></script>
+
 </body>
 
-
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-</script>
-<script src="./js/script.js"></script>
 </html>
