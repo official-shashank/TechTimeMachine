@@ -2,40 +2,48 @@ var compoenents = {
     Buttons:{
         title: 'button',
         "1990": {
-          code: `<div class="demo-section" style="margin-bottom: 50px;">
-              
-              <div style="font-size: 1.5rem; color: white; text-align: center; margin-bottom: 20px; animation: blink 1s infinite;">
-                  Loading...
-              </div>
-              <!-- Optional: Embed classic GIF -->
-              <img src="https://i.gifer.com/ZZ5H.gif" alt="90s spinning globe" width="100" style="display: block; margin: 0 auto;">
-          </div>`,
+          code: `<button>Click Me</button>`,
           explanation: {
             details: 'button is awesomely designed',
           },
         },
         "2000": {
-          code: `<div class="demo-section" style="margin-bottom: 50px;">
-              
-              <div style="font-size: 1.5rem; color: white; text-align: center; margin-bottom: 20px; animation: blink 1s infinite;">
-                  Loading...
-              </div>
-              <!-- Optional: Embed classic GIF -->
-              <img src="https://i.gifer.com/ZZ5H.gif" alt="90s spinning globe" width="100" style="display: block; margin: 0 auto;">
-          </div>`,
+          code: ` <button style="background: linear-gradient(to bottom, #e0e0e0 0%, #b0b0b0 100%); border: 2px solid #888; padding: 10px 20px; color: #000; font-size: 16px; font-family: Verdana, sans-serif; border-radius: 5px; text-shadow: 1px 1px 1px #fff; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); cursor: pointer; transition: all 0.2s ease-in-out;" 
+    onmousedown="this.style.boxShadow='none'; this.style.transform='translate(3px, 3px)';" 
+    onmouseup="this.style.boxShadow='3px 3px 5px rgba(0, 0, 0, 0.5)'; this.style.transform='translate(0, 0)';"
+    onmouseover="this.style.background='linear-gradient(to bottom, #d0d0d0 0%, #a0a0a0 100%)';" 
+    onmouseout="this.style.background='linear-gradient(to bottom, #e0e0e0 0%, #b0b0b0 100%)';">
+    2000
+  </button>`,
           explanation: {
             details: 'button is awesomely designed',
           },
         },
         "2010": {
-          code: `<div class="demo-section" style="margin-bottom: 50px;">
-              
-              <div style="font-size: 1.5rem; color: white; text-align: center; margin-bottom: 20px; animation: blink 1s infinite;">
-                  Loading...
-              </div>
-              <!-- Optional: Embed classic GIF -->
-              <img src="https://i.gifer.com/ZZ5H.gif" alt="90s spinning globe" width="100" style="display: block; margin: 0 auto;">
-          </div>`,
+          code: `<button 
+    style="
+      background: linear-gradient(to bottom, #e0e0e0 0%, #b0b0b0 100%);
+      border: 2px solid #888;
+      padding: 10px 20px;
+      color: #000;
+      font-size: 16px;
+      font-family: 'Helvetica', 'Arial', sans-serif;
+      border-radius: 15px;
+      text-shadow: 1px 1px 1px #fff;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    "
+    onmouseover="this.style.background='linear-gradient(to bottom, #d0d0d0 0%, #a0a0a0 100%)';
+                 this.style.boxShadow='3px 3px 7px rgba(0, 0, 0, 0.7)';"
+    onmouseout="this.style.background='linear-gradient(to bottom, #e0e0e0 0%, #b0b0b0 100%)';
+                 this.style.boxShadow='3px 3px 5px rgba(0, 0, 0, 0.5)';"
+    onmousedown="this.style.boxShadow='none';
+                 this.style.transform='translate(3px, 3px)';"
+    onmouseup="this.style.boxShadow='3px 3px 7px rgba(0, 0, 0, 0.7)';
+               this.style.transform='translate(0px, 0px)';">
+    2010
+  </button>`,
           explanation: {
             details: 'button is awesomely designed',
           },
@@ -136,6 +144,95 @@ var compoenents = {
         },
     },
     scroll:{
+        title: 'scroll',
+        "1990": {
+          code: `<div class="sc" style="font-family: Arial, sans-serif; background-color: #f0f0f0; color: #000; margin: 0; padding: 0;">
+        <header style="background-color: #3366cc; color: white; text-align: center; padding: 10px 0;">
+            <h1 style="margin: 0; font-size: 2em;">Welcome to My 1990s Style Website</h1>
+        </header>
+
+        <div class="container" style="width: 80%; margin: 20px auto; background: white; border: 2px solid #ccc; padding: 20px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);">
+            <h2>About This Site</h2>
+            <p style="margin: 15px 0; line-height: 1.5; text-align: justify;">This is a simple static web page demonstrating the look and feel of web pages from the 1990s. It features basic HTML structure and styles without any scroll effects or complicated behaviors.</p>
+
+            <h2>Images from the Past</h2>
+            <img src="https://via.placeholder.com/400x200" alt="Sample Image 1" style="max-width: 100%; height: auto; display: block; margin: 10px 0;" />
+            <p style="margin: 15px 0; line-height: 1.5; text-align: justify;">Image 1: A sample image representing static content.</p>
+
+            <img src="https://via.placeholder.com/400x200" alt="Sample Image 2" style="max-width: 100%; height: auto; display: block; margin: 10px 0;" />
+            <p style="margin: 15px 0; line-height: 1.5; text-align: justify;">Image 2: Another sample image, showcasing the same static layout.</p>
+
+            <h2>Features of this Site</h2>
+            <ul style="padding-left: 20px;">
+                <li>Static content that doesn't respond to scrolling.</li>
+                <li>Basic layout with a header and footer.</li>
+                <li>Simple typography with limited styles.</li>
+                <li>Placeholder images to illustrate content use.</li>
+            </ul>
+        </div>
+
+        <footer style="background-color: #3366cc; color: white; text-align: center; padding: 10px 0; position: fixed; bottom: 0; width: 100%;">
+            <p style="margin: 0;">&copy; 1990s Style Website Example</p>
+        </footer>
+    </div>`,
+          explanation: {
+            details: 'button is awesomely designed',
+          },
+        },
+        "2000": {
+          code: `<div class="demo-section" style="margin-bottom: 50px;">
+              
+              <div style="font-size: 1.5rem; color: white; text-align: center; margin-bottom: 20px; animation: blink 1s infinite;">
+                  Loading...
+              </div>
+              <!-- Optional: Embed classic GIF -->
+              <img src="https://i.gifer.com/ZZ5H.gif" alt="90s spinning globe" width="100" style="display: block; margin: 0 auto;">
+          </div>`,
+          explanation: {
+            details: 'button is awesomely designed',
+          },
+        },
+        "2010": {
+          code: `<div class="demo-section" style="margin-bottom: 50px;">
+              
+              <div style="font-size: 1.5rem; color: white; text-align: center; margin-bottom: 20px; animation: blink 1s infinite;">
+                  Loading...
+              </div>
+              <!-- Optional: Embed classic GIF -->
+              <img src="https://i.gifer.com/ZZ5H.gif" alt="90s spinning globe" width="100" style="display: block; margin: 0 auto;">
+          </div>`,
+          explanation: {
+            details: 'button is awesomely designed',
+          },
+        },
+        "2020": {
+          code: `<div class="demo-section" style="margin-bottom: 50px;">
+              
+              <div style="font-size: 1.5rem; color: white; text-align: center; margin-bottom: 20px; animation: blink 1s infinite;">
+                  Loading...
+              </div>
+              <!-- Optional: Embed classic GIF -->
+              <img src="https://i.gifer.com/ZZ5H.gif" alt="90s spinning globe" width="100" style="display: block; margin: 0 auto;">
+          </div>`,
+          explanation: {
+            details: 'button is awesomely designed',
+          },
+        },
+        "2030": {
+          code: `<div class="demo-section" style="margin-bottom: 50px;">
+              
+              <div style="font-size: 1.5rem; color: white; text-align: center; margin-bottom: 20px; animation: blink 1s infinite;">
+                  Loading...
+              </div>
+              <!-- Optional: Embed classic GIF -->
+              <img src="https://i.gifer.com/ZZ5H.gif" alt="90s spinning globe" width="100" style="display: block; margin: 0 auto;">
+          </div>`,
+          explanation: {
+            details: 'button is awesomely designed',
+          },
+        },
+    },
+    forms:{
         title: 'scroll',
         "1990": {
           code: `<div class="sc" style="font-family: Arial, sans-serif; background-color: #f0f0f0; color: #000; margin: 0; padding: 0;">
