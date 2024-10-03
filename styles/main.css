@@ -4,22 +4,86 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root{
-    --black:rgb(64, 42, 42);
-    --font1:
-    --font
+  --base-clr: #1a1113;
+  --line-clr: #42434a;
+  --hover-clr: #222533;
+  --text-clr: #e6e6ef;
+  --accent-clr: #5e63ff;
+  --secondary-text-clr: #b0b3c1;
 }
 
-a{
-    text-decoration: none;
-    cursor:pointer;
-    color:var(--black)
+html{
+  font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5rem;
+}
+body{
+  min-height: 100vh;
+  min-height: 100vh;
+  background-color: var(--base-clr);
+  color: var(--text-clr);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-clr) var(--base-clr);
 }
 
-.btn{
-   cursor: pointer;
+
+/* scroll bar */
+body::-webkit-scrollbar {
+  width: 8px; /* Reduce the width of the scrollbar */
 }
 
-ul,ol{
-    list-style: none;
+body::-webkit-scrollbar-track {
+  background: var(--base-clr); /* Background of the scrollbar track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--line-clr); /* Scrollbar handle */
+  border-radius: 10px; /* Rounded edges */
+  border: 1px solid var(--base-clr); /* Space around the handle */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hover-clr); /* Scrollbar handle on hover */
+}
+
+/* button stylings */
+.custom-btn {
+    border:1px solid var(--accent-clr) ;
+    color: var(--text-clr);
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.active-custom-btn{
+  background: linear-gradient(200deg, var(--accent-clr), var(--hover-clr));
+}
+
+
+.custom-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.custom-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(68, 70, 130, 0.5);
+}
+
+/* container style */
+
+.main-container{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
