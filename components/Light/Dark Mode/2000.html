@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2000s Web Page</title>
-    <link id="themeStyle" rel="stylesheet" href="light.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,17 +22,27 @@
     </style>
     <script>
         function toggleTheme() {
-            var themeLink = document.getElementById("themeStyle");
-            if (themeLink.getAttribute("href") === "light.css") {
-                themeLink.setAttribute("href", "dark.css");
+            var body = document.body;
+            var button = document.querySelector('button');
+
+            if (body.style.backgroundColor === 'white') {
+                body.style.backgroundColor = 'black'; // Dark background
+                body.style.color = 'white'; // Light text
+                button.style.backgroundColor = '#555'; // Darker button
+                button.style.color = 'white'; // Light button text
+                button.innerText = 'Switch to Light Theme'; // Change button text
             } else {
-                themeLink.setAttribute("href", "light.css");
+                body.style.backgroundColor = 'white'; // Light background
+                body.style.color = 'black'; // Dark text
+                button.style.backgroundColor = '#4CAF50'; // Original green button
+                button.style.color = 'white'; // Original button text
+                button.innerText = 'Switch to Dark Theme'; // Change button text
             }
         }
     </script>
 </head>
 <body>
     <h1>Welcome to the 2000s Web!</h1>
-    <button onclick="toggleTheme()">Switch Theme</button>
+    <button onclick="toggleTheme()">Switch to Dark Theme</button>
 </body>
 </html>

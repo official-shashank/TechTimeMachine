@@ -3,17 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2020s Typography</title>
+    <title>ANICE COLD DRINK</title>
+    <style>
+        *,
+        *:before,
+        *:after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-kerning: auto;
+        }
+        html {
+            text-align: center;
+            -webkit-text-size-adjust: 100%;
+        }
+        body {
+            margin: 0;
+        }
+        h1 {
+            width: 100%;
+            line-height: 1.2;
+            font-weight: 400;
+            font-family: 'Source Code Pro', Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+            position: fixed;
+            left: 0;
+            top: calc(50% - 1.5em);
+        }
+        h1 span {
+            display: inline-block;
+            background: rgba(255, 255, 255, .5);
+            white-space: pre;
+        }
+        h1 span:empty {
+            background: transparent;
+            border: none;
+        }
+        h1 span:nth-of-type(2) {
+            animation-duration: 10s;
+            animation-name: slide;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        @media (orientation: portrait) {
+            h1 {
+                font-size: 5vmin;
+            }
+            h1 span {
+                padding: 1vmin;
+                border-bottom: .5vmin solid black;
+            }
+            h1 span:empty {
+                padding: 2vmin;
+            }
+      
+            @keyframes slide {
+                from { margin-left: 4vmin; margin-right: 0; }
+                25%  { margin-left: 4vmin; margin-right: 0; }
+                50%  { margin-left: 0; margin-right: 4vmin; }
+                75%  { margin-left: 0; margin-right: 4vmin; }
+                to   { margin-left: 4vmin; margin-right: 0; }
+            }
+        }
+        
+        @media (orientation: landscape) {
+            h1 {
+                font-size: 5vmax;
+            }
+            h1 span {
+                padding: 1vmax;
+                border-bottom: .5vmax solid black;
+            }
+            h1 span:empty {
+                padding: 2vmax;
+            }
+      
+            @keyframes slide {
+                from { margin-left: 4vmax; margin-right: 0; }
+                25%  { margin-left: 4vmax; margin-right: 0; }
+                50%  { margin-left: 0; margin-right: 4vmax; }
+                75%  { margin-left: 0; margin-right: 4vmax; }
+                to   { margin-left: 4vmax; margin-right: 0; }
+            }
+        }
+    </style>
 </head>
-<div style="background-color: #e8f8f5; color: #333; font-family: 'Arial', sans-serif; margin: 20px; text-align: center;">
-    <h1 style="font-size: 36px; color: #00bcd4;">2020s Typography</h1>
-    <p style="font-size: 20px;">The 2020s have brought forth <strong>variable fonts</strong>, allowing dynamic changes to weight, width, and style without loading multiple font files. Additionally, fluid typography scales font sizes based on viewport width, creating a seamless reading experience.</p>
-    <h2 style="font-size: 28px; color: #009688;">Key Features:</h2>
-    <ul style="font-size: 18px; color: #8e44ad; list-style-type: square; padding: 0;">
-        <li>Dynamic font weight and width</li>
-        <li>Smooth scaling of text size</li>
-        <li>Enhanced user experience and accessibility</li>
-    </ul>
-    
-</div>
+<body>
+    <h1>
+        <span>A</span>
+        <span>N</span>
+        <span>I</span>
+        <span>C</span>
+        <span>E</span>
+        <span></span>
+        <span>C</span>
+        <span>O</span>
+        <span>L</span>
+        <span>D</span>
+        <span></span>
+        <span>D</span>
+        <span>R</span>
+        <span>I</span>
+        <span>N</span>
+        <span>K</span>
+    </h1>
+    <script>
+        document.documentElement.style.background = 'hsl(' + ~~(Math.random() * 359) + ', 75%, 50%)';
+    </script>
+</body>
 </html>
