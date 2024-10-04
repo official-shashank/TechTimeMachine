@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2000s: Flash or JavaScript Cards</title>
+    <script>
+        function enlargeCard(element) {
+            element.style.transform = "scale(1.05)";
+        }
+
+        function resetCard(element) {
+            element.style.transform = "scale(1)";
+        }
+    </script>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 20px;">
+    <h1 style="color: #333;">2000s: Flash or JavaScript Cards</h1>
+    <p style="color: #555;">The 2000s saw the introduction of interactivity through Flash and JavaScript, allowing for hover effects and animations. Web designers began to embrace more dynamic content, enhancing the user experience.</p>
+    <div style="background-color: #fff; border: 1px solid #ccc; padding: 20px; margin-bottom: 20px; transition: transform 0.3s;" 
+         onmouseover="enlargeCard(this)" 
+         onmouseout="resetCard(this)">
+        <h2 style="color: #444;">Interactive Content Card</h2>
+        <p>This card enlarges slightly when hovered over, illustrating the use of JavaScript for interactivity. Here is an example of an interactive card:</p>
+        <p style="font-weight: bold;">Featured Product:</p>
+        <p>"The latest gadget that will change your life."</p>
+    </div>
+</body>
+</html>
