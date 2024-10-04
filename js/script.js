@@ -18,25 +18,30 @@ document.getElementById('btn1')?.addEventListener('click', loaddata)
 //   output.innerHTML = codeEditor.value
 // })
 
-document.getElementById('btn2')?.addEventListener('click', function () {
-  codeEditor.value = contentToBeShown['2000']['code']
-  output.innerHTML = contentToBeShown['2000']['code']
-})
+function buttonContentChange(){
+  document.getElementById('btn2')?.addEventListener('click', function () {
+    console.log("laod data btn2")
+    codeEditor.value = contentToBeShown['2000']['code']
+    output.innerHTML = contentToBeShown['2000']['code']
+  })
+  
+  document.getElementById('btn3')?.addEventListener('click', function () {
+   codeEditor.value = contentToBeShown['2010']['code']
+    output.innerHTML = contentToBeShown['2010']['code']
+  })
+  
+  document.getElementById('btn4')?.addEventListener('click', function () {
+    codeEditor.value = contentToBeShown['2020']['code']
+    output.innerHTML = contentToBeShown['2020']['code']
+  })
+  
+  document.getElementById('btn5')?.addEventListener('click', function () {
+   codeEditor.value = contentToBeShown['2030']['code']
+    output.innerHTML = contentToBeShown['2030']['code']
+  })
+  
+}
 
-document.getElementById('btn3')?.addEventListener('click', function () {
- codeEditor.value = contentToBeShown['2010']['code']
-  output.innerHTML = contentToBeShown['2010']['code']
-})
-
-document.getElementById('btn4')?.addEventListener('click', function () {
-  codeEditor.value = contentToBeShown['2020']['code']
-  output.innerHTML = contentToBeShown['2020']['code']
-})
-
-document.getElementById('btn5')?.addEventListener('click', function () {
- codeEditor.value = contentToBeShown['2030']['code']
-  output.innerHTML = contentToBeShown['2030']['code']
-})
 
 // document.getElementById('prevBtn').addEventListener('click', function () {
 //   alert('Prev button clicked')
@@ -60,10 +65,11 @@ links.forEach((link) => {
     event.preventDefault()
     mainLayout.classList.remove('main-container')
     await loadLayout()
-    // console.log(this.text);
+    console.log(this.text);
     const title = document.getElementById('title')
     title.innerText = this.text
-    title.text = this.text
+
+   
     contentToBeShown = compoenents[this.text]
     btnStateManage()
     await loaddata()
@@ -80,7 +86,7 @@ function loadIconicWebsite() {
   if (mainLayout) {
     iconicWebsites.map((item, index) => {
       res += `
-  <div class="max-w-sm rounded-lg overflow-hidden shadow-xl transition-transform transform hover:scale-105 bg-[var(--base-color)]">
+  <div class="max-w-sm rounded-lg overflow-hidden shadow-xl transition-transform transform hover:scale-105 bg-[var(--base-color)] bshadow">
     <img class="w-full h-72 object-cover transition-opacity duration-300 hover:opacity-90" src=${item.imgUrl} alt="Sunset in the mountains">
 
     <div class="px-6 py-4">

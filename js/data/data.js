@@ -1,5 +1,5 @@
 var compoenents = {
-  Buttons: {
+  "Buttons": {
     title: 'button',
     "1990": {
       code: `<button>Click Me</button>`,
@@ -84,7 +84,7 @@ var compoenents = {
       },
     },
   },
-  typography: {
+  "Typography": {
     title: 'typography',
     "1990": {
       code: ` <div style="background-color: #eaeaea; color: #333; font-family: 'Times New Roman', Times, serif; margin: 20px; text-align: center;">
@@ -296,7 +296,7 @@ var compoenents = {
       },
     },
   },
-  forms: {
+  "Forms": {
     title: 'form',
     "1990": {
       code: `<div class="sc" style="font-family: Arial, sans-serif; background-color: #f0f0f0; color: #000; margin: 0; padding: 0;">
@@ -409,7 +409,7 @@ var compoenents = {
       },
     },
   },
-   hero_banner: {
+  hero_banner: {
     title: 'hero_banner',
     "1990": {
       code: `<div style="margin: 0; font-family: 'Arial', sans-serif;">
@@ -519,7 +519,7 @@ var compoenents = {
     },
   },
 
-  Loading: {
+  "Loading Animations": {
     title: 'Loading',
     "1990": {
       code: `<div>
