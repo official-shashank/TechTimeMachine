@@ -87,46 +87,31 @@ var compoenents = {
   "Typography": {
     title: 'typography',
     "1990": {
-      code: ` <div style="background-color: #eaeaea; color: #333; font-family: 'Times New Roman', Times, serif; margin: 20px; text-align: center;">
-    <h1 style="font-size: 36px; color: #2c3e50;">1990s Typography</h1>
-    <p style="font-size: 20px;">In the 1990s, most websites relied on basic system fonts such as <strong>Times New Roman</strong>, <strong>Arial</strong>, and <strong>Courier</strong>. Web designers often used simple styling for headings, paragraphs, and links, which resulted in a uniform but limited typographic experience.</p>
-    <h2 style="font-size: 28px; color: #2980b9;">Key Features:</h2>
-    <ul style="font-size: 18px; color: #8e44ad; list-style-type: square; padding: 0;">
-        <li>Basic system fonts</li>
-        <li>Minimal styling options</li>
-        <li>Consistent across browsers</li>
-    </ul>
-  </div>`,
+      code: `  <div class="bg-gray-800 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
+        <h2 class="text-2xl font-serif mb-4">1990s</h2>
+        <p class="font-serif text-5xl mt-6">The Digital Age Begins</p>
+      </div>`,
       explanation: {
         details: 'A webpage using only system-default fonts like Times New Roman and basic styling for headings, paragraphs, and links. ',
       },
     },
     "2000": {
-      code: `<div style="background-color: #fff5e6; color: #333; font-family: Arial, sans-serif; margin: 20px; text-align: center;">
-    <h1 style="font-size: 36px; color: #d35400;">2000s Typography</h1>
-    <p style="font-size: 20px;">The introduction of <strong>@font-face</strong> in the 2000s allowed websites to utilize custom fonts, expanding typography choices. This innovation marked the beginning of greater typographic diversity and personalization in web design.</p>
-    <h2 style="font-size: 28px; color: #c0392b;">Key Features:</h2>
-    <ul style="font-size: 18px; color: #8e44ad; list-style-type: square; padding: 0;">
-        <li>Use of custom fonts</li>
-        <li>More diverse typography options</li>
-        <li>Creative freedom in design</li>
-    </ul>
-</div> `,
+      code: `   <div class="bg-gray-700 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
+        <h2 class="text-2xl font-sans mb-4">2000s</h2>
+        <p class="font-sans text-5xl mt-6">The Rise of Web 2.0</p>
+      </div>`,
       explanation: {
         details: 'A page using @font-face to load custom fonts for headings and body text, reflecting the rise of typographic diversity. ',
       },
     },
     "2010": {
-      code: `<div style="background-color: #d4efdf; color: #333; font-family: 'Helvetica Neue', sans-serif; margin: 20px; text-align: center;">
-    <h1 style="font-size: 36px; color: #27ae60;">2010s Typography</h1>
-    <p style="font-size: 20px;">With the rise of <strong>Google Fonts</strong>, the 2010s made it easy for designers to implement a wide variety of fonts. Responsive typography became common, allowing font sizes to adjust based on screen width, enhancing user experience.</p>
-    <h2 style="font-size: 28px; color: #16a085;">Key Features:</h2>
-    <ul style="font-size: 18px; color: #8e44ad; list-style-type: square; padding: 0;">
-        <li>Integration of Google Fonts</li>
-        <li>Responsive typography with media queries</li>
-        <li>Wider font choices available</li>
-    </ul>
-</div>`,
+      code: `  <div class="bg-gray-600 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
+        <h2 class="text-2xl font-sans mb-4">2010s</h2>
+        <p class="text-lg font-sans leading-relaxed">
+          The 2010s saw a rise in custom fonts and greater creativity in typography. Bold, playful, and geometric fonts were common, with designers experimenting with proportions and line heights.
+        </p>
+        <p class="font-sans text-4xl mt-6">Sample Text: The Mobile-First Era</p>
+      </div>`,
       explanation: {
         details: 'A page using @font-face to load custom fonts for headings and body text, reflecting the rise of typographic diversity. ',
       },
@@ -613,7 +598,112 @@ var compoenents = {
       },
     },
   },
-  Navigaton_menu: {
+  "Navigation Menu": {
+    title: 'scroll',
+    "1990": {
+      code: `<div>
+    <table style="font-family: Arial, sans-serif; background-color: #ffffff; width: 100%; border-collapse: collapse;">
+
+        <tr>
+    
+            <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a href="#home" style="text-decoration: none; color: #000000;">Home</a></td>
+    
+            <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a href="#about" style="text-decoration: none; color: #000000;">About</a></td>
+    
+            <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a href="#services" style="text-decoration: none; color: #000000;">Services</a></td>
+    
+            <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a href="#contact" style="text-decoration: none; color: #000000;">Contact</a></td>
+    
+        </tr>
+    
+    </table>
+    
+</div>`,
+      explanation: {
+        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+      },
+    },
+    "2000": {
+      code: ` <div style="font-family: Arial, sans-serif; position: relative; display: inline-block;">
+        <button style="padding: 10px 15px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Menu</button>
+        <div style="display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;">
+            <a href="#home" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">Home</a>
+            <a href="#about" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">About</a>
+            <a href="#services" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">Services</a>
+            <a href="#contact" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">Contact</a>
+        </div>
+    </div>`,
+      explanation: {
+        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+      },
+    },
+    "2010": {
+      code: `<div style="font-family: 'Arial', sans-serif; background-color: #4CAF50; color: #fff; display: flex; justify-content: space-between; align-items: center; padding: 15px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+        <div style="display: flex; flex-direction: column; cursor: pointer;" onclick="toggleMenu()">
+            <div style="width: 30px; height: 4px; background-color: white; margin: 3px 0; transition: all 0.3s;"></div>
+            <div style="width: 30px; height: 4px; background-color: white; margin: 3px 0; transition: all 0.3s;"></div>
+            <div style="width: 30px; height: 4px; background-color: white; margin: 3px 0; transition: all 0.3s;"></div>
+        </div>
+        <div style="display: flex; gap: 15px;">
+            <a href="#home" style="color: white; text-decoration: none; padding: 10px 15px; transition: background 0.3s;">Home</a>
+            <a href="#about" style="color: white; text-decoration: none; padding: 10px 15px; transition: background 0.3s;">About</a>
+            <a href="#services" style="color: white; text-decoration: none; padding: 10px 15px; transition: background 0.3s;">Services</a>
+            <a href="#contact" style="color: white; text-decoration: none; padding: 10px 15px; transition: background 0.3s;">Contact</a>
+        </div>
+    </div>`,
+      explanation: {
+        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+      },
+    },
+    "2020": {
+      code: `<div class="menu" style="font-family: Arial, sans-serif; background-color: rgba(76, 175, 80, 0.9); position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; transform: translateX(-100%); transition: transform 0.3s ease-in-out; z-index: 1000;">
+
+        <div class="menu-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: white;">
+            <ul class="menu-links" style="list-style: none; padding: 0;">
+                <li style="margin: 20px 0;">
+                    <a href="#home" 
+                       style="color: white; text-decoration: none; font-size: 2em; transition: color 0.3s;" 
+                       onmouseover="this.style.color='#ffc107'" 
+                       onmouseout="this.style.color='white'">Home</a>
+                </li>
+                <li style="margin: 20px 0;">
+                    <a href="#about" 
+                       style="color: white; text-decoration: none; font-size: 2em; transition: color 0.3s;" 
+                       onmouseover="this.style.color='#ffc107'" 
+                       onmouseout="this.style.color='white'">About</a>
+                </li>
+                <li style="margin: 20px 0;">
+                    <a href="#services" 
+                       style="color: white; text-decoration: none; font-size: 2em; transition: color 0.3s;" 
+                       onmouseover="this.style.color='#ffc107'" 
+                       onmouseout="this.style.color='white'">Services</a>
+                </li>
+                <li style="margin: 20px 0;">
+                    <a href="#contact" 
+                       style="color: white; text-decoration: none; font-size: 2em; transition: color 0.3s;" 
+                       onmouseover="this.style.color='#ffc107'" 
+                       onmouseout="this.style.color='white'">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>`,
+      explanation: {
+        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+      },
+    },
+    "2030": {
+      code: `<div style="font-family: 'Arial', sans-serif; background-color: #f3e5f5; color: #222; text-align: center; padding: 20px;">
+    <h1 style="font-size: 50px; color: #6a1b9a;">2030s: Future Icons and Imagery Projection</h1>
+    <p style="font-size: 24px; color: #444;">By the 2030s, we will see adaptive, AI-driven icons that change based on user preferences and context.</p>
+    <p style="font-size: 20px; color: #333;">Expect interactive icons that enhance accessibility and user engagement.</p>
+    <p style="font-size: 20px; color: #333;">The evolution will focus on personalization and contextual relevance in design.</p>
+</div>`,
+      explanation: {
+        details: 'button is awesomely designed',
+      },
+    },
+  },
+  "Navigation Menu": {
     title: 'scroll',
     "1990": {
       code: `<div>
@@ -718,6 +808,7 @@ var compoenents = {
       },
     },
   }
+
 
 }
 
