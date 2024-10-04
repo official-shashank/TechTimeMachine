@@ -266,8 +266,8 @@ body {
 }
 
 
-/* utility */
+/* utility classses */
+
 .bshadow{
-  box-shadow: 22px 30px 50px -27px rgba(255, 255, 255, 0.466); 
- 
+  box-shadow: 12px 21px 45px 25px rgba(235, 232, 232, 0.3);
 }

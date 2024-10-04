@@ -1,10 +1,10 @@
 var compoenents = {
-  Buttons: {
+  "Buttons": {
     title: 'button',
     "1990": {
       code: `<button>Click Me</button>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'Display pixelated, low-resolution icons and images representing typical 90s web design, perhaps using bitmap images. ',
       },
     },
     "2000": {
@@ -16,7 +16,7 @@ var compoenents = {
     2000
   </button>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: "A button with a CSS gradient background and a hover effect that changes the button's color or size.",
       },
     },
     "2010": {
@@ -45,7 +45,7 @@ var compoenents = {
     2010
   </button>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A flat button styled according to Material Design, with a ripple effect on click. ',
       },
     },
     "2020": {
@@ -67,7 +67,7 @@ var compoenents = {
     2020
   </button>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A neomorphic button with soft shadows or a glassmorphic button with a translucent, frosted glass appearance and subtle animations.',
       },
     },
     "2030": {
@@ -84,8 +84,8 @@ var compoenents = {
       },
     },
   },
-  Typography: {
-    title: 'button',
+  "Typography": {
+    title: 'typography',
     "1990": {
       code: ` <div style="background-color: #eaeaea; color: #333; font-family: 'Times New Roman', Times, serif; margin: 20px; text-align: center;">
     <h1 style="font-size: 36px; color: #2c3e50;">1990s Typography</h1>
@@ -98,7 +98,7 @@ var compoenents = {
     </ul>
   </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A webpage using only system-default fonts like Times New Roman and basic styling for headings, paragraphs, and links. ',
       },
     },
     "2000": {
@@ -113,7 +113,7 @@ var compoenents = {
     </ul>
 </div> `,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A page using @font-face to load custom fonts for headings and body text, reflecting the rise of typographic diversity. ',
       },
     },
     "2010": {
@@ -128,7 +128,7 @@ var compoenents = {
     </ul>
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A page using @font-face to load custom fonts for headings and body text, reflecting the rise of typographic diversity. ',
       },
     },
     "2020": {
@@ -144,7 +144,7 @@ var compoenents = {
     
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'Variable fonts, allowing dynamic changes to weight, width, and style without loading multiple font files. Fluid typography, where font sizes scale based on viewport width. ',
       },
     },
     "2030": {
@@ -191,7 +191,7 @@ var compoenents = {
         </footer>
     </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A static page with simple text and images that remain fixed as you scroll, representing early web pages without scroll effects. ',
       },
     },
     "2000": {
@@ -233,7 +233,7 @@ var compoenents = {
         </button>
     </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A page with a "scroll to top" button that appears after the user scrolls a certain distance, using basic JavaScript. ',
       },
     },
     "2010": {
@@ -266,7 +266,7 @@ var compoenents = {
         <p style="margin: 0;">&copy; 2024 Parallax Scrolling Example</p>
     </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A page with a "scroll to top" button that appears after the user scrolls a certain distance, using basic JavaScript. ',
       },
     },
     "2020": {
@@ -296,8 +296,8 @@ var compoenents = {
       },
     },
   },
-  forms: {
-    title: 'scroll',
+  "Forms": {
+    title: 'form',
     "1990": {
       code: `<div class="sc" style="font-family: Arial, sans-serif; background-color: #f0f0f0; color: #000; margin: 0; padding: 0;">
         <header style="background-color: #3366cc; color: white; text-align: center; padding: 10px 0;">
@@ -329,7 +329,7 @@ var compoenents = {
         </footer>
     </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A basic contact form with only text fields, no padding, and basic buttons like <input type="submit">.  ',
       },
     },
     "2000": {
@@ -349,7 +349,7 @@ var compoenents = {
     </form>
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'Create a form with inline validation messages using basic JavaScript, e.g., “Please enter a valid email.” ',
       },
     },
     "2010": {
@@ -376,7 +376,7 @@ var compoenents = {
     </div>
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'Display a responsive form that changes its layout when the screen size shifts, with floating labels and real-time error validation. ',
       },
     },
     "2020": {
@@ -392,7 +392,7 @@ var compoenents = {
         </form>
     </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A login form with smooth input transitions, an animated password strength meter, and a simple micro-interaction on the submit button (slight color shift). ',
       },
     },
     "2030": {
@@ -409,8 +409,8 @@ var compoenents = {
       },
     },
   },
-   hero_banner: {
-    title: 'scroll',
+  hero_banner: {
+    title: 'hero_banner',
     "1990": {
       code: `<div style="margin: 0; font-family: 'Arial', sans-serif;">
 
@@ -420,7 +420,7 @@ var compoenents = {
 
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A static hero section featuring a large, pixelated image background with text overlaid, simulating the early use of banner images. ',
       },
     },
     "2000": {
@@ -446,7 +446,7 @@ var compoenents = {
 
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A simulated Flash-style hero banner that features animated text and images transitioning in and out. ',
       },
     },
     "2010": {
@@ -461,7 +461,7 @@ var compoenents = {
 
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A hero section with a parallax scrolling effect, where the background image moves slower than the overlaid text as the user scrolls down. ',
       },
     },
     "2020": {
@@ -481,7 +481,7 @@ var compoenents = {
 
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A hero section with a looping video background, animated text, and an interactive call-to-action button that changes color or size on hover. ',
       },
     },
     "2030": {
@@ -519,8 +519,8 @@ var compoenents = {
     },
   },
 
-  Loading: {
-    title: 'scroll',
+  "Loading Animations": {
+    title: 'Loading',
     "1990": {
       code: `<div>
     <div style="text-align: center; font-family: Arial, sans-serif;">
@@ -530,7 +530,7 @@ var compoenents = {
     
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'Simple "Loading..." text that blinks or remains static. ',
       },
     },
     "2000": {
@@ -547,7 +547,7 @@ var compoenents = {
 </div>
 `,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A simple JavaScript progress bar that fills as the page loads or when performing a task (e.g., form submission). ',
       },
     },
     "2010": {
@@ -571,7 +571,7 @@ var compoenents = {
     </style>
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A horizontal progress bar that smoothly animates as content loads, using CSS @keyframes. ',
       },
     },
     "2020": {
@@ -598,7 +598,7 @@ var compoenents = {
     </style>
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'An animated circular loader that gradually fills up, with subtle shadow effects and a percentage display in the center. ',
       },
     },
     "2030": {
@@ -613,7 +613,7 @@ var compoenents = {
       },
     },
   },
-  navigaton_menu: {
+  Navigaton_menu: {
     title: 'scroll',
     "1990": {
       code: `<div>
@@ -635,7 +635,7 @@ var compoenents = {
     
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
       },
     },
     "2000": {
@@ -649,7 +649,7 @@ var compoenents = {
         </div>
     </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
       },
     },
     "2010": {
@@ -667,7 +667,7 @@ var compoenents = {
         </div>
     </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
       },
     },
     "2020": {
@@ -703,7 +703,7 @@ var compoenents = {
         </div>
     </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
       },
     },
     "2030": {

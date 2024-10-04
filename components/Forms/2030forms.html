@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Form Design</title>
+</head>
+<body style="background-color: #181818; color: #fff; font-family: 'Arial', sans-serif; padding: 20px; display: flex; justify-content: center; align-items: center; height: 100vh;">
+
+    <form style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); width: 300px;">
+        <h2 style="text-align: center; color: #e0e0e0;">Contact Us</h2>
+        
+        <label for="name" style="margin-top: 10px; display: block;">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" style="width: 100%; padding: 10px; border: none; border-radius: 5px; background: #444; color: white; margin-bottom: 15px;">
+
+        <label for="email" style="display: block;">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" style="width: 100%; padding: 10px; border: none; border-radius: 5px; background: #444; color: white; margin-bottom: 15px;">
+
+        <label for="message" style="display: block;">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Type your message here..." style="width: 100%; padding: 10px; border: none; border-radius: 5px; background: #444; color: white; margin-bottom: 15px;"></textarea>
+
+        <button type="submit" style="background: linear-gradient(to right, #6a11cb, #2575fc); color: white; padding: 12px; border: none; border-radius: 5px; width: 100%; cursor: pointer; transition: transform 0.3s;">
+            Send Message
+        </button>
+
+        <div style="text-align: center; margin-top: 10px;">
+            <button type="button" style="background: #333; color: white; padding: 8px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;" onclick="alert('Voice input activated! Speak now...')">🎤 Voice Input</button>
+        </div>
+    </form>
+
+</body>
+</html>
