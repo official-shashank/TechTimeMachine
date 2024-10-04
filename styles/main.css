@@ -264,3 +264,10 @@ body {
   max-width: 100%;
   cursor: pointer;
 }
+
+
+/* utility */
+.bshadow{
+  box-shadow: 22px 30px 50px -27px rgba(255, 255, 255, 0.466); 
+ 
+}
