@@ -96,10 +96,10 @@
 <div class="flex flex-col items-center justify-center h-screen bg-gray-900 ">
   <div class="w-full max-w-md bg-gray-800 rounded-lg shadow-md p-6 shadow-lg shadow-indigo-500/70 transition-all">
     <h2 class="text-2xl font-bold text-gray-200 mb-4">Register</h2>
-    <form class="flex flex-col">
-      <input placeholder="Name" class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" type="text">
-      <input placeholder="Email address" class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" type="email">
-      <input placeholder="Password" class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" type="password">
+    <form class="flex flex-col" onsubmit="handleSignUp(event)">
+      <input id="signup-name" placeholder="Name" class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" type="text">
+      <input id="signup-email" placeholder="Email address" class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" type="email">
+      <input id="signup-password" placeholder="Password" class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" type="password">
       <div class="flex items-center justify-between flex-wrap">
         <label class="text-sm text-gray-200 cursor-pointer" for="remember-me">
           <input class="mr-2" id="remember-me" type="checkbox">
@@ -108,7 +108,7 @@
         <a class="text-sm text-blue-500 hover:underline mb-0.5" href="#">Forgot password?</a>
         <p class="text-white mt-4"> Already have account ? <a class="text-sm text-blue-500 -200 hover:underline mt-4" href="./login.html">Login</a></p>
       </div>
-      <button class="text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150 custom-btn active-custom-btn" onclick="handleSignUp(event)">Register</button>
+      <button class="text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150 custom-btn active-custom-btn" type="submit">Register</button>
     </form>
   </div>
 </div>
