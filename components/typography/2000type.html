@@ -4,53 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Font Styling Example</title>
-    <style>
-        /* Define font styles */
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;700&family=IBM+Plex+Serif:wght@400;700&display=swap');
-        
-        body {
-            font-family: 'IBM Plex Sans', sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-
-        p {
-            font-size: 16px;
-        }
-
-        p.serif {
-            font-family: 'IBM Plex Serif', serif;
-        }
-
-        p.sans-alt {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-weight: 100; /* Lighter weight */
-        }
-
-        h1 {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-weight: 100; /* Thin weight */
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-
-    <p>Here is some text that should show up by default in Plex Sans. Here is another sentence with 
+<body style="font-family: 'IBM Plex Sans', sans-serif; margin: 20px; line-height: 1.6;">
+    <p style="font-size: 16px;">
+        Here is some text that should show up by default in Plex Sans. Here is another sentence with 
         <strong>some text in a strong tag</strong> and some <em>other text that should be italicized</em> 
         and even some that should be <strong><em>bold and italic</em></strong>. Whew!
     </p>
-
-    <p class="serif">Here is the same text, but in Plex Serif and all we did was change the font-family. Here is another 
+    <p style="font-family: 'IBM Plex Serif', serif; font-size: 16px;">
+        Here is the same text, but in Plex Serif and all we did was change the font-family. Here is another 
         sentence with <strong>some text in a strong tag</strong> and some <em>other text that should be italicized</em> 
         and even some that should be <strong><em>bold and italic</em></strong>. Whew!
     </p>
-
-    <h1>A nice headline in a very thin weight</h1>
-
-    <p class="sans-alt">Here is the same text, but in Plex Sans and shifted to lighter weights, and again all we did was change 
+    <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 100;">A nice headline in a very thin weight</h1>
+    <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 100; font-size: 16px;">
+        Here is the same text, but in Plex Sans and shifted to lighter weights, and again all we did was change 
         the font-family. Here is another sentence with <strong>some text in a strong tag</strong> and some <em>other text 
         that should be italicized</em> and even some that should be <strong><em>bold and italic</em></strong>. Whew!
     </p>
-
 </body>
 </html>

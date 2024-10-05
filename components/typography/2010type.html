@@ -1,131 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programming Art & Craft</title>
-  <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Lobster+Two&family=Source+Code+Pro:wght@500;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-body: #f1f1f1;
-      --bg-poster: #114084;
-      --color-text: #aadef7;
-      --color-heading: #dae9f5;
-      --color-secondary: #ffeebe;
-    }
-
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Source Code Pro', sans-serif;
-      font-size: 100%;
-      line-height: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: var(--bg-body);
-    }
-
-    .poster {
-      text-align: center;
-      background: var(--bg-poster);
-      padding: 0 2rem;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      color: var(--color-text);
-    }
-
-    .part {
-      margin: 0.5em 0;
-      display: block;
-      font-weight: 700;
-      text-transform: capitalize;
-      line-height: 1.2;
-    }
-
-    .art em {
-      font-family: 'Lobster Two', cursive;
-      letter-spacing: 5px;
-    }
-
-    .craft em {
-      font-family: 'Electrolize', sans-serif;
-      letter-spacing: 2px;
-    }
-
-    span em {
-      color: var(--color-heading);
-    }
-
-    span.heading {
-      color: var(--color-heading);
-      text-transform: uppercase;
-    }
-
-    .heading::before, .heading::after {
-      content: "";
-      background-color: var(--color-heading);
-      height: 5px;
-      display: block;
-      margin: 5px;
-    }
-
-    @media (min-width: 25em) {
-      :root {
-        font-size: calc(1rem + ((1vw - 0.25em) * 1.0526));
-        min-height: 0vw;
-      }
-
-      .heading {
-        font-size: calc(2rem + ((1vw - 0.25em) * 2.1053));
-        min-height: 0vw;
-      }
-    }
-
-    @media (min-width: 120em) {
-      :root {
-        font-size: 2em;
-      }
-
-      .heading {
-        font-size: 4em;
-      }
-    }
-
-    /* Animation */
-    .heading.splitting .char {
-      animation: slide-in 1s cubic-bezier(0.5, 0, 0.5, 1) both;
-      animation-delay: calc(60ms * var(--char-index));
-    }
-
-    @keyframes slide-in {
-      from {
-        transform: translateY(-1em) rotate(-0.5turn) scale(0.5);
-        opacity: 0;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Art & Craft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Lobster+Two&family=Source+Code+Pro:wght@500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
-    <div class="poster">
-      <p class="quote">
-        <span class="part heading" data-splitting>Programming</span>
-        <span class="part art"><em>Art</em> of Algorithm Design</span>
-        <span class="part craft"><em>Craft</em> of Debugging Errant Code</span>
-      </p>
+<body style="font-family: 'Source Code Pro', sans-serif; font-size: 100%; line-height: 1; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f1f1f1;">
+    <div class="container">
+        <div class="poster" style="text-align: center; background: #114084; padding: 0 2rem; height: 100vh; display: flex; align-items: center; color: #aadef7;">
+            <p class="quote">
+                <span class="part heading" style="margin: 0.5em 0; display: block; font-weight: 700; text-transform: capitalize; line-height: 1.2;" data-splitting>
+                    Programming
+                </span>
+                <span class="part art" style="margin: 0.5em 0; display: block; font-weight: 700; text-transform: capitalize; line-height: 1.2;">
+                    <em style="font-family: 'Lobster Two', cursive; letter-spacing: 5px;">Art</em> of Algorithm Design
+                </span>
+                <span class="part craft" style="margin: 0.5em 0; display: block; font-weight: 700; text-transform: capitalize; line-height: 1.2;">
+                    <em style="font-family: 'Electrolize', sans-serif; letter-spacing: 2px;">Craft</em> of Debugging Errant Code
+                </span>
+            </p>
+        </div>
     </div>
-  </div>
-
-  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
-  <script>
-    Splitting();
-  </script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script>
+        Splitting();
+    </script>
 </body>
 </html>

@@ -4,50 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANICE COLD DRINK</title>
+</head>
+<body style="margin: 0;">
+    <h1 style="width: 100%; line-height: 1.2; font-weight: 400; font-family: 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace; position: fixed; left: 0; top: calc(50% - 1.5em);">
+        <span style="display: inline-block; background: rgba(255, 255, 255, .5); white-space: pre;">A</span>
+        <span style="display: inline-block; background: rgba(255, 255, 255, .5); white-space: pre; animation-duration: 10s; animation-name: slide; animation-iteration-count: infinite; animation-timing-function: ease-in-out;">N</span>
+        <span style="display: inline-block; background: rgba(255, 255, 255, .5); white-space: pre;">I</span>
+        <span style="display: inline-block; background: rgba(255, 255, 255, .5); white-space: pre;">C</span>
+        <span style="display: inline-block; background: rgba(255, 255, 255, .5); white-space: pre;">E</span>
+        <span style="display: inline-block; background: rgba(255, 255, 255, .5); white-space: pre;"></span>
+        <span style="display: inline-block; background: rgba(255, 255, 255, .5); white-space: pre;">C</span>
+        <span style="display: inline-block; background: rgba(255, 255, 255, .5); white-space: pre;">O</span>
+        <span style="display: inline-block; background: rgba(255, 255, 255, .5); white-space: pre;">L</span>
+        <span style="display: inline-block; background: rgba(255, 255, 255, .5); white-space: pre;">D</span>
+        <span style="display: inline-block; background: rgba(255, 255, 255, .5); white-space: pre;"></span>
+        <span style="display: inline-block; background: rgba(255, 255, 255, .5); white-space: pre;">D</span>
+        <span style="display: inline-block; background: rgba(255, 255, 255, .5); white-space: pre;">R</span>
+        <span style="display: inline-block; background: rgba(255, 255, 255, .5); white-space: pre;">I</span>
+        <span style="display: inline-block; background: rgba(255, 255, 255, .5); white-space: pre;">N</span>
+        <span style="display: inline-block; background: rgba(255, 255, 255, .5); white-space: pre;">K</span>
+    </h1>
+    <script>
+        document.documentElement.style.background = 'hsl(' + ~~(Math.random() * 359) + ', 75%, 50%)';
+    </script>
     <style>
-        *,
-        *:before,
-        *:after {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            text-rendering: optimizeLegibility;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            font-kerning: auto;
-        }
-        html {
-            text-align: center;
-            -webkit-text-size-adjust: 100%;
-        }
-        body {
-            margin: 0;
-        }
-        h1 {
-            width: 100%;
-            line-height: 1.2;
-            font-weight: 400;
-            font-family: 'Source Code Pro', Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-            position: fixed;
-            left: 0;
-            top: calc(50% - 1.5em);
-        }
-        h1 span {
-            display: inline-block;
-            background: rgba(255, 255, 255, .5);
-            white-space: pre;
-        }
-        h1 span:empty {
-            background: transparent;
-            border: none;
-        }
-        h1 span:nth-of-type(2) {
-            animation-duration: 10s;
-            animation-name: slide;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-        
         @media (orientation: portrait) {
             h1 {
                 font-size: 5vmin;
@@ -59,16 +39,30 @@
             h1 span:empty {
                 padding: 2vmin;
             }
-      
             @keyframes slide {
-                from { margin-left: 4vmin; margin-right: 0; }
-                25%  { margin-left: 4vmin; margin-right: 0; }
-                50%  { margin-left: 0; margin-right: 4vmin; }
-                75%  { margin-left: 0; margin-right: 4vmin; }
-                to   { margin-left: 4vmin; margin-right: 0; }
+                from {
+                    margin-left: 4vmin;
+                    margin-right: 0;
+                }
+                25% {
+                    margin-left: 4vmin;
+                    margin-right: 0;
+                }
+                50% {
+                    margin-left: 0;
+                    margin-right: 4vmin;
+                }
+                75% {
+                    margin-left: 0;
+                    margin-right: 4vmin;
+                }
+                to {
+                    margin-left: 4vmin;
+                    margin-right: 0;
+                }
             }
         }
-        
+
         @media (orientation: landscape) {
             h1 {
                 font-size: 5vmax;
@@ -80,38 +74,29 @@
             h1 span:empty {
                 padding: 2vmax;
             }
-      
             @keyframes slide {
-                from { margin-left: 4vmax; margin-right: 0; }
-                25%  { margin-left: 4vmax; margin-right: 0; }
-                50%  { margin-left: 0; margin-right: 4vmax; }
-                75%  { margin-left: 0; margin-right: 4vmax; }
-                to   { margin-left: 4vmax; margin-right: 0; }
+                from {
+                    margin-left: 4vmax;
+                    margin-right: 0;
+                }
+                25% {
+                    margin-left: 4vmax;
+                    margin-right: 0;
+                }
+                50% {
+                    margin-left: 0;
+                    margin-right: 4vmax;
+                }
+                75% {
+                    margin-left: 0;
+                    margin-right: 4vmax;
+                }
+                to {
+                    margin-left: 4vmax;
+                    margin-right: 0;
+                }
             }
         }
     </style>
-</head>
-<body>
-    <h1>
-        <span>A</span>
-        <span>N</span>
-        <span>I</span>
-        <span>C</span>
-        <span>E</span>
-        <span></span>
-        <span>C</span>
-        <span>O</span>
-        <span>L</span>
-        <span>D</span>
-        <span></span>
-        <span>D</span>
-        <span>R</span>
-        <span>I</span>
-        <span>N</span>
-        <span>K</span>
-    </h1>
-    <script>
-        document.documentElement.style.background = 'hsl(' + ~~(Math.random() * 359) + ', 75%, 50%)';
-    </script>
 </body>
 </html>

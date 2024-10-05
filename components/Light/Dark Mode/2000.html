@@ -4,28 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2000s Web Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: white;
-            color: black;
-        }
-        button {
-            padding: 10px;
-            margin: 20px;
-            background-color: #4CAF50; /* Green button */
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; background-color: white; color: black;">
+    <h1 style="margin: 0;">Welcome to the 2000s Web!</h1>
+    <button style="padding: 10px; margin: 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;" onclick="toggleTheme()">Switch to Dark Theme</button>
+
     <script>
         function toggleTheme() {
             var body = document.body;
             var button = document.querySelector('button');
 
-            if (body.style.backgroundColor === 'white') {
+            if (body.style.backgroundColor === 'white' || body.style.backgroundColor === '') {
                 body.style.backgroundColor = 'black'; // Dark background
                 body.style.color = 'white'; // Light text
                 button.style.backgroundColor = '#555'; // Darker button
@@ -40,9 +29,5 @@
             }
         }
     </script>
-</head>
-<body>
-    <h1>Welcome to the 2000s Web!</h1>
-    <button onclick="toggleTheme()">Switch to Dark Theme</button>
 </body>
 </html>

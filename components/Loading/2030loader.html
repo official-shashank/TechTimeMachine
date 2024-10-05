@@ -4,54 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dot Animation</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        body {
-            min-height: 100vh;
-            background: #141414;
-            display: grid;
-            place-items: center;
-            font-family: system-ui, sans-serif;
-            font-size: calc(1rem + 1vw);
-            line-height: 1;
-        }
-        section {
-            width: 8em;
-            outline: 1px solid #4ec200;
-            outline-offset: 3px;
-            border-radius: 15em;
-            box-shadow: 0 0 1.5em -0.15em #66ff00;
-        }
-        .dot {
-            width: 1em;
-            height: 1em;
-            background: #66ff00;
-            border-radius: 20em;
-            filter: brightness(1.25);
+</head>
+<body style="
+    min-height: 100vh; 
+    background: #141414; 
+    display: grid; 
+    place-items: center; 
+    font-family: system-ui, sans-serif; 
+    font-size: calc(1rem + 1vw); 
+    line-height: 1; 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+">
+    <section style="
+        width: 8em; 
+        outline: 1px solid #4ec200; 
+        outline-offset: 3px; 
+        border-radius: 15em; 
+        box-shadow: 0 0 1.5em -0.15em #66ff00; 
+    ">
+        <div class="dot" style="
+            width: 1em; 
+            height: 1em; 
+            background: #66ff00; 
+            border-radius: 20em; 
+            filter: brightness(1.25); 
             animation: stretch 1s linear alternate infinite;
-        }
+        "></div>
+    </section>
+
+    <style>
         @keyframes stretch {
             100% {
-                transform-origin: left;
-                transform: translateX(7em);
+                transform-origin: left; 
+                transform: translateX(7em); 
             }
             50% {
-                width: 3em;
+                width: 3em; 
             }
         }
-        img {
-            max-width: 100%;
-            object-fit: cover;
-        }
     </style>
-</head>
-<body>
-    <section>
-        <div class="dot"></div>
-    </section>
 </body>
 </html>

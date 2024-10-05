@@ -4,63 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark/Light Mode Switcher</title>
-    <style>
-        /* CSS Styles */
-        body.dark-mode {
-            background-color: #111;
-            color: #eee;
-        }
-        
-        body.dark-mode a {
-            color: #111;
-        }
-        
-        body.dark-mode button {
-            background-color: #eee;
-            color: #111;
-        }
-
-        body.light-mode {
-            background-color: #eee;
-            color: #111;
-        }
-
-        body.light-mode a {
-            color: #111;
-        }
-
-        body.light-mode button {
-            background-color: #111;
-            color: #eee;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        button {
-            font-size: 20px;
-            padding: 10px 20px;
-            cursor: pointer;
-            margin: 20px 0;
-        }
-
-        p {
-            text-align: center;
-        }
-    </style>
 </head>
-<body id="body" class="dark-mode">
-    <h1>Dark/Light Mode Switcher</h1>
-    <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
-    <p>Just press the button above to toggle!</p>
+<body id="body" class="dark-mode" style="background-color: #111; color: #eee;">
+    <h1 style="text-align: center;">Dark/Light Mode Switcher</h1>
+    <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode" style="font-size: 20px; padding: 10px 20px; cursor: pointer; margin: 20px 0; background-color: #eee; color: #111;">🌛</button>
+    <p style="text-align: center;">Just press the button above to toggle!</p>
 
     <script>
         // JavaScript Functionality
         function toggleDarkLight() {
             var body = document.getElementById("body");
             var currentClass = body.className;
-            body.className = currentClass === "dark-mode" ? "light-mode" : "dark-mode";
+
+            if (currentClass === "dark-mode") {
+                body.className = "light-mode";
+                body.style.backgroundColor = "#eee";
+                body.style.color = "#111";
+                // Update button styles
+                document.querySelector('button').style.backgroundColor = "#111";
+                document.querySelector('button').style.color = "#eee";
+            } else {
+                body.className = "dark-mode";
+                body.style.backgroundColor = "#111";
+                body.style.color = "#eee";
+                // Update button styles
+                document.querySelector('button').style.backgroundColor = "#eee";
+                document.querySelector('button').style.color = "#111";
+            }
         }
     </script>
 </body>
