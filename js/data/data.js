@@ -365,8 +365,8 @@ var compoenents = {
     },
   },
   
-  hero_banner: {
-    title: 'hero_banner',
+  "Hero Banner": {
+    title: 'Hero Banner"',
     "1990": {
       code: `<div style="margin: 0; font-family: 'Arial', sans-serif;">
 
