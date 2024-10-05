@@ -71,14 +71,11 @@ var compoenents = {
       },
     },
     "2030": {
-      code: `<div class="demo-section" style="margin-bottom: 50px;">
-              
-              <div style="font-size: 1.5rem; color: white; text-align: center; margin-bottom: 20px; animation: blink 1s infinite;">
-                  Loading...
-              </div>
-              <!-- Optional: Embed classic GIF -->
-              <img src="https://i.gifer.com/ZZ5H.gif" alt="90s spinning globe" width="100" style="display: block; margin: 0 auto;">
-          </div>`,
+      code: ` <div class="flex items-center justify-center">
+    <button class="neumorphism-btn bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white text-xl font-semibold py-3 px-6 rounded-full transform hover:scale-105 transition-transform duration-300">
+      2030 Futuristic Button
+    </button>
+  </div>`,
       explanation: {
         details: 'button is awesomely designed',
       },
@@ -87,94 +84,80 @@ var compoenents = {
   "Typography": {
     title: 'typography',
     "1990": {
-      code: `  <div class="bg-gray-800 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
-        <h2 class="text-2xl font-serif mb-4">1990s</h2>
-        <p class="font-serif text-5xl mt-6">The Digital Age Begins</p>
-      </div>`,
+      code: `    <div class="bg-gray-600 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 mb-6">
+    <!-- 1990s Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14v10H5V8zM2 8a1 1 0 011-1h18a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V8zM12 4l-2 2m4 0l-2-2" />
+    </svg>
+    <h2 class="text-2xl font-sans mb-4">1990s</h2>
+    <p class="font-sans text-5xl">Retro & Bold Designs</p>
+  </div>`,
       explanation: {
         details: 'A webpage using only system-default fonts like Times New Roman and basic styling for headings, paragraphs, and links. ',
       },
     },
     "2000": {
-      code: `   <div class="bg-gray-700 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
-        <h2 class="text-2xl font-sans mb-4">2000s</h2>
-        <p class="font-sans text-5xl mt-6">The Rise of Web 2.0</p>
-      </div>`,
+      code: ` <div class="bg-gray-700 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 mb-6">
+    <!-- 2000s Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17h4.5M3 6h18M8 20h8M5 6v9a1 1 0 001 1h12a1 1 0 001-1V6M10 11h4" />
+    </svg>
+    <h2 class="text-2xl font-sans mb-4">2000s</h2>
+    <p class="font-sans text-5xl mt-6">The Rise of Web 2.0</p>
+  </div>`,
       explanation: {
         details: 'A page using @font-face to load custom fonts for headings and body text, reflecting the rise of typographic diversity. ',
       },
     },
     "2010": {
-      code: `  <div class="bg-gray-600 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
-        <h2 class="text-2xl font-sans mb-4">2010s</h2>
-        <p class="text-lg font-sans leading-relaxed">
-          The 2010s saw a rise in custom fonts and greater creativity in typography. Bold, playful, and geometric fonts were common, with designers experimenting with proportions and line heights.
-        </p>
-        <p class="font-sans text-4xl mt-6">Sample Text: The Mobile-First Era</p>
-      </div>`,
+      code: `   <div class="bg-gray-700 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 mb-6">
+    <!-- 2010s Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 4h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2zM12 18h.01" />
+    </svg>
+    <h2 class="text-2xl font-sans mb-4">2010s</h2>
+    <p class="font-sans text-5xl">Flat Design & Minimalism</p>
+  </div> `,
       explanation: {
         details: 'A page using @font-face to load custom fonts for headings and body text, reflecting the rise of typographic diversity. ',
       },
     },
     "2020": {
-      code: `<div style="background-color: #e8f8f5; color: #333; font-family: 'Arial', sans-serif; margin: 20px; text-align: center;">
-    <h1 style="font-size: 36px; color: #00bcd4;">2020s Typography</h1>
-    <p style="font-size: 20px;">The 2020s have brought forth <strong>variable fonts</strong>, allowing dynamic changes to weight, width, and style without loading multiple font files. Additionally, fluid typography scales font sizes based on viewport width, creating a seamless reading experience.</p>
-    <h2 style="font-size: 28px; color: #009688;">Key Features:</h2>
-    <ul style="font-size: 18px; color: #8e44ad; list-style-type: square; padding: 0;">
-        <li>Dynamic font weight and width</li>
-        <li>Smooth scaling of text size</li>
-        <li>Enhanced user experience and accessibility</li>
-    </ul>
-    
-</div>`,
+      code: ` <div class="bg-gray-700 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 mb-6">
+    <!-- 2020s Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M7 6h10a2 2 0 012 2v8a2 2 0 01-2 2H7a2 2 0 01-2-2V8a2 2 0 012-2zM11 18h2" />
+    </svg>
+    <h2 class="text-2xl font-sans mb-4">2020s</h2>
+    <p class="font-sans text-5xl">Neumorphism & 3D Effects</p>
+  </div> `,
       explanation: {
         details: 'Variable fonts, allowing dynamic changes to weight, width, and style without loading multiple font files. Fluid typography, where font sizes scale based on viewport width. ',
       },
     },
     "2030": {
-      code: `<div style="font-family: 'Arial', sans-serif; background-color: #f5f5f5; color: #444; text-align: center;">
-    <h1 style="font-size: 50px; color: #ff4500;">2030s: Future Typography Projection</h1>
-    <p style="font-size: 24px; color: #777;">The 2030s will bring even more flexibility with adaptive, AI-driven typography that changes contextually based on user behavior and preferences.</p>
-    <p style="font-size: 20px; color: #999;">Expect personalized fonts that adjust for accessibility, reading speed, and design fluidity in real-time.</p>
-</div>`,
+      code: `   <div class="bg-gray-700 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
+    <!-- 2030s Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 12h-1m-4 0H9m-2 0H5m16-4v8m-1-8a4 4 0 00-4-4h-1m-5 0H8a4 4 0 00-4 4v8a4 4 0 004 4h1m5 0h1a4 4 0 004-4v-1m-4 5V5" />
+    </svg>
+    <h2 class="text-2xl font-sans mb-4">2030s</h2>
+    <p class="font-sans text-5xl">AI-Driven & Responsive Designs</p>
+  </div>`,
       explanation: {
         details: 'button is awesomely designed',
       },
     },
   },
-  scroll: {
+  "Scroll Effects": {
     title: 'scroll',
     "1990": {
-      code: `<div class="sc" style="font-family: Arial, sans-serif; background-color: #f0f0f0; color: #000; margin: 0; padding: 0;">
-        <header style="background-color: #3366cc; color: white; text-align: center; padding: 10px 0;">
-            <h1 style="margin: 0; font-size: 2em;">Welcome to My 1990s Style Website</h1>
-        </header>
-
-        <div class="container" style="width: 80%; margin: 20px auto; background: white; border: 2px solid #ccc; padding: 20px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);">
-            <h2>About This Site</h2>
-            <p style="margin: 15px 0; line-height: 1.5; text-align: justify;">This is a simple static web page demonstrating the look and feel of web pages from the 1990s. It features basic HTML structure and styles without any scroll effects or complicated behaviors.</p>
-
-            <h2>Images from the Past</h2>
-            <img src="https://via.placeholder.com/400x200" alt="Sample Image 1" style="max-width: 100%; height: auto; display: block; margin: 10px 0;" />
-            <p style="margin: 15px 0; line-height: 1.5; text-align: justify;">Image 1: A sample image representing static content.</p>
-
-            <img src="https://via.placeholder.com/400x200" alt="Sample Image 2" style="max-width: 100%; height: auto; display: block; margin: 10px 0;" />
-            <p style="margin: 15px 0; line-height: 1.5; text-align: justify;">Image 2: Another sample image, showcasing the same static layout.</p>
-
-            <h2>Features of this Site</h2>
-            <ul style="padding-left: 20px;">
-                <li>Static content that doesn't respond to scrolling.</li>
-                <li>Basic layout with a header and footer.</li>
-                <li>Simple typography with limited styles.</li>
-                <li>Placeholder images to illustrate content use.</li>
-            </ul>
-        </div>
-
-        <footer style="background-color: #3366cc; color: white; text-align: center; padding: 10px 0; position: fixed; bottom: 0; width: 100%;">
-            <p style="margin: 0;">&copy; 1990s Style Website Example</p>
-        </footer>
-    </div>`,
+      code: `     <section class="era-section bg-indigo-700 text-white flex items-center justify-center">
+      <div class="text-center p-10">
+        <h1 class="text-5xl font-bold mb-6">1990s</h1>
+        <p class="text-lg">Minimal design, early HTML sites with basic layouts, limited interactivity, and bright colors.</p>
+      </div>
+    </section> `,
       explanation: {
         details: 'A static page with simple text and images that remain fixed as you scroll, representing early web pages without scroll effects. ',
       },
@@ -284,116 +267,104 @@ var compoenents = {
   "Forms": {
     title: 'form',
     "1990": {
-      code: `<div class="sc" style="font-family: Arial, sans-serif; background-color: #f0f0f0; color: #000; margin: 0; padding: 0;">
-        <header style="background-color: #3366cc; color: white; text-align: center; padding: 10px 0;">
-            <h1 style="margin: 0; font-size: 2em;">Welcome to My 1990s Style Website</h1>
-        </header>
-
-        <div class="container" style="width: 80%; margin: 20px auto; background: white; border: 2px solid #ccc; padding: 20px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);">
-            <h2>About This Site</h2>
-            <p style="margin: 15px 0; line-height: 1.5; text-align: justify;">This is a simple static web page demonstrating the look and feel of web pages from the 1990s. It features basic HTML structure and styles without any scroll effects or complicated behaviors.</p>
-
-            <h2>Images from the Past</h2>
-            <img src="https://via.placeholder.com/400x200" alt="Sample Image 1" style="max-width: 100%; height: auto; display: block; margin: 10px 0;" />
-            <p style="margin: 15px 0; line-height: 1.5; text-align: justify;">Image 1: A sample image representing static content.</p>
-
-            <img src="https://via.placeholder.com/400x200" alt="Sample Image 2" style="max-width: 100%; height: auto; display: block; margin: 10px 0;" />
-            <p style="margin: 15px 0; line-height: 1.5; text-align: justify;">Image 2: Another sample image, showcasing the same static layout.</p>
-
-            <h2>Features of this Site</h2>
-            <ul style="padding-left: 20px;">
-                <li>Static content that doesn't respond to scrolling.</li>
-                <li>Basic layout with a header and footer.</li>
-                <li>Simple typography with limited styles.</li>
-                <li>Placeholder images to illustrate content use.</li>
-            </ul>
+      code: `<div class="bg-white p-5 shadow-lg border border-gray-400">
+        <div class="mb-4">
+            <label for="name" class="block mb-2">Name:</label>
+            <input type="text" id="name" name="name" class="border border-black p-2 w-full" placeholder="Enter your name">
         </div>
-
-        <footer style="background-color: #3366cc; color: white; text-align: center; padding: 10px 0; position: fixed; bottom: 0; width: 100%;">
-            <p style="margin: 0;">&copy; 1990s Style Website Example</p>
-        </footer>
-    </div>`,
+        
+        <div class="mb-4">
+            <label for="email" class="block mb-2">Email:</label>
+            <input type="email" id="email" name="email" class="border border-black p-2 w-full" placeholder="Enter your email">
+        </div>
+        
+        <div class="mb-4">
+            <p class="mb-2">Choose your favorite color:</p>
+            <div>
+                <label class="block"><input type="radio" name="color" value="red" checked> Red</label>
+                <label class="block"><input type="radio" name="color" value="blue"> Blue</label>
+                <label class="block"><input type="radio" name="color" value="green"> Green</label>
+            </div>
+        </div>
+        
+        <div class="mb-4">
+            <p class="mb-2">Select your hobbies:</p>
+            <div>
+                <label class="block"><input type="checkbox" name="hobby" value="music"> Music</label>
+                <label class="block"><input type="checkbox" name="hobby" value="sports"> Sports</label>
+                <label class="block"><input type="checkbox" name="hobby" value="art"> Art</label>
+            </div>
+        </div>
+        
+        <div>
+            <input type="submit" value="Submit" class="bg-blue-500 text-white p-2 cursor-pointer">
+        </div>
+    </div> `,
       explanation: {
         details: 'A basic contact form with only text fields, no padding, and basic buttons like <input type="submit">.  ',
       },
     },
     "2000": {
-      code: `<div>
-    <h1>Contact Us</h1>
-    <form name="contactForm" style="width: 300px; padding: 15px; border: 1px solid #ccc; background-color: #f9f9f9;">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd;"><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd;"><br>
-        
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd;"></textarea><br>
-        
-        <input type="submit" value="Submit" style="padding: 8px 15px; background-color: #4CAF50; color: white; border: none; cursor: pointer;" onmouseover="this.style.backgroundColor='#45a049'" onmouseout="this.style.backgroundColor='#4CAF50'">
-    </form>
-</div>`,
+      code: `<div class="era-header">
+      <h2 class="text-2xl font-bold text-gray-700">2000s</h2>
+      <p class="text-gray-500">Enhanced Interaction</p>
+    </div>
+    <div class="mb-4">
+      <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+      <input type="email" id="email" class="border rounded-lg w-full py-2 px-3 text-gray-700" placeholder="Enter your email">
+    </div>`,
       explanation: {
         details: 'Create a form with inline validation messages using basic JavaScript, e.g., “Please enter a valid email.” ',
       },
     },
     "2010": {
-      code: `<div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #dcdcdc; padding: 20px;">
-    <div class="forms" style="padding: 20px;">
-        <form action="#" method="post" style="margin: 10px auto; max-width: 400px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-            <div class="form-group" style="position: relative; margin-bottom: 20px;">
-                <input type="text" id="name" name="name" placeholder=" " required
-                       style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; transition: border-color 0.3s ease;">
-                <label for="name" style="position: absolute; top: 10px; left: 10px; transition: all 0.2s ease; color: #999;">Name</label>
-            </div>
-            <div class="form-group" style="position: relative; margin-bottom: 20px;">
-                <input type="email" id="email" name="email" placeholder=" " required
-                       style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; transition: border-color 0.3s ease;">
-                <label for="email" style="position: absolute; top: 10px; left: 10px; transition: all 0.2s ease; color: #999;">Email</label>
-            </div>
-            <div class="form-group" style="position: relative; margin-bottom: 20px;">
-                <textarea id="message" name="message" rows="4" placeholder=" "
-                          style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; transition: border-color 0.3s ease;"></textarea>
-                <label for="message" style="position: absolute; top: 10px; left: 10px; transition: all 0.2s ease; color: #999;">Message</label>
-            </div>
-            <input type="submit" value="Submit" style="background-color: #4CAF50; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">
-        </form>
+      code: ` <div class="era-header">
+      <h2 class="text-2xl font-bold text-gray-700">2010s</h2>
+      <p class="text-gray-500">Mobile-First Design</p>
     </div>
-</div>`,
+    <div class="mb-4">
+      <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password:</label>
+      <input type="password" id="password" class="border rounded-lg w-full py-2 px-3 text-gray-700" placeholder="Enter your password">
+    </div>`,
       explanation: {
         details: 'Display a responsive form that changes its layout when the screen size shifts, with floating labels and real-time error validation. ',
       },
     },
     "2020": {
-      code: `<div style="font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f2f5; margin: 0;">
-    <div class="form-container" style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: 300px;">
-        <h2 style="text-align: center; margin-bottom: 20px;">Login</h2>
-        <form>
-            <label for="username" style="margin-bottom: 5px; display: block;">Username</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username" required style="width: 93%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; transition: border-color 0.3s;">
-            <label for="password" style="margin-bottom: 5px; display: block;">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required style="width: 93%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; transition: border-color 0.3s;">
-            <input type="submit" value="Login" style="width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
-        </form>
+      code: `<div class="era-header">
+      <h2 class="text-2xl font-bold text-gray-700">2020s</h2>
+      <p class="text-gray-500">Dark Mode & Accessibility</p>
+    </div>
+    <div class="mb-4">
+      <label for="theme" class="block text-gray-700 text-sm font-bold mb-2">Choose Theme:</label>
+      <select id="theme" class="border rounded-lg w-full py-2 px-3 text-gray-700">
+        <option>Light Mode</option>
+        <option>Dark Mode</option>
+      </select>
     </div>`,
       explanation: {
         details: 'A login form with smooth input transitions, an animated password strength meter, and a simple micro-interaction on the submit button (slight color shift). ',
       },
     },
     "2030": {
-      code: `<div class="demo-section" style="margin-bottom: 50px;">
-              
-              <div style="font-size: 1.5rem; color: white; text-align: center; margin-bottom: 20px; animation: blink 1s infinite;">
-                  Loading...
-              </div>
-              <!-- Optional: Embed classic GIF -->
-              <img src="https://i.gifer.com/ZZ5H.gif" alt="90s spinning globe" width="100" style="display: block; margin: 0 auto;">
-          </div>`,
+      code: `  <div class="era-header">
+      <h2 class="text-2xl font-bold text-gray-700">2030s</h2>
+      <p class="text-gray-500">AI-Powered Interfaces</p>
+    </div>
+    <div class="mb-4">
+      <label for="feedback" class="block text-gray-700 text-sm font-bold mb-2">Feedback:</label>
+      <textarea id="feedback" class="border rounded-lg w-full py-2 px-3 text-gray-700" placeholder="Share your thoughts..."></textarea>
+    </div>
+
+    <button type="submit" class="bg-purple-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-purple-700 transition duration-300">
+      Submit
+    </button>`,
       explanation: {
         details: 'button is awesomely designed',
       },
     },
   },
+  
   hero_banner: {
     title: 'hero_banner',
     "1990": {
@@ -587,12 +558,12 @@ var compoenents = {
       },
     },
     "2030": {
-      code: `<div style="font-family: 'Arial', sans-serif; background-color: #f3e5f5; color: #222; text-align: center; padding: 20px;">
-    <h1 style="font-size: 50px; color: #6a1b9a;">2030s: Future Icons and Imagery Projection</h1>
-    <p style="font-size: 24px; color: #444;">By the 2030s, we will see adaptive, AI-driven icons that change based on user preferences and context.</p>
-    <p style="font-size: 20px; color: #333;">Expect interactive icons that enhance accessibility and user engagement.</p>
-    <p style="font-size: 20px; color: #333;">The evolution will focus on personalization and contextual relevance in design.</p>
-</div>`,
+      code: `     <div class="flex items-center justify-center space-x-2">
+    <div class="w-8 h-8 bg-purple-600 rounded-full animate-bounce" style="animation: bounce 0.6s infinite;"></div>
+    <div class="w-8 h-8 bg-purple-600 rounded-full animate-bounce" style="animation: bounce 0.6s infinite 0.2s;"></div>
+    <div class="w-8 h-8 bg-purple-600 rounded-full animate-bounce" style="animation: bounce 0.6s infinite 0.4s;"></div>
+  </div>
+`,
       explanation: {
         details: 'button is awesomely designed',
       },
@@ -703,111 +674,139 @@ var compoenents = {
       },
     },
   },
-  "Navigation Menu": {
-    title: 'scroll',
+  "Inputs": {
+    title: 'Inputs',
     "1990": {
-      code: `<div>
-    <table style="font-family: Arial, sans-serif; background-color: #ffffff; width: 100%; border-collapse: collapse;">
+      code: ` <form action="#" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
 
-        <tr>
-    
-            <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a href="#home" style="text-decoration: none; color: #000000;">Home</a></td>
-    
-            <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a href="#about" style="text-decoration: none; color: #000000;">About</a></td>
-    
-            <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a href="#services" style="text-decoration: none; color: #000000;">Services</a></td>
-    
-            <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a href="#contact" style="text-decoration: none; color: #000000;">Contact</a></td>
-    
-        </tr>
-    
-    </table>
-    
-</div>`,
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <input type="submit" value="Submit">
+</form>  `,
       explanation: {
         details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
       },
     },
     "2000": {
-      code: ` <div style="font-family: Arial, sans-serif; position: relative; display: inline-block;">
-        <button style="padding: 10px 15px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Menu</button>
-        <div style="display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;">
-            <a href="#home" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">Home</a>
-            <a href="#about" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">About</a>
-            <a href="#services" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">Services</a>
-            <a href="#contact" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">Contact</a>
-        </div>
-    </div>`,
+      code: ` <form action="#" method="post" style="width: 300px; border: 1px solid #ccc; padding: 10px;">
+    <label for="username" style="font-family: Arial, sans-serif;">Username:</label><br>
+    <input type="text" id="username" name="username" style="width: 100%; margin-bottom: 10px; padding: 5px; border: 1px solid #ccc;"><br>
+
+    <label for="email" style="font-family: Arial, sans-serif;">Email:</label><br>
+    <input type="email" id="email" name="email" style="width: 100%; margin-bottom: 10px; padding: 5px; border: 1px solid #ccc;"><br>
+
+    <input type="submit" value="Submit" style="background-color: #007BFF; color: white; padding: 8px 16px; border: none; cursor: pointer;">
+</form>  `,
       explanation: {
         details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
       },
     },
     "2010": {
-      code: `<div style="font-family: 'Arial', sans-serif; background-color: #4CAF50; color: #fff; display: flex; justify-content: space-between; align-items: center; padding: 15px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
-        <div style="display: flex; flex-direction: column; cursor: pointer;" onclick="toggleMenu()">
-            <div style="width: 30px; height: 4px; background-color: white; margin: 3px 0; transition: all 0.3s;"></div>
-            <div style="width: 30px; height: 4px; background-color: white; margin: 3px 0; transition: all 0.3s;"></div>
-            <div style="width: 30px; height: 4px; background-color: white; margin: 3px 0; transition: all 0.3s;"></div>
-        </div>
-        <div style="display: flex; gap: 15px;">
-            <a href="#home" style="color: white; text-decoration: none; padding: 10px 15px; transition: background 0.3s;">Home</a>
-            <a href="#about" style="color: white; text-decoration: none; padding: 10px 15px; transition: background 0.3s;">About</a>
-            <a href="#services" style="color: white; text-decoration: none; padding: 10px 15px; transition: background 0.3s;">Services</a>
-            <a href="#contact" style="color: white; text-decoration: none; padding: 10px 15px; transition: background 0.3s;">Contact</a>
-        </div>
-    </div>`,
+      code: ` <form action="#" method="post" style="max-width: 400px; margin: 0 auto; padding: 20px; border-radius: 8px; border: 1px solid #ddd; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+    <label for="username" style="font-family: 'Helvetica', sans-serif; font-weight: bold;">Username:</label><br>
+    <input type="text" id="username" name="username" style="width: 100%; margin-bottom: 15px; padding: 10px; border-radius: 4px; border: 1px solid #ccc;"><br>
+
+    <label for="email" style="font-family: 'Helvetica', sans-serif; font-weight: bold;">Email:</label><br>
+    <input type="email" id="email" name="email" style="width: 100%; margin-bottom: 15px; padding: 10px; border-radius: 4px; border: 1px solid #ccc;"><br>
+
+    <input type="submit" value="Submit" style="background-color: #28a745; color: white; padding: 10px 20px; border-radius: 4px; border: none; cursor: pointer; transition: background-color 0.3s;">
+</form> `,
       explanation: {
         details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
       },
     },
     "2020": {
-      code: `<div class="menu" style="font-family: Arial, sans-serif; background-color: rgba(76, 175, 80, 0.9); position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; transform: translateX(-100%); transition: transform 0.3s ease-in-out; z-index: 1000;">
+      code: ` <form action="#" method="post" class="max-w-md mx-auto p-8 border border-gray-300 rounded-lg shadow-md flex flex-col gap-4">
+    <label for="username" class="font-semibold text-gray-700">Username:</label>
+    <input type="text" id="username" name="username" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
 
-        <div class="menu-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: white;">
-            <ul class="menu-links" style="list-style: none; padding: 0;">
-                <li style="margin: 20px 0;">
-                    <a href="#home" 
-                       style="color: white; text-decoration: none; font-size: 2em; transition: color 0.3s;" 
-                       onmouseover="this.style.color='#ffc107'" 
-                       onmouseout="this.style.color='white'">Home</a>
-                </li>
-                <li style="margin: 20px 0;">
-                    <a href="#about" 
-                       style="color: white; text-decoration: none; font-size: 2em; transition: color 0.3s;" 
-                       onmouseover="this.style.color='#ffc107'" 
-                       onmouseout="this.style.color='white'">About</a>
-                </li>
-                <li style="margin: 20px 0;">
-                    <a href="#services" 
-                       style="color: white; text-decoration: none; font-size: 2em; transition: color 0.3s;" 
-                       onmouseover="this.style.color='#ffc107'" 
-                       onmouseout="this.style.color='white'">Services</a>
-                </li>
-                <li style="margin: 20px 0;">
-                    <a href="#contact" 
-                       style="color: white; text-decoration: none; font-size: 2em; transition: color 0.3s;" 
-                       onmouseover="this.style.color='#ffc107'" 
-                       onmouseout="this.style.color='white'">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>`,
+    <label for="email" class="font-semibold text-gray-700">Email:</label>
+    <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+    <button type="submit" class="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-all duration-300">Submit</button>
+</form> `,
       explanation: {
         details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
       },
     },
     "2030": {
-      code: `<div style="font-family: 'Arial', sans-serif; background-color: #f3e5f5; color: #222; text-align: center; padding: 20px;">
-    <h1 style="font-size: 50px; color: #6a1b9a;">2030s: Future Icons and Imagery Projection</h1>
-    <p style="font-size: 24px; color: #444;">By the 2030s, we will see adaptive, AI-driven icons that change based on user preferences and context.</p>
-    <p style="font-size: 20px; color: #333;">Expect interactive icons that enhance accessibility and user engagement.</p>
-    <p style="font-size: 20px; color: #333;">The evolution will focus on personalization and contextual relevance in design.</p>
-</div>`,
+      code: `   <form action="#" method="post" class="max-w-lg w-full p-8 border border-primary rounded-xl shadow-lg backdrop-blur-md bg-gray-800/50 flex flex-col gap-6 transition-all duration-500 hover:scale-105">
+        <label for="username" class="text-lg font-semibold text-primary">Username:</label>
+        <input type="text" id="username" name="username" class="w-full p-4 rounded-lg border border-secondary bg-gray-900 focus:outline-none focus:ring-4 focus:ring-secondary transition-all duration-300">
+
+        <label for="email" class="text-lg font-semibold text-primary">Email:</label>
+        <input type="email" id="email" name="email" class="w-full p-4 rounded-lg border border-secondary bg-gray-900 focus:outline-none focus:ring-4 focus:ring-secondary transition-all duration-300">
+
+        <button type="submit" class="bg-primary text-gray-900 py-4 px-8 rounded-xl hover:bg-secondary hover:text-white transition-all duration-500 ease-in-out">Submit</button>
+    </form> `,
       explanation: {
         details: 'button is awesomely designed',
       },
     },
-  }
+  },
+
+  "Cards": {
+    title: 'cards',
+    "1990": {
+      code: ` <div style="width: 300px; border: 1px solid #ccc; padding: 15px; margin: 10px;">
+    <h2 style="font-family: Arial, sans-serif;">1990s Card Title</h2>
+    <p style="font-family: Arial, sans-serif; color: #333;">This is a simple description for the card content. Basic HTML structure.</p>
+</div> `,
+      explanation: {
+        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+      },
+    },
+    "2000": {
+      code: ` <div style="width: 300px; border: 1px solid #ccc; padding: 15px; margin: 10px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-l_5oXo2UG5jr2KXUJz9UfiEBGGq_EkVWpQ&s" alt="Image" style="width: 100%; border-radius: 5px;">
+    <h2 style="font-family: Arial, sans-serif;">2000s Card Title</h2>
+    <p style="font-family: Arial, sans-serif; color: #333;">This card includes an image and basic styling to enhance its look.</p>
+</div>  `,
+      explanation: {
+        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+      },
+    },
+    "2010": {
+      code: ` <div style="max-width: 350px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR64OcZGCJYRQPrVmRfdb2vKyBaNNsBnj-tkQ&s" alt="Image" style="width: 100%; border-radius: 10px;">
+    <h2 style="font-family: 'Helvetica', sans-serif; font-weight: bold;">2010s Card Title</h2>
+    <p style="color: #555;">This card includes a button and a more modern design aesthetic.</p>
+    <button style="background-color: #28a745; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Read More</button>
+</div> `,
+      explanation: {
+        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+      },
+    },
+    "2020": {
+      code: ` <div class="max-w-sm mx-auto my-10 p-6 bg-white border border-gray-300 rounded-lg shadow-lg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlv2SKoD4zDsFXcE5u-md4W4S8BLj50t_LfQ&s" alt="Image" class="rounded-lg w-full">
+    <h2 class="text-2xl font-semibold text-gray-800 mt-4">2020s Card Title</h2>
+    <p class="mt-4 text-gray-600">This is a responsive card with an image and Tailwind CSS styling.</p>
+    <button class="bg-blue-600 text-white py-2 px-4 rounded-lg mt-4 hover:bg-blue-700 transition-all duration-300">Learn More</button>
+</div> `,
+      explanation: {
+        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+      },
+    },
+    "2030": {
+      code: `      <div class="max-w-md w-full p-8 border border-primary rounded-xl shadow-xl backdrop-blur-md bg-gray-800/50 text-white transition-all duration-500 transform hover:scale-105 hover:bg-gray-700/60">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1PwAuabLHhIeBTigE8Vwg05c58L8GbiNqmA&s" alt="Image" class="rounded-xl mb-4">
+        <h2 class="text-3xl font-bold text-primary mb-2">Futuristic Card Title</h2>
+        <p class="text-lg text-secondary mb-4">This card incorporates glassmorphism, interactive buttons, and social icons for a modern user experience.</p>
+        <div class="flex space-x-4">
+            <button class="bg-primary text-gray-900 py-2 px-4 rounded-lg hover:bg-secondary hover:text-white transition-all duration-500">Learn More</button>
+            <button class="bg-gray-600 py-2 px-4 rounded-lg">Share</button>
+        </div>  `,
+      explanation: {
+        details: 'button is awesomely designed',
+      },
+    },
+  },
+
+
 
 
 }
