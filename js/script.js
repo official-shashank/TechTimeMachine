@@ -1,7 +1,78 @@
 let codeEditor = document.getElementById('codeEditor')
 let output = document.getElementById('output')
 
-let contentToBeShown
+let contentToBeShown;
+
+
+// login functionality
+
+// Handle SignUp
+function handleSignUp(event) {
+  event.preventDefault();
+
+  const name = document.getElementById('signup-name').value;
+  const email = document.getElementById('signup-email').value;
+  const password = document.getElementById('signup-password').value;
+
+  let users = JSON.parse(localStorage.getItem('users')) || [];
+
+  const userExists = users.find(user => user.email === email);
+
+  if (userExists) {
+    alert('Email is already registered! Please log in.');
+    return;
+  }
+
+  // Register the user
+  users.push({ name, email, password });
+  localStorage.setItem('users', JSON.stringify(users));
+  alert('Registration successful! Please log in.');
+  window.location.href = './login.html';
+}
+
+// Handle Login
+function handleLogin(event) {
+  event.preventDefault();
+
+  const email = document.getElementById('login-email').value;
+  const password = document.getElementById('login-password').value;
+
+  let users = JSON.parse(localStorage.getItem('users')) || [];
+
+  // Check if the user exists
+  const user = users.find(user => user.email === email && user.password === password);
+  
+  if (user) {
+    // Set authentication status in localStorage
+    localStorage.setItem('isAuthenticated', 'true');
+    localStorage.setItem('loggedInUser', JSON.stringify(user));
+    alert(`Welcome back, ${user.name}!`);
+
+    // Redirect to a protected page after login
+    window.location.href = '/componentsLayout.html';
+  } else {
+    alert('Invalid email or password.');
+  }
+}
+
+// Logout Function
+function logout() {
+  localStorage.removeItem('isAuthenticated');
+  localStorage.removeItem('loggedInUser');
+  alert('You have been logged out.');
+  window.location.href = './login.html';
+}
+
+
+
+
+
+
+
+
+
+
+
 
 async function loaddata() {
   codeEditor = document.getElementById('codeEditor')
@@ -19,6 +90,7 @@ document.getElementById('btn1')?.addEventListener('click', loaddata)
 // })
 
 function buttonContentChange(){
+  document.getElementById('btn1')?.addEventListener('click', loaddata)
   document.getElementById('btn2')?.addEventListener('click', function () {
     console.log("laod data btn2")
     codeEditor.value = contentToBeShown['2000']['code']
@@ -173,83 +245,23 @@ lightbox.addEventListener('click', e => {
 
 
 
-// login functionality
 
-// function handleSignUp(event) {
-//   event.preventDefault(); 
 
-//   const name = document.querySelector('.signup-form input[type="text"]').value;
-//   const email = document.querySelector('.signup-form input[type="email"]').value;
-//   const password = document.querySelector('.signup-form input[type="password"]').value;
 
-//   let users = JSON.parse(localStorage.getItem('users')) || [];
-//   const userExists = users.find(user => user.email === email);
 
-//   if (userExists) {
-//       alert("Email already registered. Please log in.");
-//       return;
-//   }
 
-//   users.push({ name, email, password });
-//   localStorage.setItem('users', JSON.stringify(users));
 
-//   alert("Registration successful! You can now log in.");
-//   window.location.href = './login.html'; 
-// }
 
-// function handleLogin(event) {
-//   event.preventDefault(); 
-//   console.log(clicked)
-  
-//   const email=document.getElementById("email").value;
-//   const password=document.getElementById("password").value;
-  
-//   console.log(email,password)
+// accordian section
+const accordions = document.querySelectorAll('.accordion-section');
 
-//   let users = JSON.parse(localStorage.getItem('users')) || [];
-//   const user = users.find(user => user.email === email && user.password === password);
-
-//   console.log(user);
-
-//   if (user) {
-//       localStorage.setItem('loggedInUser', JSON.stringify(user));
-//       localStorage.setItem('isAuthenticated', 'true');
-//       alert(`Welcome back, ${user.name}!`);
-//       window.location.href = './dashboard.html'; 
-//   } else {
-//       alert("Invalid email or password. Please try again.");
-//   }
-// }
-
-// function checkAuthentication() {
-//   const isAuthenticated = localStorage.getItem('isAuthenticated');
-
-//   if (!isAuthenticated || isAuthenticated !== 'true') {
-//       alert('You need to log in first!');
-//       window.location.href = './login.html'; 
-//   } else {
-//       const user = JSON.parse(localStorage.getItem('loggedInUser'));
-//       if (user) {
-//           alert(`Welcome, ${user.name}, to your dashboard!`);
-//       }
-//   }
-// }
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const currentPage = window.location.pathname;
-
-//   if (currentPage.includes('signup.html')) {
-//       document.querySelector('.signup-form').addEventListener('submit', handleSignUp);
-//   } else if (currentPage.includes('login.html')) {
-//       document.querySelector('.login-form').addEventListener('submit', handleLogin);
-//   }
-
-//   checkAuthentication(); // Only call this on the dashboard page
-// });
-
-// function logout() {
-//   localStorage.removeItem('isAuthenticated');
-//   localStorage.removeItem('loggedInUser');
-//   alert('You have been logged out.');
-//   window.location.href = './login.html'; 
-// }
+    accordions.forEach((accordion) => {
+      const header = accordion.querySelector('.flex');
+      const content = accordion.querySelector('.accordion-content');
+      const icon = accordion.querySelector('svg');
+      
+      header.addEventListener('click', () => {
+        content.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180');
+      });
+    });

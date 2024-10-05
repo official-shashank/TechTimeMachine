@@ -263,8 +263,6 @@ body {
 
 /* utility classses */
 
-.bshadow{
-  /* box-shadow: 20px 20px 42px 8px rgba(184, 182, 182, 0.801); */
-  /* box-shadow: -6px 5px 20px 9px rgba(184, 182, 182, 0.801); */
-  border: 1px solid rgb(156, 155, 155);
-}
+.rotate-180 { transform: rotate(180deg); }
+.transition-transform { transition: transform 0.3s ease-in-out; }
+.hover-scale:hover { transform: scale(1.05); }

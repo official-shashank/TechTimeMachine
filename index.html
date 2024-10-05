@@ -9,6 +9,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css " rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
+  <script src="./js/components/checkAuth.js"></script>
   <style type="text/tailwindcss">
     @layer utilities {
           .content-auto {
@@ -333,12 +334,251 @@
   </section>
 
 
+  <div class=" mx-auto lg:w-4/5 w-full p-6 relative top-[30rem]">
+    <!-- Section Heading -->
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-bold">Decades by Decades Breakdown</h1>
+      <p class="mt-4 text-lg text-gray-300">Explore the evolution of web design from the 1990s to the speculative 2030s, showcasing buttons, forms, navigation bars, typography, and design elements of each era.</p>
+    </div>
+
+    <!-- Accordion Structure -->
+    <div class="space-y-6">
+
+      <!-- 1990s Section -->
+      <div class="accordion-section bg-gray-800 rounded-lg p-6">
+        <div class="flex justify-between items-center cursor-pointer">
+          <h2 class="text-xl font-semibold">1990s: The Beginning</h2>
+          <svg class="w-6 h-6 transition-transform rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+          </svg>
+        </div>
+        <div class="accordion-content hidden mt-4">
+          <p class="mb-4">Text-based websites, table layouts, inline styles, and early CSS. Pixelated buttons and “Under construction” GIFs were common.</p>
+
+          <!-- 1990s Showcase -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Buttons -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Button</h3>
+              <input type="button" class="w-full p-2 bg-gray-600 text-white rounded-md" value="Old-school Button">
+            </div>
+            <!-- Navigation -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Navigation Bar</h3>
+              <table class="w-full border-collapse border-gray-500">
+                <tr><td class="p-2 text-white border border-gray-600">Home</td></tr>
+                <tr><td class="p-2 text-white border border-gray-600">About</td></tr>
+                <tr><td class="p-2 text-white border border-gray-600">Contact</td></tr>
+              </table>
+            </div>
+            <!-- Forms -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Form</h3>
+              <form class="space-y-2">
+                <input type="text" placeholder="Name" class="w-full p-2 bg-gray-600 text-white rounded-md">
+                <input type="email" placeholder="Email" class="w-full p-2 bg-gray-600 text-white rounded-md">
+                <button class="w-full p-2 bg-blue-600 text-white rounded-md">Submit</button>
+              </form>
+            </div>
+            <!-- Typography -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Typography</h3>
+              <p class="font-sans text-gray-400">Web safe fonts like <span class="font-serif">Arial, Times New Roman</span>, and <span class="font-mono">Courier New</span> were standard during the 1990s.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2000s Section -->
+      <div class="accordion-section bg-gray-800 rounded-lg p-6">
+        <div class="flex justify-between items-center cursor-pointer">
+          <h2 class="text-xl font-semibold">2000s: CSS, Flash, and Web Standards</h2>
+          <svg class="w-6 h-6 transition-transform rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+          </svg>
+        </div>
+        <div class="accordion-content hidden mt-4">
+          <p class="mb-4">The adoption of CSS allowed transition from table-based layouts to div-based layouts. Flash was used for animations, and web standards improved with W3C guidelines.</p>
+
+          <!-- 2000s Showcase -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Flash Animations -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Flash-like Button</h3>
+              <button class="w-full p-2 bg-gradient-to-r from-blue-500 to-green-500 text-white rounded-md hover-scale transition-transform">Flashy Button</button>
+            </div>
+            <!-- Gradient Forms -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Form with Gradients</h3>
+              <form class="space-y-2">
+                <input type="text" placeholder="Name" class="w-full p-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-md">
+                <input type="email" placeholder="Email" class="w-full p-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-md">
+                <button class="w-full p-2 bg-gradient-to-r from-blue-500 to-green-500 text-white rounded-md hover-scale transition-transform">Submit</button>
+              </form>
+            </div>
+            <!-- Flash Navigation -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Flash Navigation</h3>
+              <div class="flex justify-between p-2 bg-gray-600 rounded-md">
+                <a href="#" class="text-white hover:text-yellow-300 transition-colors">Home</a>
+                <a href="#" class="text-white hover:text-yellow-300 transition-colors">About</a>
+                <a href="#" class="text-white hover:text-yellow-300 transition-colors">Contact</a>
+              </div>
+            </div>
+            <!-- Typography -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Typography</h3>
+              <p class="font-sans text-gray-400">Fonts like <span class="font-serif">Verdana</span> and <span class="font-mono">Georgia</span> gained popularity with more focus on readability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2010s Section -->
+      <div class="accordion-section bg-gray-800 rounded-lg p-6">
+        <div class="flex justify-between items-center cursor-pointer">
+          <h2 class="text-xl font-semibold">2010s: Responsive Design and Flat UI</h2>
+          <svg class="w-6 h-6 transition-transform rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+          </svg>
+        </div>
+        <div class="accordion-content hidden mt-4">
+          <p class="mb-4">Responsive design became essential with the rise of mobile devices. Flat design, grid layouts, and minimalism dominated the web. Google introduced Material Design in 2014.</p>
+
+          <!-- 2010s Showcase -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Flat Buttons -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Flat Buttons</h3>
+              <button class="w-full p-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">Clean Button</button>
+            </div>
+            <!-- Responsive Form -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Responsive Form</h3>
+              <form class="space-y-2">
+                <input type="text" placeholder="Name" class="w-full p-2 bg-gray-600 text-white rounded-md">
+                <input type="email" placeholder="Email" class="w-full p-2 bg-gray-600 text-white rounded-md">
+                <button class="w-full p-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors">Submit</button>
+              </form>
+            </div>
+            <!-- Material Navigation -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Material Design Navigation</h3>
+              <div class="flex justify-between p-2 bg-gray-600 rounded-md">
+                <a href="#" class="text-white hover:text-yellow-300 transition-colors">Home</a>
+                <a href="#" class="text-white hover:text-yellow-300 transition-colors">About</a>
+                <a href="#" class="text-white hover:text-yellow-300 transition-colors">Contact</a>
+              </div>
+            </div>
+            <!-- Typography -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Typography</h3>
+              <p class="font-sans text-gray-400">Fonts like <span class="font-serif">Roboto</span> and <span class="font-mono">Lato</span> were widely used for their modern and clean appearance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2020s Section -->
+      <div class="accordion-section bg-gray-800 rounded-lg p-6">
+        <div class="flex justify-between items-center cursor-pointer">
+          <h2 class="text-xl font-semibold">2020s: Dark Mode, Neumorphism, and Interactivity</h2>
+          <svg class="w-6 h-6 transition-transform rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+          </svg>
+        </div>
+        <div class="accordion-content hidden mt-4">
+          <p class="mb-4">Dark mode became a default option. Neumorphism and minimalism made waves in UI design, while interactive elements such as micro-animations and scroll-triggered effects became common.</p>
+
+          <!-- 2020s Showcase -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Dark Mode Button -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Dark Mode Button</h3>
+              <button class="w-full p-2 bg-gray-900 text-white rounded-md hover:bg-gray-800 transition-colors">Dark Mode Button</button>
+            </div>
+            <!-- Neumorphism Form -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Neumorphism Form</h3>
+              <form class="space-y-2">
+                <input type="text" placeholder="Name" class="w-full p-2 bg-gray-800 text-white rounded-md shadow-inner">
+                <input type="email" placeholder="Email" class="w-full p-2 bg-gray-800 text-white rounded-md shadow-inner">
+                <button class="w-full p-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">Submit</button>
+              </form>
+            </div>
+            <!-- Interactive Navigation -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Interactive Navigation</h3>
+              <div class="flex justify-between p-2 bg-gray-600 rounded-md">
+                <a href="#" class="text-white hover:text-yellow-300 transition-colors">Home</a>
+                <a href="#" class="text-white hover:text-yellow-300 transition-colors">About</a>
+                <a href="#" class="text-white hover:text-yellow-300 transition-colors">Contact</a>
+              </div>
+            </div>
+            <!-- Typography -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Typography</h3>
+              <p class="font-sans text-gray-400">Fonts like <span class="font-serif">Poppins</span> and <span class="font-mono">Inter</span> dominated modern UI design.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Speculative 2030s Section -->
+      <div class="accordion-section bg-gray-800 rounded-lg p-6">
+        <div class="flex justify-between items-center cursor-pointer">
+          <h2 class="text-xl font-semibold">2030s: AI-Generated Design and Immersive Experiences</h2>
+          <svg class="w-6 h-6 transition-transform rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+          </svg>
+        </div>
+        <div class="accordion-content hidden mt-4">
+          <p class="mb-4">AI-generated layouts and immersive experiences using VR/AR technology are expected to dominate the 2030s. Personalization will reach new heights, and adaptive designs will cater to real-time user feedback.</p>
+
+          <!-- 2030s Showcase -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- AI-Generated Button -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">AI-Generated Button</h3>
+              <button class="w-full p-2 bg-purple-600 text-white rounded-md hover:bg-purple-500 transition-colors">Future Button</button>
+            </div>
+            <!-- Immersive Form -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Immersive Form</h3>
+              <form class="space-y-2">
+                <input type="text" placeholder="Name" class="w-full p-2 bg-gray-800 text-white rounded-md">
+                <input type="email" placeholder="Email" class="w-full p-2 bg-gray-800 text-white rounded-md">
+                <button class="w-full p-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">Submit</button>
+              </form>
+            </div>
+            <!-- Adaptive Navigation -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Adaptive Navigation</h3>
+              <div class="flex justify-between p-2 bg-gray-600 rounded-md">
+                <a href="#" class="text-white hover:text-yellow-300 transition-colors">Home</a>
+                <a href="#" class="text-white hover:text-yellow-300 transition-colors">About</a>
+                <a href="#" class="text-white hover:text-yellow-300 transition-colors">Contact</a>
+              </div>
+            </div>
+            <!-- Typography -->
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Typography</h3>
+              <p class="font-sans text-gray-400">Highly personalized, AI-driven fonts will adapt to user preferences and environments in real time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
 
   
 
 
 
-  <div class="bg-gray-900 py-24 sm:py-32 relative top-[25rem]">
+  <div class="bg-gray-900 py-24 sm:py-32 relative top-[30rem]">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:text-center">
         <h2 class="text-xl font-semibold leading-7 text-indigo-600 uppercase">UI/UX Behaviors</h2>
@@ -434,7 +674,7 @@
   </div>
 
 
-  <div class="bg-gray-900 py-24 sm:py-32 relative top-[25rem]">
+  <div class="bg-gray-900 py-24 sm:py-32 relative top-[30rem]">
     <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
       <h2 class="text-center text-base/7 font-semibold text-indigo-600 uppercase font-medium">case studies</h2>
       <p
