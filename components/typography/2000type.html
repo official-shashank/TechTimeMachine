@@ -3,17 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2000s Typography</title>
-</head>
-<div style="background-color: #fff5e6; color: #333; font-family: Arial, sans-serif; margin: 20px; text-align: center;">
-    <h1 style="font-size: 36px; color: #d35400;">2000s Typography</h1>
-    <p style="font-size: 20px;">The introduction of <strong>@font-face</strong> in the 2000s allowed websites to utilize custom fonts, expanding typography choices. This innovation marked the beginning of greater typographic diversity and personalization in web design.</p>
-    <h2 style="font-size: 28px; color: #c0392b;">Key Features:</h2>
-    <ul style="font-size: 18px; color: #8e44ad; list-style-type: square; padding: 0;">
-        <li>Use of custom fonts</li>
-        <li>More diverse typography options</li>
-        <li>Creative freedom in design</li>
-    </ul>
-</div> 
+    <title>Font Styling Example</title>
+    <style>
+        /* Define font styles */
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;700&family=IBM+Plex+Serif:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
 
+        p {
+            font-size: 16px;
+        }
+
+        p.serif {
+            font-family: 'IBM Plex Serif', serif;
+        }
+
+        p.sans-alt {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 100; /* Lighter weight */
+        }
+
+        h1 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 100; /* Thin weight */
+        }
+    </style>
+</head>
+<body>
+
+    <p>Here is some text that should show up by default in Plex Sans. Here is another sentence with 
+        <strong>some text in a strong tag</strong> and some <em>other text that should be italicized</em> 
+        and even some that should be <strong><em>bold and italic</em></strong>. Whew!
+    </p>
+
+    <p class="serif">Here is the same text, but in Plex Serif and all we did was change the font-family. Here is another 
+        sentence with <strong>some text in a strong tag</strong> and some <em>other text that should be italicized</em> 
+        and even some that should be <strong><em>bold and italic</em></strong>. Whew!
+    </p>
+
+    <h1>A nice headline in a very thin weight</h1>
+
+    <p class="sans-alt">Here is the same text, but in Plex Sans and shifted to lighter weights, and again all we did was change 
+        the font-family. Here is another sentence with <strong>some text in a strong tag</strong> and some <em>other text 
+        that should be italicized</em> and even some that should be <strong><em>bold and italic</em></strong>. Whew!
+    </p>
+
+</body>
 </html>

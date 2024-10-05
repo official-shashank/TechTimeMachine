@@ -1,13 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2030s Typography</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tretton37 Animation</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0) 34%, rgba(31, 31, 31, 0.69) 190%);
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .center {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      height: 62px;
+      margin: auto;
+    }
+
+    .stage {
+      height: 100vh;
+      position: relative;
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(00deg) translateX(0px) translateY(0px) translateZ(0px) scale(1.45);
+    }
+
+    .scene {
+      perspective: 600;
+      height: 100vh;
+    }
+
+    .header, .subheader {
+      display: block;
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) scale(1) !important;
+    }
+
+    h1, .header {
+      font-family: montserrat;
+      color: #424242;
+      font-size: 31px;
+      font-weight: 700;
+      margin: 0;
+      left: -4px;
+      letter-spacing: -1px;
+    }
+
+    h2, .subheader {
+      font-family: montserrat;
+      letter-spacing: -1px;
+      font-size: 22px;
+      transform-origin: 0px 0%;
+      color: green;
+      transform: rotateX(-87deg);
+      left: -3px;
+      font-weight: 400;
+      position: relative;
+    }
+
+    .sub {
+      opacity: 0;
+    }
+
+    @keyframes drop_swing {
+      0% {transform: rotateX(-87deg);}
+      50% {transform: rotateX(-87deg); opacity: 0;}
+      70% {transform: rotateX(40deg); opacity: 1;}
+      80% {transform: rotateX(-20deg); opacity: 1;}
+      90% {transform: rotateX(15deg); opacity: 1;}
+      100% {transform: rotateX(0deg); opacity: 1;}
+    }
+
+    @keyframes intro_3d {
+      100% {transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) scale(1);}
+    }
+
+    .drop_swing {
+      animation: drop_swing 2s forwards, wipe_left .7s 2.8s forwards cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .intro_s {
+      animation: intro_3d .7s .8s forwards cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .intro {
+      animation: wipe_right .7s 2.85s forwards cubic-bezier(0.19, 1, 0.22, 1);
+      position: relative;
+      opacity: 1;
+    }
+
+    .code {
+      animation: up .5s 4s forwards cubic-bezier(0.19, 1, 0.22, 1), nudge .26s 4.45s forwards cubic-bezier(0.19, 1, 0.22, 1), wipe_right .7s 6s forwards cubic-bezier(0.19, 1, 0.22, 1);
+      position: relative;
+      top: 1000px;
+    }
+
+    .pro {
+      animation: down .45s 4.3s forwards cubic-bezier(0.19, 1, 0.22, 1), wipe_left .7s 6s forwards cubic-bezier(0.19, 1, 0.22, 1);
+      position: relative;
+      top: 1000px;
+    }
+
+    .years {
+      animation: up .5s 6.7s forwards cubic-bezier(0.19, 1, 0.22, 1), nudge .26s 7.15s forwards cubic-bezier(0.19, 1, 0.22, 1), wipe_right .7s 8.7s forwards cubic-bezier(0.19, 1, 0.22, 1);
+      position: relative;
+      top: 1000px;
+    }
+
+    .call, .not {
+      display: none;
+      opacity: 0;
+    }
+
+    .calc {
+      animation: down .45s 9.7s forwards cubic-bezier(0.19, 1, 0.22, 1), wipe_left .7s 11.4s forwards cubic-bezier(0.19, 1, 0.22, 1);
+      position: relative;
+      top: 1000px;
+    }
+
+    .build {
+      animation: up .5s 9.4s forwards cubic-bezier(0.19, 1, 0.22, 1), nudge .26s 9.85s forwards cubic-bezier(0.19, 1, 0.22, 1), wipe_right .7s 11.4s forwards cubic-bezier(0.19, 1, 0.22, 1);
+      position: relative;
+      top: 1000px;
+    }
+
+    @keyframes wipe_left {
+      from {left: 0; transform: rotateX(0deg); opacity: 1;}
+      to {opacity: 0; left: -200px; transform: rotateX(0deg); display: none;}
+    }
+
+    @keyframes wipe_right {
+      from {left: 0; transform: rotateX(0deg); opacity: 1;}
+      to {opacity: 0; left: 200px; transform: rotateX(0deg); display: none;}
+    }
+
+    @keyframes up {
+      0% {top: -1000px;}
+      50% {top: 10px;}
+      100% {top: 0px;}
+    }
+
+    @keyframes nudge {
+      0% {top: 0;}
+      50% {top: -10px;}
+      100% {top: 0px;}
+    }
+
+    @keyframes down {
+      0% {top: 1000px;}
+      50% {top: -10px;}
+      100% {top: 0px;}
+    }
+  </style>
 </head>
-<div style="font-family: 'Arial', sans-serif; background-color: #f5f5f5; color: #444; text-align: center;">
-    <h1 style="font-size: 50px; color: #ff4500;">2030s: Future Typography Projection</h1>
-    <p style="font-size: 24px; color: #777;">The 2030s will bring even more flexibility with adaptive, AI-driven typography that changes contextually based on user behavior and preferences.</p>
-    <p style="font-size: 20px; color: #999;">Expect personalized fonts that adjust for accessibility, reading speed, and design fluidity in real-time.</p>
-</div>
+<body>
+  <div class="stage intro_s">
+    <div class="scene center">
+      <h1 class="intro">Taral Bharambe</h1>
+      <h2 class="sub">we've got this</h2>
+      <span class="header code">Baking up code</span>
+      <span class="subheader pro">Like a boss</span>
+      <span class="header years">Techies of Decades</span>
+      <span class="subheader don">of being coding ninjas</span>
+      <span class="header build">Belive in karma</span>
+      <span class="subheader calc">Do it Today</span>
+      <span class="header call">belive in karma</span>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    var split = function(to_split) {
+      var words = $(to_split).text().split('');
+      var title = $(to_split).text().split('');
+      for (var i in words) {
+        words[i] = '<span>' + words[i] + '</span>';
+      }
+      var text = words.join('');
+      $(to_split).html(text);
+    };
+
+    var show_text = function(to_show, method, timing) {
+      split($(to_show));
+      var count = 0;
+      var length = $(to_show).find('span').length;
+      $(to_show + ' span').each(function() {
+        if (method === 'popup') {
+          $(this).delay((timing * count) + count * 1).animate({opacity: '1', 'top': '-10px'}, 220, 'easeOutCubic');
+          $(this).delay((0 * count) + count / 0).animate({opacity: '1', 'top': '0px'}, 140);
+        } else {
+          $(this).delay(timing * count).animate({opacity: '1', 'top': '0'}, 100);
+        }
+        count++;
+      });
+    };
+
+    show_text('.intro', 'popup', 10);
+    setTimeout(function() {
+      $('.sub').addClass('drop_swing');
+    }, 100);
+    setTimeout(function() {
+      $('.sub').hide();
+      $('.intro').hide();
+    }, 3400);
+    setTimeout(function() {
+      $('.pro').hide();
+      $('.code').hide();
+    }, 6400);
+    setTimeout(function() {
+      $('.years').hide();
+      $('.don').hide();
+    }, 9400);
+    setTimeout(function() {
+      $('.calc').hide();
+      $('.build').hide();
+    }, 12200);
+    setTimeout(function() {
+      $('.call,.not').css('opacity', '1');
+      show_text('.call', 'popup', 10);
+      setTimeout(function() {
+        show_text('.not', 'popup', 10);
+      }, 233);
+    }, 12300);
+  </script>
+</body>
 </html>

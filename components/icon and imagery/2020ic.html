@@ -3,14 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2020s Icons and Imagery</title>
+    <title>Coffee Selector</title>
 </head>
-<div style="font-family: 'Verdana', sans-serif; background-color: #e8f5e9; color: #111; text-align: center; padding: 20px;">
-    <h1 style="font-size: 44px; color: #388e3c;">2020s: Animated SVGs and Lottie Files</h1>
-    <p style="font-size: 20px; color: #444;">The use of animated SVGs and Lottie files allows for high-quality, lightweight animations.</p>
-    <div>
-        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_qd6wnu.json" background="transparent" speed="1" loop autoplay style="width: 200px; height: 200px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></lottie-player>
+<body style="height: 100vh; width: 100vw; background: #d6b9a4; display: flex; justify-content: space-evenly; align-items: center; margin: auto; overflow: hidden;">
+
+    <div class="social" style="position: absolute; top: 10px; left: 10px;">
+        <a href="https://twitter.com/rominamartinlib?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-dnt="true" data-show-count="false">Follow @rominamartinlib</a>
     </div>
-    <p style="font-size: 20px; color: #444;">Lottie files provide smooth transitions with minimal performance impact.</p>
-</div>
+
+    <div class="options" style="display: grid; grid-gap: 1vh; grid-template-rows: repeat(10, 35px); grid-template-columns: 120px; justify-content: space-evenly; box-sizing: border-box;">
+        <button id="americano" style="user-select: none; background: rgba(214, 217, 227, 0.6); outline: none; font-size: 1rem; border: 2px solid #a67a60; color: #363636; border-radius: 1vh; transition: all 0.3s ease;">Americano</button>
+        <button id="au_lait" style="user-select: none; background: rgba(214, 217, 227, 0.6); outline: none; font-size: 1rem; border: 2px solid #a67a60; color: #363636; border-radius: 1vh; transition: all 0.3s ease;">Au lait</button>
+        <button id="capuccino" style="user-select: none; background: rgba(214, 217, 227, 0.6); outline: none; font-size: 1rem; border: 2px solid #a67a60; color: #363636; border-radius: 1vh; transition: all 0.3s ease;">Capuccino</button>
+        <button id="corretto" style="user-select: none; background: rgba(214, 217, 227, 0.6); outline: none; font-size: 1rem; border: 2px solid #a67a60; color: #363636; border-radius: 1vh; transition: all 0.3s ease;">Corretto</button>
+        <button id="espresso" style="user-select: none; background: rgba(214, 217, 227, 0.6); outline: none; font-size: 1rem; border: 2px solid #a67a60; color: #363636; border-radius: 1vh; transition: all 0.3s ease;">Espresso</button>
+        <button id="latte" style="user-select: none; background: rgba(214, 217, 227, 0.6); outline: none; font-size: 1rem; border: 2px solid #a67a60; color: #363636; border-radius: 1vh; transition: all 0.3s ease;">Latte</button>
+        <button id="lungo" style="user-select: none; background: rgba(214, 217, 227, 0.6); outline: none; font-size: 1rem; border: 2px solid #a67a60; color: #363636; border-radius: 1vh; transition: all 0.3s ease;">Lungo</button>
+        <button id="macchiato" style="user-select: none; background: rgba(214, 217, 227, 0.6); outline: none; font-size: 1rem; border: 2px solid #a67a60; color: #363636; border-radius: 1vh; transition: all 0.3s ease;">Macchiato</button>
+        <button id="mocha" style="user-select: none; background: rgba(214, 217, 227, 0.6); outline: none; font-size: 1rem; border: 2px solid #a67a60; color: #363636; border-radius: 1vh; transition: all 0.3s ease;">Mocha</button>
+        <button id="ristretto" style="user-select: none; background: rgba(214, 217, 227, 0.6); outline: none; font-size: 1rem; border: 2px solid #a67a60; color: #363636; border-radius: 1vh; transition: all 0.3s ease;">Ristretto</button>
+    </div>
+
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 70vw;">
+        <h1 class="coffee_name" style="color: #f1faee; text-align: center; font-size: 4vw;">Choose your coffee</h1>
+        <div class="cup" style="width: 30vw; height: 24vw; border-radius: 0 0 10vw 10vw; position: relative; background-color: #474747; z-index: 10; box-sizing: border-box;">
+            <div class="filling reset" style="position: absolute; left: calc(2vw / 2); bottom: calc(2vw / 2); width: calc(30vw - 2vw); height: calc(24vw - 2vw); overflow: hidden; border-radius: 0 0 10vw 10vw; background-color: #d6b9a4; bottom: 1vw;">
+                <div class="coffee" style="position: absolute; width: 100%; transition: all 1s linear; color: #817f75; display: flex; align-items: flex-start; justify-content: center; font-size: 3vw; height: 100%; bottom: -100%; background: #3c302f;">Coffee</div>
+                <div class="water" style="position: absolute; width: 100%; background: #b1dce2; bottom: -100%; transition: all 1s linear;">Water</div>
+                <div class="liquor" style="position: absolute; width: 100%; background: #fc8626; bottom: -100%; transition: all 1s linear;">Liquor</div>
+                <div class="milk" style="position: absolute; width: 100%; background: #f0ebe5; bottom: -100%; transition: all 1s linear;">Milk</div>
+                <div class="whipped_cream" style="position: absolute; width: 100%; background: #fceecb; bottom: -100%; transition: all 1s linear;">Whipped cream</div>
+                <div class="milk_foam" style="position: absolute; width: 100%; background: #fceecb; bottom: -100%; transition: all 1s linear;">Milk foam</div>
+                <div class="steamed_milk" style="position: absolute; width: 100%; background: #ffd7b3; bottom: -100%; transition: all 1s linear;">Steamed milk</div>
+                <div class="chocolate" style="position: absolute; width: 100%; background: #391e09; bottom: -100%; transition: all 1s linear;">Chocolate</div>
+            </div>
+            <div class="plate" style="position: absolute; top: calc(100% + 1vw); left: calc((30vw - 25vw) / 2); width: 25vw; background: #474747; height: 2vw; border-radius: 1vw;"></div>
+        </div>
+    </div>
+
+    <script>
+        const coffee_name = document.querySelector(".coffee_name");
+        const coffee_filling = document.querySelector(".filling");
+        const buttons = document.querySelectorAll("button");
+        let current_element = null;
+
+        const changeCoffeeType = (selected) => {
+            if (current_element) {
+                current_element.classList.remove("selected");
+                coffee_filling.classList.remove(current_element.id);
+            }
+            current_element = selected;
+            coffee_filling.classList.add(current_element.id);
+            current_element.classList.add("selected");
+            coffee_name.innerText = selected.innerText;
+        };
+
+        [...buttons].forEach((button) => {
+            button.addEventListener("click", () => {
+                changeCoffeeType(button);
+            });
+        });
+    </script>
+
+</body>
 </html>

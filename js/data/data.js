@@ -71,14 +71,11 @@ var compoenents = {
       },
     },
     "2030": {
-      code: `<div class="demo-section" style="margin-bottom: 50px;">
-              
-              <div style="font-size: 1.5rem; color: white; text-align: center; margin-bottom: 20px; animation: blink 1s infinite;">
-                  Loading...
-              </div>
-              <!-- Optional: Embed classic GIF -->
-              <img src="https://i.gifer.com/ZZ5H.gif" alt="90s spinning globe" width="100" style="display: block; margin: 0 auto;">
-          </div>`,
+      code: ` <div class="flex items-center justify-center">
+    <button class="neumorphism-btn bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white text-xl font-semibold py-3 px-6 rounded-full transform hover:scale-105 transition-transform duration-300">
+      2030 Futuristic Button
+    </button>
+  </div>`,
       explanation: {
         details: 'button is awesomely designed',
       },
@@ -87,94 +84,80 @@ var compoenents = {
   "Typography": {
     title: 'typography',
     "1990": {
-      code: `  <div class="bg-gray-800 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
-        <h2 class="text-2xl font-serif mb-4">1990s</h2>
-        <p class="font-serif text-5xl mt-6">The Digital Age Begins</p>
-      </div>`,
+      code: `    <div class="bg-gray-600 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 mb-6">
+    <!-- 1990s Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14v10H5V8zM2 8a1 1 0 011-1h18a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V8zM12 4l-2 2m4 0l-2-2" />
+    </svg>
+    <h2 class="text-2xl font-sans mb-4">1990s</h2>
+    <p class="font-sans text-5xl">Retro & Bold Designs</p>
+  </div>`,
       explanation: {
         details: 'A webpage using only system-default fonts like Times New Roman and basic styling for headings, paragraphs, and links. ',
       },
     },
     "2000": {
-      code: `   <div class="bg-gray-700 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
-        <h2 class="text-2xl font-sans mb-4">2000s</h2>
-        <p class="font-sans text-5xl mt-6">The Rise of Web 2.0</p>
-      </div>`,
+      code: ` <div class="bg-gray-700 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 mb-6">
+    <!-- 2000s Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17h4.5M3 6h18M8 20h8M5 6v9a1 1 0 001 1h12a1 1 0 001-1V6M10 11h4" />
+    </svg>
+    <h2 class="text-2xl font-sans mb-4">2000s</h2>
+    <p class="font-sans text-5xl mt-6">The Rise of Web 2.0</p>
+  </div>`,
       explanation: {
         details: 'A page using @font-face to load custom fonts for headings and body text, reflecting the rise of typographic diversity. ',
       },
     },
     "2010": {
-      code: `  <div class="bg-gray-600 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
-        <h2 class="text-2xl font-sans mb-4">2010s</h2>
-        <p class="text-lg font-sans leading-relaxed">
-          The 2010s saw a rise in custom fonts and greater creativity in typography. Bold, playful, and geometric fonts were common, with designers experimenting with proportions and line heights.
-        </p>
-        <p class="font-sans text-4xl mt-6">Sample Text: The Mobile-First Era</p>
-      </div>`,
+      code: `   <div class="bg-gray-700 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 mb-6">
+    <!-- 2010s Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 4h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2zM12 18h.01" />
+    </svg>
+    <h2 class="text-2xl font-sans mb-4">2010s</h2>
+    <p class="font-sans text-5xl">Flat Design & Minimalism</p>
+  </div> `,
       explanation: {
         details: 'A page using @font-face to load custom fonts for headings and body text, reflecting the rise of typographic diversity. ',
       },
     },
     "2020": {
-      code: `<div style="background-color: #e8f8f5; color: #333; font-family: 'Arial', sans-serif; margin: 20px; text-align: center;">
-    <h1 style="font-size: 36px; color: #00bcd4;">2020s Typography</h1>
-    <p style="font-size: 20px;">The 2020s have brought forth <strong>variable fonts</strong>, allowing dynamic changes to weight, width, and style without loading multiple font files. Additionally, fluid typography scales font sizes based on viewport width, creating a seamless reading experience.</p>
-    <h2 style="font-size: 28px; color: #009688;">Key Features:</h2>
-    <ul style="font-size: 18px; color: #8e44ad; list-style-type: square; padding: 0;">
-        <li>Dynamic font weight and width</li>
-        <li>Smooth scaling of text size</li>
-        <li>Enhanced user experience and accessibility</li>
-    </ul>
-    
-</div>`,
+      code: ` <div class="bg-gray-700 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 mb-6">
+    <!-- 2020s Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M7 6h10a2 2 0 012 2v8a2 2 0 01-2 2H7a2 2 0 01-2-2V8a2 2 0 012-2zM11 18h2" />
+    </svg>
+    <h2 class="text-2xl font-sans mb-4">2020s</h2>
+    <p class="font-sans text-5xl">Neumorphism & 3D Effects</p>
+  </div> `,
       explanation: {
         details: 'Variable fonts, allowing dynamic changes to weight, width, and style without loading multiple font files. Fluid typography, where font sizes scale based on viewport width. ',
       },
     },
     "2030": {
-      code: `<div style="font-family: 'Arial', sans-serif; background-color: #f5f5f5; color: #444; text-align: center;">
-    <h1 style="font-size: 50px; color: #ff4500;">2030s: Future Typography Projection</h1>
-    <p style="font-size: 24px; color: #777;">The 2030s will bring even more flexibility with adaptive, AI-driven typography that changes contextually based on user behavior and preferences.</p>
-    <p style="font-size: 20px; color: #999;">Expect personalized fonts that adjust for accessibility, reading speed, and design fluidity in real-time.</p>
-</div>`,
+      code: `   <div class="bg-gray-700 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
+    <!-- 2030s Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 12h-1m-4 0H9m-2 0H5m16-4v8m-1-8a4 4 0 00-4-4h-1m-5 0H8a4 4 0 00-4 4v8a4 4 0 004 4h1m5 0h1a4 4 0 004-4v-1m-4 5V5" />
+    </svg>
+    <h2 class="text-2xl font-sans mb-4">2030s</h2>
+    <p class="font-sans text-5xl">AI-Driven & Responsive Designs</p>
+  </div>`,
       explanation: {
         details: 'button is awesomely designed',
       },
     },
   },
-  scroll: {
+  "Scroll Effects": {
     title: 'scroll',
     "1990": {
-      code: `<div class="sc" style="font-family: Arial, sans-serif; background-color: #f0f0f0; color: #000; margin: 0; padding: 0;">
-        <header style="background-color: #3366cc; color: white; text-align: center; padding: 10px 0;">
-            <h1 style="margin: 0; font-size: 2em;">Welcome to My 1990s Style Website</h1>
-        </header>
-
-        <div class="container" style="width: 80%; margin: 20px auto; background: white; border: 2px solid #ccc; padding: 20px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);">
-            <h2>About This Site</h2>
-            <p style="margin: 15px 0; line-height: 1.5; text-align: justify;">This is a simple static web page demonstrating the look and feel of web pages from the 1990s. It features basic HTML structure and styles without any scroll effects or complicated behaviors.</p>
-
-            <h2>Images from the Past</h2>
-            <img src="https://via.placeholder.com/400x200" alt="Sample Image 1" style="max-width: 100%; height: auto; display: block; margin: 10px 0;" />
-            <p style="margin: 15px 0; line-height: 1.5; text-align: justify;">Image 1: A sample image representing static content.</p>
-
-            <img src="https://via.placeholder.com/400x200" alt="Sample Image 2" style="max-width: 100%; height: auto; display: block; margin: 10px 0;" />
-            <p style="margin: 15px 0; line-height: 1.5; text-align: justify;">Image 2: Another sample image, showcasing the same static layout.</p>
-
-            <h2>Features of this Site</h2>
-            <ul style="padding-left: 20px;">
-                <li>Static content that doesn't respond to scrolling.</li>
-                <li>Basic layout with a header and footer.</li>
-                <li>Simple typography with limited styles.</li>
-                <li>Placeholder images to illustrate content use.</li>
-            </ul>
-        </div>
-
-        <footer style="background-color: #3366cc; color: white; text-align: center; padding: 10px 0; position: fixed; bottom: 0; width: 100%;">
-            <p style="margin: 0;">&copy; 1990s Style Website Example</p>
-        </footer>
-    </div>`,
+      code: `     <section class="era-section bg-indigo-700 text-white flex items-center justify-center">
+      <div class="text-center p-10">
+        <h1 class="text-5xl font-bold mb-6">1990s</h1>
+        <p class="text-lg">Minimal design, early HTML sites with basic layouts, limited interactivity, and bright colors.</p>
+      </div>
+    </section> `,
       explanation: {
         details: 'A static page with simple text and images that remain fixed as you scroll, representing early web pages without scroll effects. ',
       },
@@ -284,116 +267,104 @@ var compoenents = {
   "Forms": {
     title: 'form',
     "1990": {
-      code: `<div class="sc" style="font-family: Arial, sans-serif; background-color: #f0f0f0; color: #000; margin: 0; padding: 0;">
-        <header style="background-color: #3366cc; color: white; text-align: center; padding: 10px 0;">
-            <h1 style="margin: 0; font-size: 2em;">Welcome to My 1990s Style Website</h1>
-        </header>
-
-        <div class="container" style="width: 80%; margin: 20px auto; background: white; border: 2px solid #ccc; padding: 20px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);">
-            <h2>About This Site</h2>
-            <p style="margin: 15px 0; line-height: 1.5; text-align: justify;">This is a simple static web page demonstrating the look and feel of web pages from the 1990s. It features basic HTML structure and styles without any scroll effects or complicated behaviors.</p>
-
-            <h2>Images from the Past</h2>
-            <img src="https://via.placeholder.com/400x200" alt="Sample Image 1" style="max-width: 100%; height: auto; display: block; margin: 10px 0;" />
-            <p style="margin: 15px 0; line-height: 1.5; text-align: justify;">Image 1: A sample image representing static content.</p>
-
-            <img src="https://via.placeholder.com/400x200" alt="Sample Image 2" style="max-width: 100%; height: auto; display: block; margin: 10px 0;" />
-            <p style="margin: 15px 0; line-height: 1.5; text-align: justify;">Image 2: Another sample image, showcasing the same static layout.</p>
-
-            <h2>Features of this Site</h2>
-            <ul style="padding-left: 20px;">
-                <li>Static content that doesn't respond to scrolling.</li>
-                <li>Basic layout with a header and footer.</li>
-                <li>Simple typography with limited styles.</li>
-                <li>Placeholder images to illustrate content use.</li>
-            </ul>
+      code: `<div class="bg-white p-5 shadow-lg border border-gray-400">
+        <div class="mb-4">
+            <label for="name" class="block mb-2">Name:</label>
+            <input type="text" id="name" name="name" class="border border-black p-2 w-full" placeholder="Enter your name">
         </div>
-
-        <footer style="background-color: #3366cc; color: white; text-align: center; padding: 10px 0; position: fixed; bottom: 0; width: 100%;">
-            <p style="margin: 0;">&copy; 1990s Style Website Example</p>
-        </footer>
-    </div>`,
+        
+        <div class="mb-4">
+            <label for="email" class="block mb-2">Email:</label>
+            <input type="email" id="email" name="email" class="border border-black p-2 w-full" placeholder="Enter your email">
+        </div>
+        
+        <div class="mb-4">
+            <p class="mb-2">Choose your favorite color:</p>
+            <div>
+                <label class="block"><input type="radio" name="color" value="red" checked> Red</label>
+                <label class="block"><input type="radio" name="color" value="blue"> Blue</label>
+                <label class="block"><input type="radio" name="color" value="green"> Green</label>
+            </div>
+        </div>
+        
+        <div class="mb-4">
+            <p class="mb-2">Select your hobbies:</p>
+            <div>
+                <label class="block"><input type="checkbox" name="hobby" value="music"> Music</label>
+                <label class="block"><input type="checkbox" name="hobby" value="sports"> Sports</label>
+                <label class="block"><input type="checkbox" name="hobby" value="art"> Art</label>
+            </div>
+        </div>
+        
+        <div>
+            <input type="submit" value="Submit" class="bg-blue-500 text-white p-2 cursor-pointer">
+        </div>
+    </div> `,
       explanation: {
         details: 'A basic contact form with only text fields, no padding, and basic buttons like <input type="submit">.  ',
       },
     },
     "2000": {
-      code: `<div>
-    <h1>Contact Us</h1>
-    <form name="contactForm" style="width: 300px; padding: 15px; border: 1px solid #ccc; background-color: #f9f9f9;">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd;"><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd;"><br>
-        
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd;"></textarea><br>
-        
-        <input type="submit" value="Submit" style="padding: 8px 15px; background-color: #4CAF50; color: white; border: none; cursor: pointer;" onmouseover="this.style.backgroundColor='#45a049'" onmouseout="this.style.backgroundColor='#4CAF50'">
-    </form>
-</div>`,
+      code: `<div class="era-header">
+      <h2 class="text-2xl font-bold text-gray-700">2000s</h2>
+      <p class="text-gray-500">Enhanced Interaction</p>
+    </div>
+    <div class="mb-4">
+      <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+      <input type="email" id="email" class="border rounded-lg w-full py-2 px-3 text-gray-700" placeholder="Enter your email">
+    </div>`,
       explanation: {
         details: 'Create a form with inline validation messages using basic JavaScript, e.g., “Please enter a valid email.” ',
       },
     },
     "2010": {
-      code: `<div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #dcdcdc; padding: 20px;">
-    <div class="forms" style="padding: 20px;">
-        <form action="#" method="post" style="margin: 10px auto; max-width: 400px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-            <div class="form-group" style="position: relative; margin-bottom: 20px;">
-                <input type="text" id="name" name="name" placeholder=" " required
-                       style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; transition: border-color 0.3s ease;">
-                <label for="name" style="position: absolute; top: 10px; left: 10px; transition: all 0.2s ease; color: #999;">Name</label>
-            </div>
-            <div class="form-group" style="position: relative; margin-bottom: 20px;">
-                <input type="email" id="email" name="email" placeholder=" " required
-                       style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; transition: border-color 0.3s ease;">
-                <label for="email" style="position: absolute; top: 10px; left: 10px; transition: all 0.2s ease; color: #999;">Email</label>
-            </div>
-            <div class="form-group" style="position: relative; margin-bottom: 20px;">
-                <textarea id="message" name="message" rows="4" placeholder=" "
-                          style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; transition: border-color 0.3s ease;"></textarea>
-                <label for="message" style="position: absolute; top: 10px; left: 10px; transition: all 0.2s ease; color: #999;">Message</label>
-            </div>
-            <input type="submit" value="Submit" style="background-color: #4CAF50; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">
-        </form>
+      code: ` <div class="era-header">
+      <h2 class="text-2xl font-bold text-gray-700">2010s</h2>
+      <p class="text-gray-500">Mobile-First Design</p>
     </div>
-</div>`,
+    <div class="mb-4">
+      <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password:</label>
+      <input type="password" id="password" class="border rounded-lg w-full py-2 px-3 text-gray-700" placeholder="Enter your password">
+    </div>`,
       explanation: {
         details: 'Display a responsive form that changes its layout when the screen size shifts, with floating labels and real-time error validation. ',
       },
     },
     "2020": {
-      code: `<div style="font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f2f5; margin: 0;">
-    <div class="form-container" style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: 300px;">
-        <h2 style="text-align: center; margin-bottom: 20px;">Login</h2>
-        <form>
-            <label for="username" style="margin-bottom: 5px; display: block;">Username</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username" required style="width: 93%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; transition: border-color 0.3s;">
-            <label for="password" style="margin-bottom: 5px; display: block;">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required style="width: 93%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; transition: border-color 0.3s;">
-            <input type="submit" value="Login" style="width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
-        </form>
+      code: `<div class="era-header">
+      <h2 class="text-2xl font-bold text-gray-700">2020s</h2>
+      <p class="text-gray-500">Dark Mode & Accessibility</p>
+    </div>
+    <div class="mb-4">
+      <label for="theme" class="block text-gray-700 text-sm font-bold mb-2">Choose Theme:</label>
+      <select id="theme" class="border rounded-lg w-full py-2 px-3 text-gray-700">
+        <option>Light Mode</option>
+        <option>Dark Mode</option>
+      </select>
     </div>`,
       explanation: {
         details: 'A login form with smooth input transitions, an animated password strength meter, and a simple micro-interaction on the submit button (slight color shift). ',
       },
     },
     "2030": {
-      code: `<div class="demo-section" style="margin-bottom: 50px;">
-              
-              <div style="font-size: 1.5rem; color: white; text-align: center; margin-bottom: 20px; animation: blink 1s infinite;">
-                  Loading...
-              </div>
-              <!-- Optional: Embed classic GIF -->
-              <img src="https://i.gifer.com/ZZ5H.gif" alt="90s spinning globe" width="100" style="display: block; margin: 0 auto;">
-          </div>`,
+      code: `  <div class="era-header">
+      <h2 class="text-2xl font-bold text-gray-700">2030s</h2>
+      <p class="text-gray-500">AI-Powered Interfaces</p>
+    </div>
+    <div class="mb-4">
+      <label for="feedback" class="block text-gray-700 text-sm font-bold mb-2">Feedback:</label>
+      <textarea id="feedback" class="border rounded-lg w-full py-2 px-3 text-gray-700" placeholder="Share your thoughts..."></textarea>
+    </div>
+
+    <button type="submit" class="bg-purple-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-purple-700 transition duration-300">
+      Submit
+    </button>`,
       explanation: {
         details: 'button is awesomely designed',
       },
     },
   },
+  
   hero_banner: {
     title: 'hero_banner',
     "1990": {
@@ -587,12 +558,12 @@ var compoenents = {
       },
     },
     "2030": {
-      code: `<div style="font-family: 'Arial', sans-serif; background-color: #f3e5f5; color: #222; text-align: center; padding: 20px;">
-    <h1 style="font-size: 50px; color: #6a1b9a;">2030s: Future Icons and Imagery Projection</h1>
-    <p style="font-size: 24px; color: #444;">By the 2030s, we will see adaptive, AI-driven icons that change based on user preferences and context.</p>
-    <p style="font-size: 20px; color: #333;">Expect interactive icons that enhance accessibility and user engagement.</p>
-    <p style="font-size: 20px; color: #333;">The evolution will focus on personalization and contextual relevance in design.</p>
-</div>`,
+      code: `     <div class="flex items-center justify-center space-x-2">
+    <div class="w-8 h-8 bg-purple-600 rounded-full animate-bounce" style="animation: bounce 0.6s infinite;"></div>
+    <div class="w-8 h-8 bg-purple-600 rounded-full animate-bounce" style="animation: bounce 0.6s infinite 0.2s;"></div>
+    <div class="w-8 h-8 bg-purple-600 rounded-full animate-bounce" style="animation: bounce 0.6s infinite 0.4s;"></div>
+  </div>
+`,
       explanation: {
         details: 'button is awesomely designed',
       },
@@ -703,59 +674,575 @@ var compoenents = {
       },
     },
   },
-  "Navigation Menu": {
+
+
+  icon_and_imagery: {
     title: 'scroll',
     "1990": {
-      code: `<div>
-    <table style="font-family: Arial, sans-serif; background-color: #ffffff; width: 100%; border-collapse: collapse;">
-
-        <tr>
-    
-            <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a href="#home" style="text-decoration: none; color: #000000;">Home</a></td>
-    
-            <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a href="#about" style="text-decoration: none; color: #000000;">About</a></td>
-    
-            <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a href="#services" style="text-decoration: none; color: #000000;">Services</a></td>
-    
-            <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a href="#contact" style="text-decoration: none; color: #000000;">Contact</a></td>
-    
-        </tr>
-    
-    </table>
-    
+      code: `div style="font-family: 'Arial', sans-serif; background-color: #f9f9f9; color: #333; text-align: center; padding: 20px;">
+    <h1 style="font-size: 36px; color: #ff3366;">1990s: Bitmap Icons and Low-Resolution Graphics</h1>
+    <p style="font-size: 20px; color: #666;">In the 1990s, web design was characterized by pixelated icons and low-resolution GIF images.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpTcUH4LLjSVfkKEXJ30BBRyAhfT4s_YZO3g&s" alt="90s Icon" style="width: 150px; height: 150px; image-rendering: pixelated; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+    <p style="font-size: 20px; color: #666;">Example of a pixelated icon typical of 90s web design.</p>
+    <p style="font-size: 20px; color: #666;">Limited color palettes and low fidelity were common.</p>
 </div>`,
       explanation: {
         details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
       },
     },
     "2000": {
-      code: ` <div style="font-family: Arial, sans-serif; position: relative; display: inline-block;">
-        <button style="padding: 10px 15px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Menu</button>
-        <div style="display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;">
-            <a href="#home" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">Home</a>
-            <a href="#about" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">About</a>
-            <a href="#services" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">Services</a>
-            <a href="#contact" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">Contact</a>
-        </div>
-    </div>`,
+      code: ` <div style="font-family: 'Verdana', sans-serif; background-color: #e0f7fa; color: #111; text-align: center; padding: 20px;">
+    <h1 style="font-size: 40px; color: #00796b;">2000s: Flash Graphics and Scalable Icons</h1>
+    <p style="font-size: 20px; color: #444;">The rise of Flash allowed for more dynamic graphics, while SVGs began to gain traction as a scalable format.</p>
+    <img src="https://i.pinimg.com/736x/b9/b5/5e/b9b55e8714f4142abc808c992bc3eb77.jpg" alt="Flash Graphic" style="width: 150px; height: 150px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+    <p style="font-size: 20px; color: #444;">This icon showcases the vibrant, animated graphics of the 2000s.</p>
+    <p style="font-size: 20px; color: #444;">Flash graphics were prominent but began to decline with the rise of mobile devices.</p>
+</div>`,
       explanation: {
         details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
       },
     },
     "2010": {
-      code: `<div style="font-family: 'Arial', sans-serif; background-color: #4CAF50; color: #fff; display: flex; justify-content: space-between; align-items: center; padding: 15px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
-        <div style="display: flex; flex-direction: column; cursor: pointer;" onclick="toggleMenu()">
-            <div style="width: 30px; height: 4px; background-color: white; margin: 3px 0; transition: all 0.3s;"></div>
-            <div style="width: 30px; height: 4px; background-color: white; margin: 3px 0; transition: all 0.3s;"></div>
-            <div style="width: 30px; height: 4px; background-color: white; margin: 3px 0; transition: all 0.3s;"></div>
+      code: `<div style="font-family: 'Arial', sans-serif; background-color: #fff3e0; color: #000; text-align: center; padding: 20px;">
+    <h1 style="font-size: 42px; color: #ff9800;">2010s: Font Icons and SVGs</h1>
+    <p style="font-size: 20px; color: #333;">The introduction of icon fonts like Font Awesome transformed icon design.</p>
+    <i class="fas fa-camera" style="font-size: 80px; color: #3f51b5; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></i>
+    <p style="font-size: 20px; color: #333;">Example of a scalable vector icon using Font Awesome.</p>
+    <p style="font-size: 20px; color: #333;">High-quality icons became standard for responsive web design.</p>
+</div>`,
+      explanation: {
+        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+      },
+    },
+    "2020": {
+      code: `<div style="font-family: 'Verdana', sans-serif; background-color: #e8f5e9; color: #111; text-align: center; padding: 20px;">
+    <h1 style="font-size: 44px; color: #388e3c;">2020s: Animated SVGs and Lottie Files</h1>
+    <p style="font-size: 20px; color: #444;">The use of animated SVGs and Lottie files allows for high-quality, lightweight animations.</p>
+    <div>
+        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_qd6wnu.json" background="transparent" speed="1" loop autoplay style="width: 200px; height: 200px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></lottie-player>
+    </div>
+    <p style="font-size: 20px; color: #444;">Lottie files provide smooth transitions with minimal performance impact.</p>
+</div>`,
+      explanation: {
+        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+      },
+    },
+    "2030": {
+      code: `<div style="font-family: 'Arial', sans-serif; background-color: #f3e5f5; color: #222; text-align: center; padding: 20px;">
+    <h1 style="font-size: 50px; color: #6a1b9a;">2030s: Future Icons and Imagery Projection</h1>
+    <p style="font-size: 24px; color: #444;">By the 2030s, we will see adaptive, AI-driven icons that change based on user preferences and context.</p>
+    <p style="font-size: 20px; color: #333;">Expect interactive icons that enhance accessibility and user engagement.</p>
+    <p style="font-size: 20px; color: #333;">The evolution will focus on personalization and contextual relevance in design.</p>
+</div>`,
+      explanation: {
+        details: 'button is awesomely designed',
+      },
+    },
+  },
+
+  Light: {
+    title: 'homepages',
+    "1990": {
+      code: `<div>
+    <h1>Welcome to the 90s Web!</h1>
+    <p>This is a static webpage with no theme switching.</p>
+    <img src="under_construction.gif" alt="Under Construction" />
+</div>`,
+      explanation: {
+        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+      },
+    },
+    "2000": {
+      code: ` <div style="font-family: Arial, sans-serif; background-color: lightblue; color: black;">
+    <h1 style="text-align: center;">2000s: CSS and Flash Era</h1>
+
+    <div style="text-align: center;">
+        <img src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/3a75e3d1-c38b-4e1c-8323-28ff8221b64c/edwinmurat.jpg" alt="Flash Animation Example" style="width: 300px;">
+    </div>
+
+    <div style="width: 100%; background-color: darkgray; padding: 10px; margin-top: 20px; text-align: center;">
+        <a href="#" style="color: white; text-decoration: none; padding: 10px; display: inline-block;">Home</a>
+        <a href="#" style="color: white; text-decoration: none; padding: 10px; display: inline-block;">About</a>
+        <a href="#" style="color: white; text-decoration: none; padding: 10px; display: inline-block;">Contact</a>
+    </div>
+
+    <form style="margin: 20px;">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" style="padding: 5px; border: 1px solid gray;">
+        <input type="submit" value="Submit" style="padding: 5px; background-color: green; color: white;">
+    </form>
+</div>`,
+      explanation: {
+        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+      },
+    },
+    "2010": {
+      code: `<div style="font-family: 'Helvetica', sans-serif; text-align: center; transition: background-color 0.5s, color 0.5s; background-color: white; color: black;">
+    <h1>Welcome to the 2010s Web!</h1>
+    <button style="padding: 10px; margin: 20px; background-color: #2196F3; color: white; border: none; cursor: pointer;" onclick="toggleTheme()">Toggle Dark Mode</button>
+</div>`,
+      explanation: {
+        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+      },
+    },
+    "2020": {
+      code: `<div style="background-color: #ffffff; color: #000000; font-family: Arial, sans-serif; text-align: center; padding: 50px; transition: background-color 0.5s, color 0.5s;">
+    <h1 style="color: #0077cc;">2020s: System-Wide Dark Mode</h1>
+    <p>In the 2020s, websites began using CSS variables to create adaptive light/dark modes.</p>
+    <p>This era features smooth transitions and custom themes based on system settings.</p>
+    <button style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;" onclick="document.body.style.backgroundColor = document.body.style.backgroundColor === 'rgb(26, 26, 26)' ? '#ffffff' : '#1a1a1a'; document.body.style.color = document.body.style.color === 'rgb(255, 255, 255)' ? '#000000' : '#ffffff';">Toggle Dark Mode</button>
+</div>`,
+      explanation: {
+        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+      },
+    },
+    "2030": {
+      code: `<div style="background-color: #f0f0f0; color: #333; font-family: 'Arial', sans-serif; text-align: center; padding: 50px; transition: background-color 0.5s, color 0.5s;">
+    <h1 style="color: #003366;">2030s: Futuristic Light/Dark Mode</h1>
+    <p>The 2030s could bring us interactive and customizable interfaces.</p>
+    <p>Imagine using voice commands or gestures to switch themes effortlessly!</p>
+    <p>In this speculative future, interfaces will feel dynamic and tailored to individual preferences.</p>
+    <button onclick="toggleTheme()" style="padding: 10px 20px; background-color: #0066cc; color: white; border: none; cursor: pointer;">Toggle Dark Mode</button>
+
+    <script>
+        // Inline dark mode styles
+        const darkModeStyles = {
+            backgroundColor: "#2a2a2a",
+            color: "#e0e0e0"
+        };
+
+        // Function to toggle dark mode
+        function toggleTheme() {
+            const body = document.body;
+            if (body.style.backgroundColor === darkModeStyles.backgroundColor) {
+                body.style.backgroundColor = "#f0f0f0";
+                body.style.color = "#333";
+            } else {
+                body.style.backgroundColor = darkModeStyles.backgroundColor;
+                body.style.color = darkModeStyles.color;
+            }
+        }
+    </script>
+</div>`,
+      explanation: {
+        details: 'button is awesomely designed',
+      },
+    },
+  },
+
+
+  tooltip: {
+    title: 'tooltip',
+    "1990": {
+      code: `<div style="font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 20px;">
+    <h1 style="color: #333;">1990s: Browser-Default Tooltips</h1>
+    <div style="background-color: #fff; border: 1px solid #ccc; padding: 20px; margin-bottom: 20px;">
+        <h2 style="color: #444;">Tooltip Example</h2>
+        <button title="This is a tooltip!">Hover over me!</button>
+        <p style="font-size: 14px; color: #666;">
+            In the 1990s, web design utilized browser-default tooltips, which were simple and straightforward. Tooltips were created using the <code>title</code> attribute in HTML. When users hovered over an element, the tooltip text would appear as a small box, providing additional information without cluttering the interface. This method was limited but effective for basic interactions.
+        </p>
+    </div>
+</div>`,
+      explanation: {
+        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+      },
+    },
+    "2000": {
+      code: `<div style="font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 20px;">
+    <h1 style="color: #333;">2000s: JavaScript Popups and Alerts</h1>
+    <div style="background-color: #fff; border: 1px solid #ccc; padding: 20px; margin-bottom: 20px;">
+        <h2 style="color: #444;">Popup Example</h2>
+        <button onclick="showAlert()">Click me for an alert!</button>
+        <p style="font-size: 14px; color: #666;">
+            The 2000s saw the rise of JavaScript popups, which allowed for more interactive user experiences. Using the <code>alert()</code> and <code>confirm()</code> functions, developers could create simple dialog boxes that interrupted the user's workflow. While these popups were effective for alerting users, they often became intrusive and were eventually overused, leading to their decline in favor of more user-friendly options.
+        </p>
+    </div>
+</div>`,
+      explanation: {
+        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+      },
+    },
+    "2010": {
+      code: `<div style="font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 20px;">
+    <h1 style="color: #333;">2010s: CSS Tooltips and Modal Popups</h1>
+    <div style="background-color: #fff; border: 1px solid #ccc; padding: 20px; margin-bottom: 20px;">
+        <h2 style="color: #444;">Tooltip Example</h2>
+        <div style="position: relative; display: inline-block; cursor: pointer;">
+            Hover over me
+            <span style="visibility: hidden; width: 120px; background-color: black; color: #fff; text-align: center; border-radius: 6px; padding: 5px; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -60px; opacity: 0; transition: opacity 0.3s;" class="tooltiptext">This is a tooltip!</span>
         </div>
-        <div style="display: flex; gap: 15px;">
-            <a href="#home" style="color: white; text-decoration: none; padding: 10px 15px; transition: background 0.3s;">Home</a>
-            <a href="#about" style="color: white; text-decoration: none; padding: 10px 15px; transition: background 0.3s;">About</a>
-            <a href="#services" style="color: white; text-decoration: none; padding: 10px 15px; transition: background 0.3s;">Services</a>
-            <a href="#contact" style="color: white; text-decoration: none; padding: 10px 15px; transition: background 0.3s;">Contact</a>
+        <h2 style="color: #444;">Modal Example</h2>
+        <button onclick="showModal()" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">Open Modal</button>
+        <div id="myModal" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); padding-top: 60px;">
+            <div style="background-color: #fefefe; margin: 5% auto; padding: 20px; border: 1px solid #888; width: 80%;">
+                <span style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;" onclick="closeModal()">&times;</span>
+                <h2 style="color: #444;">Modal Header</h2>
+                <p>This is a simple modal popup example!</p>
+            </div>
         </div>
-    </div>`,
+        <p style="font-size: 14px; color: #666;">
+            The 2010s brought significant advancements in web design, particularly with CSS tooltips and modal popups. Tooltips became more visually appealing with custom styles and animations, enhancing the user experience. Modals emerged as a powerful tool for capturing user attention without navigating away from the page, often used for forms and critical alerts. This era emphasized smooth transitions and responsive designs to improve usability.
+        </p>
+    </div>
+</div>`,
+      explanation: {
+        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+      },
+    },
+    "2020": {
+      code: `<div style="font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 20px;">
+    <h1 style="color: #333; text-align: center;">2020s: Interactive, Animated Popups</h1>
+    <div style="max-width: 600px; margin: auto; background-color: #fff; border: 1px solid #ccc; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <h2 style="color: #444;">Animated Modal Popup Example</h2>
+        <p style="font-size: 16px; color: #666;">
+            The 2020s have seen a surge in the use of interactive and animated popups in web design. These popups enhance user experience through smooth transitions, engaging micro-interactions, and scroll-based triggers. This approach not only draws attention but also makes the interface more dynamic and enjoyable.
+        </p>
+        <button onclick="showModal()" style="padding: 10px 20px; font-size: 16px; cursor: pointer; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">Open Animated Modal</button>
+        <div id="myModal" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); padding-top: 60px;">
+            <div style="background-color: #fefefe; margin: 5% auto; padding: 20px; border: 1px solid #888; width: 80%; border-radius: 8px;">
+                <span style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;" onclick="closeModal()">&times;</span>
+                <h2 style="color: #444;">Modal Header</h2>
+                <p style="font-size: 16px; color: #666;">This is an animated modal popup example! Notice the subtle entrance and exit animations, which enhance user engagement.</p>
+            </div>
+        </div>
+        <p style="font-size: 14px; color: #666;">
+            In this example, the modal features a fade-in effect when displayed and a fade-out effect when closed, providing a smooth user experience. These types of animations have become a standard practice in modern web design, helping to create an immersive experience for users. Interactive elements like these are crucial for capturing attention and improving navigation.
+        </p>
+    </div>
+</div>`,
+      explanation: {
+        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+      },
+    },
+    "2030": {
+      code: `<div style="font-family: 'Arial', sans-serif; background: linear-gradient(to right, #0f0c29, #302b63, #24243e); color: #fff; padding: 20px; transition: background-color 0.3s ease;">
+    <h1 style="color: #ffde59;">2030s: Immersive Interactive Popups</h1>
+    <div style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid #ccc; padding: 20px; margin-bottom: 20px; border-radius: 15px;">
+        <h2 style="color: #ffde59;">Futuristic Modal Popup Example</h2>
+        <button onclick="showModal()" style="padding: 12px 24px; font-size: 18px; cursor: pointer; background-color: #00c6ff; color: #fff; border: none; border-radius: 10px; transition: background-color 0.3s ease;">Open Futuristic Modal</button>
+
+        <div id="myModal" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.8); padding-top: 60px;">
+            <div style="background-color: rgba(255, 255, 255, 0.9); margin: 5% auto; padding: 20px; border: 1px solid #888; width: 70%; border-radius: 15px; animation: zoomIn 0.3s forwards;">
+                <span style="color: #ff6b81; float: right; font-size: 28px; font-weight: bold; cursor: pointer;" onclick="closeModal()">&times;</span>
+                <h2 style="color: #444;">Futuristic Modal Header</h2>
+                <p>Welcome to the 2030s! This modal uses immersive design techniques to engage users.</p>
+            </div>
+        </div>
+
+        <p style="font-size: 16px; color: #ddd;">
+            The 2030s are envisioned to be a transformative era in web design. Interactive popups will incorporate augmented reality elements and seamless transitions. Designers will prioritize user experience with immersive backgrounds and dynamic interactions that adapt to user behavior, leading to a more personalized and engaging web environment.
+        </p>
+    </div>
+
+    <style>
+        @keyframes zoomIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+
+        .zoomIn {
+            animation: zoomIn 0.3s forwards;
+        }
+
+        .zoomOut {
+            animation: zoomOut 0.3s forwards;
+        }
+    </style>
+</div>`,
+      explanation: {
+        details: 'button is awesomely designed',
+      },
+    },
+  },
+
+  footer: {
+    title: 'Footer',
+    "1990": {
+      code: `<div>
+    <footer>
+        <p>Contact us: info@example.com | Phone: (123) 456-7890</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2024 Your Company Name</p>
+    </footer>
+</div>`,
+      explanation: {
+        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+      },
+    },
+    "2000": {
+      code: ` <div>
+    <footer style="font-family: Comic Sans, sans-serif; background-color: #333; color: #fff; padding: 20px; display: flex; justify-content: space-around; flex-wrap: wrap;">
+        <div class="footer-section" style="width: 200px;">
+            <h4 style="margin-bottom: 10px;">Company</h4>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 5px;"><a href="#" style="color: #ffffff; text-decoration: none;">About Us</a></li>
+                <li style="margin-bottom: 5px;"><a href="#" style="color: #ffffff; text-decoration: none;">Careers</a></li>
+                <li style="margin-bottom: 5px;"><a href="#" style="color: #ffffff; text-decoration: none;">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section" style="width: 200px;">
+            <h4 style="margin-bottom: 10px;">Services</h4>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 5px;"><a href="#" style="color: #ffffff; text-decoration: none;">Web Design</a></li>
+                <li style="margin-bottom: 5px;"><a href="#" style="color: #ffffff; text-decoration: none;">SEO Services</a></li>
+                <li style="margin-bottom: 5px;"><a href="#" style="color: #ffffff; text-decoration: none;">Consulting</a></li>
+            </ul>
+        </div>
+        <div class="footer-section" style="width: 200px;">
+            <h4 style="margin-bottom: 10px;">Support</h4>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 5px;"><a href="#" style="color: #ffffff; text-decoration: none;">Contact Us</a></li>
+                <li style="margin-bottom: 5px;"><a href="#" style="color: #ffffff; text-decoration: none;">FAQs</a></li>
+                <li style="margin-bottom: 5px;"><a href="#" style="color: #ffffff; text-decoration: none;">Help Center</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>`,
+      explanation: {
+        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+      },
+    },
+    "2010": {
+      code: `<div>
+    <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+        <ul style="list-style: none; padding: 0;">
+            <li style="display: inline; margin: 0 10px;">
+                <a href="#" style="color: #fff; font-size: 24px; text-decoration: none; transition: transform 0.3s, color 0.3s;">&#x1F426; Twitter</a>
+            </li>
+            <li style="display: inline; margin: 0 10px;">
+                <a href="#" style="color: #fff; font-size: 24px; text-decoration: none; transition: transform 0.3s, color 0.3s;">&#x1F4F7; Instagram</a>
+            </li>
+            <li style="display: inline; margin: 0 10px;">
+                <a href="#" style="color: #fff; font-size: 24px; text-decoration: none; transition: transform 0.3s, color 0.3s;">&#x1F4F1; Facebook</a>
+            </li>
+            <li style="display: inline; margin: 0 10px;">
+                <a href="#" style="color: #fff; font-size: 24px; text-decoration: none; transition: transform 0.3s, color 0.3s;">&#x1F4BB; LinkedIn</a>
+            </li>
+            <li style="display: inline; margin: 0 10px;">
+                <a href="#" style="color: #fff; font-size: 24px; text-decoration: none; transition: transform 0.3s, color 0.3s;">&#x1F4FA; YouTube</a>
+            </li>
+            <li style="display: inline; margin: 0 10px;">
+                <a href="#" style="color: #fff; font-size: 24px; text-decoration: none; transition: transform 0.3s, color 0.3s;">&#x1F4BB; GitHub</a>
+            </li>
+        </ul>
+        <p style="margin: 20px 0 0;">&copy; 2010s Style Footer</p>
+    </footer>
+</div>`,
+      explanation: {
+        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+      },
+    },
+    "2020": {
+      code: `<div style="line-height: 1.5; font-family: 'Poppins', sans-serif; margin: 0; padding: 0; box-sizing: border-box;">
+
+  <footer class="footer" style="background-color: #24262b; padding: 70px 0;">
+    <div class="container" style="max-width: 1170px; margin: auto;">
+      <div class="row" style="display: flex; flex-wrap: wrap;">
+        <div class="footer-col" style="width: 25%; padding: 0 15px;">
+          <h4 style="font-size: 18px; color: #ffffff; text-transform: capitalize; margin-bottom: 35px; font-weight: 500; position: relative;">
+            company
+            <span style="content: ''; position: absolute; left: 0; bottom: -10px; background-color: #e91e63; height: 2px; box-sizing: border-box; width: 50px;"></span>
+          </h4>
+          <ul style="list-style: none;">
+            <li style="margin-bottom: 10px;"><a href="#" style="font-size: 16px; text-transform: capitalize; color: #bbbbbb; text-decoration: none; font-weight: 300; display: block; transition: all 0.3s ease;" onmouseover="this.style.color='#e91e63'" onmouseout="this.style.color='#bbbbbb'">about us</a></li>
+            <li style="margin-bottom: 10px;"><a href="#" style="font-size: 16px; text-transform: capitalize; color: #bbbbbb; text-decoration: none; font-weight: 300; display: block; transition: all 0.3s ease;" onmouseover="this.style.color='#e91e63'" onmouseout="this.style.color='#bbbbbb'">our services</a></li>
+            <li style="margin-bottom: 10px;"><a href="#" style="font-size: 16px; text-transform: capitalize; color: #bbbbbb; text-decoration: none; font-weight: 300; display: block; transition: all 0.3s ease;" onmouseover="this.style.color='#e91e63'" onmouseout="this.style.color='#bbbbbb'">privacy policy</a></li>
+            <li><a href="#" style="font-size: 16px; text-transform: capitalize; color: #bbbbbb; text-decoration: none; font-weight: 300; display: block; transition: all 0.3s ease;" onmouseover="this.style.color='#e91e63'" onmouseout="this.style.color='#bbbbbb'">affiliate program</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col" style="width: 25%; padding: 0 15px;">
+          <h4 style="font-size: 18px; color: #ffffff; text-transform: capitalize; margin-bottom: 35px; font-weight: 500; position: relative;">
+            get help
+            <span style="content: ''; position: absolute; left: 0; bottom: -10px; background-color: #e91e63; height: 2px; box-sizing: border-box; width: 50px;"></span>
+          </h4>
+          <ul style="list-style: none;">
+            <li style="margin-bottom: 10px;"><a href="#" style="font-size: 16px; text-transform: capitalize; color: #bbbbbb; text-decoration: none; font-weight: 300; display: block; transition: all 0.3s ease;" onmouseover="this.style.color='#e91e63'" onmouseout="this.style.color='#bbbbbb'">FAQ</a></li>
+            <li style="margin-bottom: 10px;"><a href="#" style="font-size: 16px; text-transform: capitalize; color: #bbbbbb; text-decoration: none; font-weight: 300; display: block; transition: all 0.3s ease;" onmouseover="this.style.color='#e91e63'" onmouseout="this.style.color='#bbbbbb'">shipping</a></li>
+            <li style="margin-bottom: 10px;"><a href="#" style="font-size: 16px; text-transform: capitalize; color: #bbbbbb; text-decoration: none; font-weight: 300; display: block; transition: all 0.3s ease;" onmouseover="this.style.color='#e91e63'" onmouseout="this.style.color='#bbbbbb'">returns</a></li>
+            <li style="margin-bottom: 10px;"><a href="#" style="font-size: 16px; text-transform: capitalize; color: #bbbbbb; text-decoration: none; font-weight: 300; display: block; transition: all 0.3s ease;" onmouseover="this.style.color='#e91e63'" onmouseout="this.style.color='#bbbbbb'">order status</a></li>
+            <li><a href="#" style="font-size: 16px; text-transform: capitalize; color: #bbbbbb; text-decoration: none; font-weight: 300; display: block; transition: all 0.3s ease;" onmouseover="this.style.color='#e91e63'" onmouseout="this.style.color='#bbbbbb'">payment options</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col" style="width: 25%; padding: 0 15px;">
+          <h4 style="font-size: 18px; color: #ffffff; text-transform: capitalize; margin-bottom: 35px; font-weight: 500; position: relative;">
+            online shop
+            <span style="content: ''; position: absolute; left: 0; bottom: -10px; background-color: #e91e63; height: 2px; box-sizing: border-box; width: 50px;"></span>
+          </h4>
+          <ul style="list-style: none;">
+            <li style="margin-bottom: 10px;"><a href="#" style="font-size: 16px; text-transform: capitalize; color: #bbbbbb; text-decoration: none; font-weight: 300; display: block; transition: all 0.3s ease;" onmouseover="this.style.color='#e91e63'" onmouseout="this.style.color='#bbbbbb'">watch</a></li>
+            <li style="margin-bottom: 10px;"><a href="#" style="font-size: 16px; text-transform: capitalize; color: #bbbbbb; text-decoration: none; font-weight: 300; display: block; transition: all 0.3s ease;" onmouseover="this.style.color='#e91e63'" onmouseout="this.style.color='#bbbbbb'">bag</a></li>
+            <li style="margin-bottom: 10px;"><a href="#" style="font-size: 16px; text-transform: capitalize; color: #bbbbbb; text-decoration: none; font-weight: 300; display: block; transition: all 0.3s ease;" onmouseover="this.style.color='#e91e63'" onmouseout="this.style.color='#bbbbbb'">shoes</a></li>
+            <li><a href="#" style="font-size: 16px; text-transform: capitalize; color: #bbbbbb; text-decoration: none; font-weight: 300; display: block; transition: all 0.3s ease;" onmouseover="this.style.color='#e91e63'" onmouseout="this.style.color='#bbbbbb'">dress</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col" style="width: 25%; padding: 0 15px;">
+          <h4 style="font-size: 18px; color: #ffffff; text-transform: capitalize; margin-bottom: 35px; font-weight: 500; position: relative;">
+            follow us
+            <span style="content: ''; position: absolute; left: 0; bottom: -10px; background-color: #e91e63; height: 2px; box-sizing: border-box; width: 50px;"></span>
+          </h4>
+          <div class="social-links" style="display: flex;">
+            <a href="#" style="display: inline-block; height: 40px; width: 40px; background-color: rgba(255,255,255,0.2); margin: 0 10px 10px 0; text-align: center; line-height: 40px; border-radius: 50%; color: #ffffff; transition: all 0.5s ease;" onmouseover="this.style.color='#e91e63'" onmouseout="this.style.color='#ffffff'">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" style="display: inline-block; height: 40px; width: 40px; background-color: rgba(255,255,255,0.2); margin: 0 10px 10px 0; text-align: center; line-height: 40px; border-radius: 50%; color: #ffffff; transition: all 0.5s ease;" onmouseover="this.style.color='#e91e63'" onmouseout="this.style.color='#ffffff'">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" style="display: inline-block; height: 40px; width: 40px; background-color: rgba(255,255,255,0.2); margin: 0 10px 10px 0; text-align: center; line-height: 40px; border-radius: 50%; color: #ffffff; transition: all 0.5s ease;" onmouseover="this.style.color='#e91e63'" onmouseout="this.style.color='#ffffff'">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" style="display: inline-block; height: 40px; width: 40px; background-color: rgba(255,255,255,0.2); margin: 0 10px 10px 0; text-align: center; line-height: 40px; border-radius: 50%; color: #ffffff; transition: all 0.5s ease;" onmouseover="this.style.color='#e91e63'" onmouseout="this.style.color='#ffffff'">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>`,
+      explanation: {
+        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+      },
+    },
+    "2030": {
+      code: `<div style="margin: 0; font-family: 'Poppins', sans-serif;">
+
+    <div style="display: flex; align-items: flex-end; min-height: 100vh; background: #333;">
+        <footer style="position: relative; width: 100%; background: #3586ff; min-height: 100px; padding: 20px 50px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <div class="waves">
+                <div style="position: absolute; top: -100px; left: 0; width: 100%; height: 100px; background: url(https://i.ibb.co/rZt4Nhg/wave.png); background-size: 1000px 100px; z-index: 1000; opacity: 1; bottom: 0; animation: animateWave 4s linear infinite;"></div>
+                <div style="position: absolute; top: -100px; left: 0; width: 100%; height: 100px; background: url(https://i.ibb.co/rZt4Nhg/wave.png); background-size: 1000px 100px; z-index: 999; opacity: 0.5; bottom: 10px; animation: animateWave_02 4s linear infinite;"></div>
+                <div style="position: absolute; top: -100px; left: 0; width: 100%; height: 100px; background: url(https://i.ibb.co/rZt4Nhg/wave.png); background-size: 1000px 100px; z-index: 1000; opacity: 0.2; bottom: 0; animation: animateWave 3s linear infinite;"></div>
+                <div style="position: absolute; top: -100px; left: 0; width: 100%; height: 100px; background: url(https://i.ibb.co/rZt4Nhg/wave.png); background-size: 1000px 100px; z-index: 999; opacity: 0.7; bottom: 20px; animation: animateWave_02 3s linear infinite;"></div>
+            </div>
+            <ul style="position: relative; display: flex; justify-content: center; align-items: center; margin: 10px 0; list-style: none;">
+                <li><a href="#" style="font-size: 2em; color: #ccc; margin: 0 10px; display: inline-block; transition: 0.5s;"> <ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#" style="font-size: 2em; color: #ccc; margin: 0 10px; display: inline-block; transition: 0.5s;"> <ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#" style="font-size: 2em; color: #ccc; margin: 0 10px; display: inline-block; transition: 0.5s;"> <ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#" style="font-size: 2em; color: #ccc; margin: 0 10px; display: inline-block; transition: 0.5s;"> <ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+
+            <ul style="position: relative; display: flex; justify-content: center; align-items: center; margin: 10px 0; list-style: none;">
+                <li><a href="#" style="font-size: 1.2em; color: #ccc; margin: 0 10px; display: inline-block; transition: 0.5s; text-decoration: none; opacity: 0.75;">Home</a></li>
+                <li><a href="#" style="font-size: 1.2em; color: #ccc; margin: 0 10px; display: inline-block; transition: 0.5s; text-decoration: none; opacity: 0.75;">About</a></li>
+                <li><a href="#" style="font-size: 1.2em; color: #ccc; margin: 0 10px; display: inline-block; transition: 0.5s; text-decoration: none; opacity: 0.75;">Services</a></li>
+                <li><a href="#" style="font-size: 1.2em; color: #ccc; margin: 0 10px; display: inline-block; transition: 0.5s; text-decoration: none; opacity: 0.75;">Team</a></li>
+                <li><a href="#" style="font-size: 1.2em; color: #ccc; margin: 0 10px; display: inline-block; transition: 0.5s; text-decoration: none; opacity: 0.75;">Contact</a></li>
+            </ul>
+            <p style="color: #eee; text-align: center; margin-top: 15px; margin-bottom: 10px; font-size: 1.1em;">&copy; 2021 Prakash Sahu | All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <style>
+        @keyframes animateWave {
+            0% { background-position-x: 1000px; }
+            100% { background-position-x: 0px; }
+        }
+
+        @keyframes animateWave_02 {
+            0% { background-position-x: 0px; }
+            100% { background-position-x: 1000px; }
+        }
+    </style>
+</div>`,
+      explanation: {
+        details: 'button is awesomely designed',
+      },
+    },
+  },
+
+  homepages: {
+    title: 'homepages',
+    "1990": {
+      code: `<div style="font-family: Arial, sans-serif; background-color: yellow; color: black;">
+    <h1 style="text-align: center;">1990s: The Beginning</h1>
+    
+    <table style="width: 100%; border: 1px solid black;">
+        <tr>
+            <td style="padding: 20px;">
+                <h2 style="font-family: 'Comic Sans MS';">Welcome to the 90s Website!</h2>
+                <p style="font-size: 18px; color: blue;">This website is under construction!</p>
+                <img src="https://example.com/under_construction.gif" alt="Under Construction" style="display: block; margin: 0 auto; width: 200px;">
+            </td>
+        </tr>
+    </table>
+    
+    <form style="margin: 20px;">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" style="padding: 5px; border: 1px solid gray;">
+        <input type="button" value="Submit" style="padding: 5px; background-color: gray; color: white;">
+    </form>
+
+</div>`,
+      explanation: {
+        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+      },
+    },
+    "2000": {
+      code: ` <div style="font-family: Arial, sans-serif; background-color: lightblue; color: black;">
+    <h1 style="text-align: center;">2000s: CSS and Flash Era</h1>
+
+    <div style="text-align: center;">
+        <img src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/3a75e3d1-c38b-4e1c-8323-28ff8221b64c/edwinmurat.jpg" alt="Flash Animation Example" style="width: 300px;">
+    </div>
+
+    <div style="width: 100%; background-color: darkgray; padding: 10px; margin-top: 20px; text-align: center;">
+        <a href="#" style="color: white; text-decoration: none; padding: 10px; display: inline-block;">Home</a>
+        <a href="#" style="color: white; text-decoration: none; padding: 10px; display: inline-block;">About</a>
+        <a href="#" style="color: white; text-decoration: none; padding: 10px; display: inline-block;">Contact</a>
+    </div>
+
+    <form style="margin: 20px;">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" style="padding: 5px; border: 1px solid gray;">
+        <input type="submit" value="Submit" style="padding: 5px; background-color: green; color: white;">
+    </form>
+</div>`,
+      explanation: {
+        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+      },
+    },
+    "2010": {
+      code: `<div style="font-family: Arial, sans-serif; background-color: white; color: black;">
+    <h1 style="text-align: center;">2010s: Responsive and Flat UI</h1>
+
+    <div style="background-color: lightgray; padding: 20px; text-align: center;">
+        <h2 style="font-family: sans-serif;">Flat UI Form</h2>
+        <form style="margin: 20px;">
+            <input type="text" placeholder="Your Name" style="padding: 10px; width: 100%; border: none; margin-bottom: 10px;">
+            <input type="email" placeholder="Your Email" style="padding: 10px; width: 100%; border: none; margin-bottom: 10px;">
+            <input type="submit" value="Submit" style="padding: 10px; width: 100%; background-color: blue; color: white; border: none;">
+        </form>
+    </div>
+
+    <div style="margin-top: 20px; text-align: center;">
+        <p>Resize the browser to see responsive design in action!</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5XzjFvWTPanU0ij-LKfYmkuNnipyQ9svLzA&s" alt="Responsive Layout" style="width: 50%; max-width: 600px;">
+    </div>
+</div>`,
       explanation: {
         details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
       },
@@ -808,7 +1295,6 @@ var compoenents = {
       },
     },
   }
-
 
 }
 

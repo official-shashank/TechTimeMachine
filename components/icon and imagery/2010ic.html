@@ -3,14 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2010s Icons and Imagery</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Font Awesome SVG Symbols</title>
+
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/b15ad03e0d.js" crossorigin="anonymous"></script>
+
+    <!-- Vue.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <style>
+        .icon {
+            width: 2em;
+            height: 2em;
+        }
+        /* Custom styles for the layout */
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .bg-gray9 {
+            background-color: #222;
+        }
+        .white {
+            color: white;
+        }
+        .pa6 {
+            padding: 2rem;
+        }
+        .flex {
+            display: flex;
+        }
+        .flex-column {
+            flex-direction: column;
+        }
+        .justify-center {
+            justify-content: center;
+        }
+        .items-center {
+            align-items: center;
+        }
+        .tc {
+            text-align: center;
+        }
+        .fw6 {
+            font-weight: 600;
+        }
+        .black-10 {
+            color: rgba(0, 0, 0, 0.1);
+        }
+        .gray2 {
+            color: #ccc;
+        }
+        .hover-white:hover {
+            color: white;
+        }
+        .mw8 {
+            max-width: 40rem;
+        }
+        .center {
+            margin: 0 auto;
+        }
+        .overflow-hidden {
+            overflow: hidden;
+        }
+        .bb {
+            border-bottom: 1px solid black;
+        }
+        .ph2 {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+        .bv2 {
+            border-width: 2px;
+        }
+        .mb2 {
+            margin-bottom: 0.5rem;
+        }
+        .tr {
+            text-align: right;
+        }
+        .pv2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        .b--black-10 {
+            border-color: rgba(0, 0, 0, 0.1);
+        }
+        .br2 {
+            border-radius: 0.25rem;
+        }
+        .pa2 {
+            padding: 0.5rem;
+        }
+        .pointer {
+            cursor: pointer;
+        }
+        .bg-gray {
+            background-color: #ccc;
+        }
+    </style>
 </head>
-<div style="font-family: 'Arial', sans-serif; background-color: #fff3e0; color: #000; text-align: center; padding: 20px;">
-    <h1 style="font-size: 42px; color: #ff9800;">2010s: Font Icons and SVGs</h1>
-    <p style="font-size: 20px; color: #333;">The introduction of icon fonts like Font Awesome transformed icon design.</p>
-    <i class="fas fa-camera" style="font-size: 80px; color: #3f51b5; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></i>
-    <p style="font-size: 20px; color: #333;">Example of a scalable vector icon using Font Awesome.</p>
-    <p style="font-size: 20px; color: #333;">High-quality icons became standard for responsive web design.</p>
-</div>
+<body>
+
+<main class="w-100 min-vh-100 bg-gray9 white sans-serif pa6 flex flex-column justify-center items-center ba bw4 b--gray8">
+    <div class="mw8 center w-100 overflow-hidden">
+        <h1 class="mt0 mb4 tc fw6 f6 black-10">
+            <a href="https://fontawesome.com" class="link gray2 hover-white">
+                <i class="fab fa-font-awesome-flag"></i>
+                <span>Using SVG Symbols</span>
+            </a>
+        </h1>
+
+        <!-- Define invisible symbols -->
+        <i data-fa-symbol="delete" class="fas fa-trash fa-fw" style="display: none"></i>
+        <i data-fa-symbol="edit" class="fas fa-pencil fa-fw" style="display: none"></i>
+        <i data-fa-symbol="favorite" class="fas fa-star fa-fw" style="display: none"></i>
+
+        <div class="flex justify-center">
+            <div id="app" class="w-50">
+                <div v-for="row of rows" class="flex items-center bb ph2 bw2 mb2 b--black-10">
+                    <div class="w-80 pv2">
+                        {{ row.label }}
+                    </div>
+                    <div class="w-20 tr pv2">
+                        <!-- Use SVG Sprite technique -->
+                        <svg class="icon pa2 br2 pointer bg-gray"><use xlink:href="#edit"></use></svg>
+                        <svg class="icon pa2 br2 pointer bg-gray"><use xlink:href="#delete"></use></svg>
+                        <svg class="icon pa2 br2 pointer bg-gray"><use xlink:href="#favorite"></use></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- JavaScript to initialize Vue.js -->
+<script>
+    var rows = [
+        { label: 'Audra Vazques' },
+        { label: 'Delia Venezia' },
+        { label: 'Ryan Lindbloom' },
+        { label: 'Archie Genest' },
+        { label: 'Madelene Miguez' },
+        { label: 'Micheline President' },
+        { label: 'Chantell Harada' },
+        { label: 'Merry Barwick' },
+        { label: 'Alejandro Starbird' },
+        { label: 'Ebonie Husk' },
+        { label: 'Ezekiel Lamagna' },
+        { label: 'Lynsey Prince' },
+        { label: 'Despina Wait' },
+        { label: 'Lavina Ferrigno' },
+        { label: 'Lynnette Longenecker' },
+        { label: 'Jacquelin Aguiar' },
+        { label: 'Kathe Mcconkey' },
+        { label: 'Luanne Hagar' },
+        { label: 'Monte Siddiqi' },
+        { label: 'Debi Amoroso' }
+    ];
+
+    var app = new Vue({
+        el: "#app",
+        data: {
+            rows: rows
+        }
+    });
+</script>
+
+</body>
 </html>
