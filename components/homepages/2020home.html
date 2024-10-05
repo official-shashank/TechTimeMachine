@@ -4,117 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2020s Web Design</title>
-    <style>
-        /* Neomorphic Style for Navbar */
-        .navbar {
-            position: fixed;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #e0e0e0;
-            padding: 10px 30px;
-            border-radius: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff;
-            z-index: 1000;
-        }
-
-        .navbar ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        .navbar ul li {
-            padding: 10px 20px;
-            background-color: #e0e0e0;
-            border-radius: 15px;
-            box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .navbar ul li:hover {
-            box-shadow: inset 8px 8px 15px #bebebe, inset -8px -8px 15px #ffffff;
-        }
-
-        .navbar a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        .navbar a:hover {
-            color: #f9876f;
-        }
-
-        /* Centered text and button section */
-        .hero-section {
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-            background-image: url('https://img.freepik.com/premium-vector/glassmorphism-card-concept-with-colorful-floating-spheres-frosted-glass-effect_177517-999.jpg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        /* Button style */
-        .neomorphism-btn {
-            padding: 15px 30px;
-            background-color: #f0f0f0;
-            border-radius: 15px;
-            box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff;
-            border: none;
-            color: #333;
-            font-weight: bold;
-            font-size: 18px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .neomorphism-btn:hover {
-            background-color: #e0e0e0;
-            box-shadow: inset 8px 8px 15px #bebebe, inset -8px -8px 15px #ffffff;
-        }
-
-        h1 {
-            font-size: 40px;
-            color: #f9876f;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-        }
-    </style>
 </head>
 <body style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; background-color: #e0e0e0; color: black; margin: 0; padding: 0;">
 
     <!-- Neomorphic Navbar -->
-    <div class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <div class="navbar" style="position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background-color: #e0e0e0; padding: 10px 30px; border-radius: 30px; display: flex; justify-content: center; align-items: center; box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff; z-index: 1000;">
+        <ul style="list-style: none; display: flex; gap: 20px;">
+            <li style="padding: 10px 20px; background-color: #e0e0e0; border-radius: 15px; box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff; font-size: 16px; font-weight: bold; cursor: pointer; transition: all 0.3s ease;" 
+                onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.boxShadow='5px 5px 12px #bebebe, -5px -5px 12px #ffffff';" 
+                onmouseout="this.style.backgroundColor='#e0e0e0'; this.style.boxShadow='8px 8px 15px #bebebe, -8px -8px 15px #ffffff';">
+                <a href="#home" style="text-decoration: none; color: #333;">Home</a>
+            </li>
+            <li style="padding: 10px 20px; background-color: #e0e0e0; border-radius: 15px; box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff; font-size: 16px; font-weight: bold; cursor: pointer; transition: all 0.3s ease;" 
+                onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.boxShadow='5px 5px 12px #bebebe, -5px -5px 12px #ffffff';" 
+                onmouseout="this.style.backgroundColor='#e0e0e0'; this.style.boxShadow='8px 8px 15px #bebebe, -8px -8px 15px #ffffff';">
+                <a href="#services" style="text-decoration: none; color: #333;">Services</a>
+            </li>
+            <li style="padding: 10px 20px; background-color: #e0e0e0; border-radius: 15px; box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff; font-size: 16px; font-weight: bold; cursor: pointer; transition: all 0.3s ease;" 
+                onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.boxShadow='5px 5px 12px #bebebe, -5px -5px 12px #ffffff';" 
+                onmouseout="this.style.backgroundColor='#e0e0e0'; this.style.boxShadow='8px 8px 15px #bebebe, -8px -8px 15px #ffffff';">
+                <a href="#portfolio" style="text-decoration: none; color: #333;">Portfolio</a>
+            </li>
+            <li style="padding: 10px 20px; background-color: #e0e0e0; border-radius: 15px; box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff; font-size: 16px; font-weight: bold; cursor: pointer; transition: all 0.3s ease;" 
+                onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.boxShadow='5px 5px 12px #bebebe, -5px -5px 12px #ffffff';" 
+                onmouseout="this.style.backgroundColor='#e0e0e0'; this.style.boxShadow='8px 8px 15px #bebebe, -8px -8px 15px #ffffff';">
+                <a href="#contact" style="text-decoration: none; color: #333;">Contact</a>
+            </li>
         </ul>
     </div>
 
     <!-- Full-screen background with centered text and button -->
-    <div class="hero-section">
-        <!-- Overlay text and button in the center -->
+    <div class="hero-section" style="position: relative; width: 100vw; height: 100vh; background-image: url('https://img.freepik.com/premium-vector/glassmorphism-card-concept-with-colorful-floating-spheres-frosted-glass-effect_177517-999.jpg'); background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center; text-align: center;">
         <div>
-            <h1>Modern Design</h1><br><br><br><br>
-            <button class="neomorphism-btn" onmouseover="this.style.backgroundColor='#e0e0e0';" 
+            <h1 style="font-size: 40px; color: #f9876f; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);">Modern Design</h1><br><br><br><br>
+            <button style="padding: 15px 30px; background-color: #f0f0f0; border-radius: 15px; box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff; border: none; color: #333; font-weight: bold; font-size: 18px; cursor: pointer; transition: all 0.3s ease;" 
+                    onmouseover="this.style.backgroundColor='#e0e0e0';" 
                     onmouseout="this.style.backgroundColor='#f0f0f0';">
                 Click Me!
             </button>
         </div>
     </div>
-
 </body>
 </html>
-
