@@ -3,19 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2030s Web Design</title>
+    <title>Adrian BL</title>
 </head>
-<body style="font-family: Arial, sans-serif; background-color: black; color: white;">
-    <h1 style="text-align: center;">2030s: Futuristic Speculations</h1>
+<body style="margin: 0; padding: 0; box-sizing: border-box; overflow: hidden; background-color: #161616; font-family: 'Courier New', Courier, monospace;">
 
-    <div style="padding: 20px; background-color: #333; color: white; text-align: center;">
-        <div style="padding: 15px; background-color: #555; border-radius: 10px; transform: perspective(600px) rotateX(5deg);">
-            <h2>Interactive Card with Paper-morphism</h2>
+    <!-- Navbar -->
+    <div class="navbar" style="position: fixed; top: 0; width: 100%; height: 70px; background-color: #111; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; z-index: 1000;">
+        <div class="logo">
+            <a href="#" style="color: #fff; text-decoration: none; font-family: 'digital geometric'; font-weight: bold;">Adrian BL</a>
         </div>
+        <ul style="display: flex; list-style: none;">
+            <li style="padding: 15px; color: #fff; cursor: pointer; font-size: 14px;"><a href="#about" style="color: #fff; text-decoration: none; font-family: 'digital geometric'; font-weight: bold;">About</a></li>
+            <li style="padding: 15px; color: #fff; cursor: pointer; font-size: 14px;"><a href="#projects" style="color: #fff; text-decoration: none; font-family: 'digital geometric'; font-weight: bold;">Projects</a></li>
+            <li style="padding: 15px; color: #fff; cursor: pointer; font-size: 14px;"><a href="#contact" style="color: #fff; text-decoration: none; font-family: 'digital geometric'; font-weight: bold;">Contact</a></li>
+        </ul>
     </div>
 
-    <div style="margin-top: 20px; text-align: center;">
-        <img src="https://img.freepik.com/free-psd/gradient-technology-concept-facebook-template_23-2150506341.jpg" alt="Future Mockup" style="width: 300px;">
+    <p class="titulo" style="margin-top: 6rem; font-size: 10em; color: #fff; overflow: hidden; margin-left: 115px; font-family: 'digital geometric'; font-weight: bold;">adrian</p>
+    <p class="subtitulo" style="position: relative; font-size: 10em; color: #fff; overflow: hidden; margin-left: 609px; margin-top: -185px; font-family: 'digital geometric'; font-weight: bold; letter-spacing: -7px;">bl</p>
+
+    <div class="figura" style="position: absolute; width: 0; height: 0; border-left: 28px solid transparent; border-right: 28px solid transparent; border-bottom: 70px solid aqua; margin-left: 160px; margin-top: -265px;"></div>
+
+    <div class="menu" style="position: absolute; bottom: 40%; padding: 0 10px; right: -160px; transform: rotate(-90deg);">
+        <ul style="list-style: none;">
+            <li style="display: inline-block; padding: 10px 25px; color: #fff; cursor: pointer; letter-spacing: 2px; font-size: 12px; font-weight: 300;">
+                <a href="https://github.com/AdrianBL1" style="text-decoration: none; color: #fff;">github</a>
+            </li>
+            <li style="display: inline-block; padding: 10px 25px; color: #fff; cursor: pointer; letter-spacing: 2px; font-size: 12px; font-weight: 300;">
+                <a href="https://github.com/AdrianBL1?tab=repositories" style="text-decoration: none; color: #fff;">proyectos</a>
+            </li>
+            <li style="display: inline-block; padding: 10px 25px; color: #fff; cursor: pointer; letter-spacing: 2px; font-size: 12px; font-weight: 300;">
+                <a href="https://codepen.io/adrianbl" style="text-decoration: none; color: #fff;">codepen</a>
+            </li>
+            <li style="display: inline-block; padding: 10px 25px; color: #fff; cursor: pointer; letter-spacing: 2px; font-size: 12px; font-weight: 300;">
+                <a href="/win98_version/" target="_blank" style="text-decoration: none; color: #fff;">win98_version</a>
+            </li>
+        </ul>
     </div>
+
+    <div class="footer" style="font-size: 12px; letter-spacing: 3px; position: absolute; color: #fff; bottom: 40px; left: 80px; transform: rotate(-90deg);">
+        adrian bl
+        <span style="content: ''; border: 2px solid #fff; width: 50px; margin: 0 20px 0 0; transform: translateY(-2px); opacity: .5; display: inline-block;"></span>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script>
+        var textWrapper = document.querySelector(".titulo");
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letra'>$&</span>");
+        anime.timeline().add({
+            targets: '.titulo .letra',
+            translateY: [200, 0],
+            easing: "easeOutExpo",
+            opacity: 1,
+            duration: 1700,
+            delay: (el, i) => 400 + 70 * i
+        });
+
+        TweenMax.from(".footer", 1.5, {delay: 0.7, opacity: 0, y: 200, ease: Expo.easeInOut});
+        TweenMax.from(".menu ul li", 1.5, {delay: 1, opacity: 0, y: -30, ease: Expo.easeInOut}, 0.08);
+        TweenMax.from(".subtitulo", 1.5, {delay: 1.5, opacity: 0, y: -50, ease: Expo.easeInOut});
+        TweenMax.from(".figura", 1.5, {delay: 1.5, opacity: 0, ease: Expo.easeInOut});
+    </script>
 </body>
 </html>
