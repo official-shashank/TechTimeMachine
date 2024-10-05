@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Shapes</title>
+</head>
+<body style="margin: 0; padding: 0; height: 100vh; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+
+    <div class="container" style="width: 500px; height: 500px; border: 5px solid lightgray; background: royalblue; position: relative; margin: 5px; display: flex; justify-content: center; align-items: center;">
+        <div class="shape" style="position: absolute; background-color: burlywood; width: 350px; height: 350px; rotate: 45deg; border-radius: 10%; animation: shape 3s steps(1) infinite;">
+        </div>
+    </div>
+
+    <div class="container" style="width: 500px; height: 500px; border: 5px solid lightgray; background: royalblue; position: relative; margin: 5px; display: flex; justify-content: center; align-items: center;">
+        <div class="circle-with-steps" style="position: absolute; background-color: burlywood; width: 400px; height: 400px; animation: circle-with-steps 3s steps(4) infinite alternate;">
+        </div>
+    </div>
+
+    <style>
+        /* Circle with Steps Animation */
+        @keyframes circle-with-steps {
+            from { }
+            80% { border-radius: 50%; }
+            to { border-radius: 50%; }
+        }
+
+        /* Shape Animation */
+        @keyframes shape {
+            from { }
+            25% { border-radius: 50%; width: 400px; height: 400px; }
+            50% { height: 330px; width: 480px; rotate: 0deg; }
+            75% { border-radius: 140px 140px 140px 30px; height: 350px; width: 350px; rotate: 135deg; }
+            to { border-radius: 140px 140px 140px 30px; }
+        }
+    </style>
+</body>
+</html>

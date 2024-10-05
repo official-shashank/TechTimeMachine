@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nice Border Card</title>
+    <link href="https://cdn.jsdelivr.net/fontsource/fonts/kode-mono:vf@latest/latin-wght-normal.woff2" rel="stylesheet">
+</head>
+<body style="display: grid; height: 100vh; overflow: hidden; position: relative; place-content: center; background-color: #010c15; font-family: 'Kode Mono Variable', monospace; margin: 0; padding: 0; box-sizing: border-box;">
+
+<main class="container" style="width: 100%; min-height: 100vh; gap: 3rem; display: flex; align-items: center; justify-content: center;">
+    <div class="card animated" style="--size: 300px; --radius: 0.75rem; margin: 0 auto; padding: 2rem; width: var(--size); background: #1c1f2b; text-align: center; position: relative; border-radius: var(--radius);">
+        <h1 style="margin: 0; color: #26d0ce;">Nice Border</h1>
+        <p style="color: #ffffff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices tortor sem, et faucibus elit feugiat a. In dapibus euismod eros, eget facilisis neque accumsan eget.</p>
+        <div style="content: ''; z-index: -1; width: 100%; height: 100%; position: absolute; translate: -50% -50%; inset-block-start: 50%; inset-inline-start: 50%; border: 8px solid transparent; border-radius: var(--radius);"></div>
+        <div style="content: ''; z-index: -1; width: 100%; height: 100%; position: absolute; translate: -50% -50%; inset-block-start: 50%; inset-inline-start: 50%; border: 8px solid rgba(38, 208, 206, 0.6); border-radius: var(--radius);"></div>
+    </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!-- 2030s Card Section with Tailwind CSS -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#00e0e0',
+                        'secondary': '#ff6bcb',
+                    },
+                },
+            },
+        };
+    </script>
+    <title>2030 Card Section</title>
+</head>
+
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+
+    <div class="max-w-md w-full p-8 border border-primary rounded-xl shadow-xl backdrop-blur-md bg-gray-800/50 text-white transition-all duration-500 transform hover:scale-105 hover:bg-gray-700/60">
+        <img src="https://t3.ftcdn.net/jpg/04/78/81/32/360_F_478813213_eCDJfwddSyZEfoo1nZo6QZIKUKFGD3jU.jpg" alt="Image" class="rounded-xl mb-4">
+        <h2 class="text-3xl font-bold text-primary mb-2">Futuristic Card Title</h2>
+        <p class="text-lg text-secondary mb-4">This card incorporates glassmorphism, interactive buttons, and social icons for a modern user experience.</p>
+        <div class="flex space-x-4">
+            <button class="bg-primary text-gray-900 py-2 px-4 rounded-lg hover:bg-secondary hover:text-white transition-all duration-500">Learn More</button>
+            <button class="bg-gray-600 py-2 px-4 rounded-lg">Share</button>
+        </div>
+        <div class="mt-4">
+            <a href="#" class="text-primary hover:text-secondary mr-2">🔗</a>
+            <a href="#" class="text-primary hover:text-secondary">🌐</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

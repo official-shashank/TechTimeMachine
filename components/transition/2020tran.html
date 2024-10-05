@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline CSS Example</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body style="display: grid; place-content: center; min-height: 100vh; color: #fff; background-color: #121212; font-family: 'Noto Sans', sans-serif;">
+    <h1 aria-label="Lorem ipsum" style="position: relative; font-size: clamp(36px, 5.25vw, 144px); line-height: 1.15; color: transparent; background: transparent; transition: color 0.25s; max-width: 100%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; user-select: none; cursor: pointer;">
+        TechiesOfDecades
+        <span style="content: attr(aria-label); position: absolute; top: 0; left: 0; background: linear-gradient(45deg, blue, violet); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; clip-path: polygon(100% 0, -20% 0, 100% 80%); transition: color 0.25s, top 0.25s, left 0.25s, opacity 0.25s; display: inline-block;"></span>
+        <span style="content: attr(aria-label); position: absolute; top: 0; left: 0; background: linear-gradient(45deg, blue, violet); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; clip-path: polygon(0 100%, -20% 0, 100% 95%); transition: color 0.25s, top 0.25s, left 0.25s, opacity 0.25s; display: inline-block;"></span>
+    </h1>
+    <script>
+        const h1 = document.querySelector('h1');
+        h1.addEventListener('mouseover', () => {
+            h1.style.color = 'unset';
+            h1.querySelector('span:nth-child(2)').style.top = '-65%';
+            h1.querySelector('span:nth-child(2)').style.left = '48px';
+            h1.querySelector('span:nth-child(2)').style.opacity = '0';
+            h1.querySelector('span:nth-child(3)').style.top = '65%';
+            h1.querySelector('span:nth-child(3)').style.left = '-32px';
+            h1.querySelector('span:nth-child(3)').style.opacity = '0';
+        });
+        h1.addEventListener('mouseout', () => {
+            h1.style.color = 'transparent';
+            h1.querySelector('span:nth-child(2)').style.top = '0';
+            h1.querySelector('span:nth-child(2)').style.left = '0';
+            h1.querySelector('span:nth-child(2)').style.opacity = '1';
+            h1.querySelector('span:nth-child(3)').style.top = '0';
+            h1.querySelector('span:nth-child(3)').style.left = '0';
+            h1.querySelector('span:nth-child(3)').style.opacity = '1';
+        });
+    </script>
+</body>
+</html>
