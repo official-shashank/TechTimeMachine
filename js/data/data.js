@@ -1588,69 +1588,43 @@ var compoenents = {
   Inputs: {
     title: 'Input',
     "1990": {
-      code: `<section class="py-20 bg-gray-300">
-    <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl font-bold mb-4">1990s: Simple HTML Forms</h1>
-        <p class="text-lg mb-6">Forms were plain and unstyled, with default browser input styles.</p>
-        <div class="bg-white p-8 rounded shadow-lg">
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" class="border p-1 mb-2 block w-full" style="background-color: #ffffff; color: #000; border: 1px solid #000;"><br>
+      code: `
+      <div">
+        <label for="">Enter your name</label>
+        <input name="name" type="text">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" class="border p-1 mb-2 block w-full" style="background-color: #ffffff; color: #000; border: 1px solid #000;"><br>
-
-                <button type="submit" class="border px-4 py-2 bg-gray-400" style="background-color: #cccccc; border: 1px solid #000;">Submit</button>
-            </form>
-        </div>
-    </div>
-</section>`,
+      </div>`,
       explanation: {
         details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
       },
     },
     "2000": {
-      code: ` <div style="font-family: Arial, sans-serif; background-color: lightblue; color: black;">
-    <h1 style="text-align: center;">2000s: CSS and Flash Era</h1>
-
-    <div style="text-align: center;">
-        <img src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/3a75e3d1-c38b-4e1c-8323-28ff8221b64c/edwinmurat.jpg" alt="Flash Animation Example" style="width: 300px;">
-    </div>
-
-    <div style="width: 100%; background-color: darkgray; padding: 10px; margin-top: 20px; text-align: center;">
-        <a href="#" style="color: white; text-decoration: none; padding: 10px; display: inline-block;">Home</a>
-        <a href="#" style="color: white; text-decoration: none; padding: 10px; display: inline-block;">About</a>
-        <a href="#" style="color: white; text-decoration: none; padding: 10px; display: inline-block;">Contact</a>
-    </div>
-
-    <form style="margin: 20px;">
-        <label for="email">Enter your email:</label>
-        <input type="email" id="email" name="email" style="padding: 5px; border: 1px solid gray;">
-        <input type="submit" value="Submit" style="padding: 5px; background-color: green; color: white;">
-    </form>
-</div>`,
+      code:
+      `
+      <div>
+        <label for="inputname" class="block text-gray-800 font-semibold text-sm">Input Name</label>
+        <div class="mt-2">
+            <input type="text" name="inputname"
+                class="block w-56 rounded-md py-1.5 px-2 ring-1 ring-inset ring-gray-400 focus:text-gray-800" />
+        </div>
+        <label class="pt-1 block text-gray-500 text-sm">Some Description</label>
+      </div>
+      
+      `,
       explanation: {
         details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
       },
     },
     "2010": {
-      code: `<div style="font-family: Arial, sans-serif; background-color: white; color: black;">
-    <h1 style="text-align: center;">2010s: Responsive and Flat UI</h1>
-
-    <div style="background-color: lightgray; padding: 20px; text-align: center;">
-        <h2 style="font-family: sans-serif;">Flat UI Form</h2>
-        <form style="margin: 20px;">
-            <input type="text" placeholder="Your Name" style="padding: 10px; width: 100%; border: none; margin-bottom: 10px;">
-            <input type="email" placeholder="Your Email" style="padding: 10px; width: 100%; border: none; margin-bottom: 10px;">
-            <input type="submit" value="Submit" style="padding: 10px; width: 100%; background-color: blue; color: white; border: none;">
-        </form>
-    </div>
-
-    <div style="margin-top: 20px; text-align: center;">
-        <p>Resize the browser to see responsive design in action!</p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5XzjFvWTPanU0ij-LKfYmkuNnipyQ9svLzA&s" alt="Responsive Layout" style="width: 50%; max-width: 600px;">
-    </div>
-</div>`,
+      code: 
+      `
+        <input
+          class="bg-[#222630] px-4 py-3 outline-none w-[280px] text-white rounded-lg border-2 transition-colors duration-100 border-solid focus:border-[#596A95] border-[#2B3040]"
+          name="text"
+          placeholder="Enter email or username"
+          type="text"
+        />
+      `,
       explanation: {
         details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
       },

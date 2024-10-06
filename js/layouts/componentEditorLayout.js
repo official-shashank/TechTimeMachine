@@ -19,7 +19,7 @@ var editorLayout = `
                 <!-- Code Editor -->
                 <div class="bg-gray-800 p-4 rounded-lg">
                   <h2 class="text-lg font-semibold mb-4">Code Editor</h2>
-                  <textarea id="codeEditor" class="w-full h-64 bg-gray-900 text-white p-4 rounded-lg resize-none" placeholder="Write your code here..."></textarea>
+                  <pre><textarea id="codeEditor" class="w-full h-64 bg-gray-900 text-white p-4 rounded-lg resize-none" placeholder="Write your code here..."></textarea></pre>
               </div>
                 
                 <!-- Output Area -->
