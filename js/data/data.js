@@ -118,7 +118,7 @@ var compoenents = {
     </p>
 </div>`,
       explanation: {
-        details: 'A page using @font-face to load custom fonts for headings and body text, reflecting the rise of typographic diversity. ',
+        details: ' The 2000s saw a shift toward minimalism, with clean, sans-serif fonts like Arial and Helvetica taking center stage in digital design. As the internet became widely accessible, typography needed to prioritize legibility and consistency across devices. Sans-serif fonts and whitespace became essential for web layouts, aligning with the minimalist trend. CSS allowed for more typographic styling, but design focused on simplicity and usability, establishing a clean and structured approach in digital environments.',
       },
     },
     "2010": {
@@ -131,7 +131,7 @@ var compoenents = {
     <p class="font-sans text-5xl">Flat Design & Minimalism</p>
   </div> `,
       explanation: {
-        details: 'A page using @font-face to load custom fonts for headings and body text, reflecting the rise of typographic diversity. ',
+        details: ' Responsive design and mobile optimization became critical in the 2010s, as typography adapted to a wide range of screen sizes. Google Fonts and other online libraries expanded the typographic palette, making unique fonts more accessible and fostering creativity in digital branding. The decade saw a resurgence of serif fonts for a touch of tradition, and brands often mixed serif and sans-serif fonts to create distinctive identities. Accessibility became a priority, influencing designers to consider color contrast and readability across various devices and user needs. ',
       },
     },
     "2020": {
@@ -144,7 +144,7 @@ var compoenents = {
     <p class="font-sans text-5xl">Neumorphism & 3D Effects</p>
   </div> `,
       explanation: {
-        details: 'Variable fonts, allowing dynamic changes to weight, width, and style without loading multiple font files. Fluid typography, where font sizes scale based on viewport width. ',
+        details: ' Responsive design and mobile optimization became critical in the 2010s, as typography adapted to a wide range of screen sizes. Google Fonts and other online libraries expanded the typographic palette, making unique fonts more accessible and fostering creativity in digital branding. The decade saw a resurgence of serif fonts for a touch of tradition, and brands often mixed serif and sans-serif fonts to create distinctive identities. Accessibility became a priority, influencing designers to consider color contrast and readability across various devices and user needs. ',
       },
     },
     "2030": {
@@ -157,7 +157,7 @@ var compoenents = {
     <p class="font-sans text-5xl">AI-Driven & Responsive Designs</p>
   </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'Looking to the future, typography in the 2030s is expected to become interactive and immersive, especially with the growth of augmented and virtual reality. AI and context-aware fonts may allow typography to adapt in real-time based on factors like user preferences and environmental conditions. 3D and animated fonts could offer engaging experiences in AR/VR environments, enhancing how text integrates into spatial designs. The focus on intelligent typography promises a highly responsive and immersive UX, blending seamlessly with its surroundings to engage users more fully.',
       },
     },
   },
@@ -171,7 +171,7 @@ var compoenents = {
       </div>
     </section> `,
       explanation: {
-        details: 'A static page with simple text and images that remain fixed as you scroll, representing early web pages without scroll effects. ',
+        details: 'In the 1990s, web pages were primarily designed for desktop viewing, and scrolling was often limited due to the prevailing design philosophy of fitting as much information as possible above the fold (the visible area of a webpage without scrolling). Users frequently encountered vertical scroll bars, and pages tended to be long, resulting in a clunky experience. Scrolling was generally seen as a necessity rather than a feature, often requiring users to navigate through vast amounts of text and images without clear cues or guidance. The focus was more on content rather than usability, which sometimes led to overwhelming user experiences.',
       },
     },
     "2000": {
@@ -213,7 +213,7 @@ var compoenents = {
         </button>
     </div>`,
       explanation: {
-        details: 'A page with a "scroll to top" button that appears after the user scrolls a certain distance, using basic JavaScript. ',
+        details: 'The 2000s marked a transition as designers began to recognize the importance of scrolling in enhancing user experience. With the advent of CSS and improved browser capabilities, scrolling became smoother, and users started to encounter scrollable elements like carousels and tabbed interfaces. The concept of infinite scrolling emerged, allowing for continuous content loading, particularly on social media platforms and news websites. This decade emphasized usability, leading to the incorporation of visual cues, such as arrows or indicators, to encourage users to scroll down. The design trend of “long scrolling” began, allowing for richer storytelling and a more engaging experience, albeit still with some limitations in mobile responsiveness.',
       },
     },
     "2010": {
@@ -246,7 +246,7 @@ var compoenents = {
         <p style="margin: 0;">&copy; 2024 Parallax Scrolling Example</p>
     </div>`,
       explanation: {
-        details: 'A page with a "scroll to top" button that appears after the user scrolls a certain distance, using basic JavaScript. ',
+        details: 'The 2010s brought significant changes in scrolling behavior due to the mobile revolution and the rise of responsive design. Touch interfaces introduced the concept of swiping, leading to more fluid and intuitive scrolling experiences. Designers started utilizing parallax scrolling effects, where background images moved at a different speed than foreground content, creating depth and engaging narratives. This era saw an increased focus on user engagement, with content often designed to entice users to scroll further, revealing additional information or calls to action. The "scroll jacking" trend emerged, where scrolling was controlled to enhance the storytelling experience, although this approach faced criticism for disrupting natural scrolling behavior.',
       },
     },
     "2020": {
@@ -278,7 +278,7 @@ var compoenents = {
 
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'In the 2020s, scrolling efforts became increasingly user-centric, with a focus on enhancing usability and reducing friction. Designers aimed to create seamless scrolling experiences with faster load times, smoother transitions, and optimized performance across devices. Vertical scrolling remained prevalent, but horizontal scrolling gained traction, particularly for galleries and product displays, offering alternative ways to engage with content. Sticky headers and footers became common, providing consistent navigation elements while users scroll. The emphasis shifted towards accessibility, ensuring that scrolling experiences were usable for all users, including those with disabilities. Designers also began integrating feedback mechanisms, such as scroll progress indicators, to inform users of their position on the page',
       },
     },
     "2030": {
@@ -330,7 +330,7 @@ var compoenents = {
 
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'Looking ahead to the 2030s, scrolling is anticipated to evolve into a more immersive, context-aware experience, especially with advancements in augmented reality (AR) and virtual reality (VR). Users may interact with content through gestures or voice commands, reducing reliance on traditional scrolling. Intelligent interfaces are expected to adapt to user preferences, presenting content dynamically based on scrolling behavior or context. Scrolling may integrate with other forms of navigation, such as eye-tracking and spatial awareness, creating an intuitive experience that feels natural in both digital and physical environments. The concept of scrolling will likely transcend traditional boundaries, merging with interactive storytelling and immersive experiences to provide users with seamless, engaging interactions across a variety of platforms and devices.',
       },
     },
   },
@@ -371,7 +371,7 @@ var compoenents = {
         </div>
     </div> `,
       explanation: {
-        details: 'A basic contact form with only text fields, no padding, and basic buttons like <input type="submit">.  ',
+        details: ' Forms in the 1990s were basic and primarily designed for desktop interactions. They followed a straightforward structure, with fields for text inputs, checkboxes, and radio buttons. Due to slow internet connections, forms were often short to reduce load times, with a simple layout that reflected early HTML constraints. Validation was minimal, often handled after submission, which could result in frustrating user experiences if forms had to be reloaded to correct errors.',
       },
     },
     "2000": {
@@ -384,7 +384,7 @@ var compoenents = {
       <input type="email" id="email" class="border rounded-lg w-full py-2 px-3 text-gray-700" placeholder="Enter your email">
     </div>`,
       explanation: {
-        details: 'Create a form with inline validation messages using basic JavaScript, e.g., “Please enter a valid email.” ',
+        details: 'As web design matured in the 2000s, forms became more dynamic and usable. JavaScript introduced real-time validation, allowing users to see errors without needing to reload the page. With the rise of e-commerce, forms became essential for checkout processes, and designers started prioritizing usability by breaking long forms into multi-step layouts. This decade also saw the introduction of dropdown menus and other interactive elements, making forms more user-friendly.” ',
       },
     },
     "2010": {
@@ -397,7 +397,7 @@ var compoenents = {
       <input type="password" id="password" class="border rounded-lg w-full py-2 px-3 text-gray-700" placeholder="Enter your password">
     </div>`,
       explanation: {
-        details: 'Display a responsive form that changes its layout when the screen size shifts, with floating labels and real-time error validation. ',
+        details: ' The mobile revolution of the 2010s brought responsive design principles, transforming forms for smaller screens. Forms were simplified, often with larger input fields and buttons to make them easier to interact with on touchscreens. Autofill, inline validation, and progress indicators became common to streamline the user experience. Social media logins (e.g., “Sign in with Google”) gained popularity, reducing the need for lengthy sign-up forms. Forms were designed to be concise, with adaptive layouts that could adjust to various devices, improving usability and reducing friction.',
       },
     },
     "2020": {
@@ -413,7 +413,7 @@ var compoenents = {
       </select>
     </div>`,
       explanation: {
-        details: 'A login form with smooth input transitions, an animated password strength meter, and a simple micro-interaction on the submit button (slight color shift). ',
+        details: 'In the 2020s, forms evolved to become even more user-friendly and efficient, with a focus on reducing input effort. Auto-suggestions, voice input options, and AI-driven predictive text made filling out forms faster and easier. Microinteractions, such as visual cues and animations, provided real-time feedback, while one-click checkouts simplified e-commerce processes. Dark mode became standard, with forms adapting seamlessly to user preferences. Privacy concerns led to clearer data consent and security practices, making forms more transparent and trustworthy. ',
       },
     },
     "2030": {
@@ -430,11 +430,11 @@ var compoenents = {
       Submit
     </button>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: ' Forms in the 2030s are expected to move towards a more seamless, frictionless experience, likely relying on biometric verification and contextual input. As augmented and virtual reality (AR/VR) become more prevalent, form interactions may occur in immersive environments, with eye-tracking and gesture-based selections replacing traditional typing. Voice and thought-based inputs might offer hands-free form completion, while AI will likely predict and autofill more complex forms based on user behavior and preferences. The goal will be to create fully adaptive forms that adjust to the context, becoming almost invisible within the user experience.',
       },
     },
   },
-  
+
   "Hero Banner": {
     title: 'Hero Banner"',
     "1990": {
@@ -446,7 +446,7 @@ var compoenents = {
 
 </div>`,
       explanation: {
-        details: 'A static hero section featuring a large, pixelated image background with text overlaid, simulating the early use of banner images. ',
+        details: 'In the 1990s, the concept of a "hero banner" as we know it today was virtually nonexistent. Websites were primarily text-heavy, with minimal use of images. Any prominent graphics used were often simple headers or static images placed at the top of a webpage. These early "banners" were usually low-resolution and designed primarily for branding rather than user engagement. The focus was more on getting information across than on creating an aesthetically pleasing experience. The use of animated GIFs was popular, but these animations could be distracting and often led to slower load times. Overall, hero sections were rudimentary and lacked the interactive and dynamic features we see in modern designs.',
       },
     },
     "2000": {
@@ -472,7 +472,7 @@ var compoenents = {
 
 </div>`,
       explanation: {
-        details: 'A simulated Flash-style hero banner that features animated text and images transitioning in and out. ',
+        details: 'The 2000s marked a shift toward more visually engaging web design. As bandwidth improved and browser capabilities expanded, designers began to experiment with larger, more visually striking banners at the top of web pages. Hero banners started to emerge as a prominent design element, showcasing products, promotions, or key messages. These banners typically featured images, branding, and text but were still somewhat static. Designers began incorporating calls to action (CTAs) within these sections, although the layout often remained quite simple, with a focus on clarity. The introduction of CSS allowed for more sophisticated styling, but the hero banners often lacked responsive design, making them less effective on mobile devices.',
       },
     },
     "2010": {
@@ -487,7 +487,7 @@ var compoenents = {
 
 </div>`,
       explanation: {
-        details: 'A hero section with a parallax scrolling effect, where the background image moves slower than the overlaid text as the user scrolls down. ',
+        details: 'The 2010s saw the hero banner become a standard feature of modern web design. Designers increasingly recognized the importance of creating a strong first impression, leading to the use of large, high-quality images or videos that filled the screen. The flat design trend allowed for cleaner visuals, and hero banners often incorporated bold typography, vivid colors, and minimalist design elements to capture user attention. This decade also saw the rise of responsive design principles, enabling hero banners to adapt seamlessly to various screen sizes. The inclusion of dynamic elements, such as sliders and parallax scrolling effects, became common, allowing for more interactive and engaging user experiences. CTAs were strategically placed to guide users toward desired actions, making hero banners effective marketing tools.',
       },
     },
     "2020": {
@@ -507,7 +507,7 @@ var compoenents = {
 
 </div>`,
       explanation: {
-        details: 'A hero section with a looping video background, animated text, and an interactive call-to-action button that changes color or size on hover. ',
+        details: 'In the 2020s, hero banners evolved into more personalized and interactive experiences. Advances in technology, such as high-resolution displays and faster loading times, allowed for even more visually compelling designs. Hero sections often incorporate video backgrounds, animations, and interactive elements that respond to user interactions. Designers focused on user-centered design principles, ensuring that hero banners provided not just aesthetic appeal but also meaningful content. Personalization became key, with banners adapting to user behavior and preferences based on data analytics. Accessibility considerations also grew, leading to designs that catered to diverse audiences, including those with disabilities. The integration of AI tools allowed for real-time updates and adjustments to content within hero banners, enhancing engagement and relevance.',
       },
     },
     "2030": {
@@ -540,7 +540,7 @@ var compoenents = {
     </main>
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'Looking ahead to the 2030s, hero banners are expected to become highly adaptive and immersive elements of digital experiences. As augmented reality (AR) and virtual reality (VR) technologies advance, hero sections may transform into 3D environments where users can interact with content in a more engaging way. Instead of static images or videos, hero banners might utilize holographic displays or interactive elements that respond to user movements and gestures. Personalization will reach new heights, with AI algorithms tailoring content dynamically to individual users based on real-time data. The lines between hero banners and other UI elements may blur, creating a seamless experience where content adapts fluidly as users navigate through digital spaces. Ultimately, hero banners of the future will focus on creating captivating, relevant, and intuitive experiences that enhance user engagement and drive desired actions.',
       },
     },
   },
@@ -556,7 +556,7 @@ var compoenents = {
     
 </div>`,
       explanation: {
-        details: 'Simple "Loading..." text that blinks or remains static. ',
+        details: 'Loading  animations in the 1990s were minimal and functional, often limited to basic spinning icons or progress bars due to limited graphics capabilities and slow internet speeds. These animations were typically monochrome and straightforward, indicating progress without much emphasis on aesthetics. The purpose was solely to inform users that content was loading, often resulting in static indicators or simple GIFs that were more utilitarian than engaging.',
       },
     },
     "2000": {
@@ -573,7 +573,7 @@ var compoenents = {
 </div>
 `,
       explanation: {
-        details: 'A simple JavaScript progress bar that fills as the page loads or when performing a task (e.g., form submission). ',
+        details: ' As technology advanced, loading animations became more visually appealing, with a focus on keeping users engaged during loading times. Animated progress bars, spinning wheels, and “loading” text with dot animations became common. Flash technology allowed designers to create more detailed animations, and websites began using interactive pre-loaders to make loading screens more interesting. However, these animations were still relatively simple and used primarily to indicate activity rather than provide a memorable user experience.',
       },
     },
     "2010": {
@@ -597,7 +597,7 @@ var compoenents = {
     </style>
 </div>`,
       explanation: {
-        details: 'A horizontal progress bar that smoothly animates as content loads, using CSS @keyframes. ',
+        details: 'The mobile boom and rise of responsive design in the 2010s led to loading animations that were faster, smoother, and more creative. Designers focused on microinteractions that gave users a sense of immediate feedback. Animated icons, brand-based loaders, and engaging progress indicators became the norm. Designers leveraged skeleton screens (loading placeholders that mimic the layout) to improve perceived loading speed, while CSS and JavaScript animations added visual interest and minimized frustration by making wait times feel shorter.',
       },
     },
     "2020": {
@@ -624,7 +624,7 @@ var compoenents = {
     </style>
 </div>`,
       explanation: {
-        details: 'An animated circular loader that gradually fills up, with subtle shadow effects and a percentage display in the center. ',
+        details: 'In the 2020s, loading animations became more sophisticated and brand-oriented, often customized to align with a company’s identity. Smooth animations, interactive loaders, and playful visuals (such as bouncing icons or logo animations) enhanced the waiting experience, while dark mode compatibility ensured consistency across user preferences. AI-driven elements also began to predict load times more accurately, enhancing the user experience by managing expectations. Skeleton screens and content placeholders became standard, showing real-time load progress rather than abstract animations.',
       },
     },
     "2030": {
@@ -635,12 +635,12 @@ var compoenents = {
   </div>
 `,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'By the 2030s, loading animations are expected to become even more immersive and responsive, particularly in augmented and virtual reality (AR/VR) environments. Haptic feedback, 3D animations, and context-aware indicators may evolve to keep users engaged in digital spaces. Loading animations will likely incorporate real-time, personalized elements, adapting dynamically based on user behavior or preferences. Advances in AI and connectivity may make load times nearly imperceptible, with animations shifting from a functional role to a form of user engagement, reinforcing the brand’s presence even during short delays.',
       },
     },
   },
   "Navigation Menu": {
-    title: 'scroll',
+    title: 'Navigation Menu',
     "1990": {
       code: `<div>
     <table style="font-family: Arial, sans-serif; background-color: #ffffff; width: 100%; border-collapse: collapse;">
@@ -661,7 +661,7 @@ var compoenents = {
     
 </div>`,
       explanation: {
-        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+        details: 'navigation menus on websites were basic and primarily text-based. Most websites utilized simple hyperlinks arranged in vertical or horizontal lists, often appearing at the top or on the left side of the page. The limited capabilities of HTML and CSS meant that menus lacked styling and interactivity. As a result, navigation was often cluttered and straightforward, relying heavily on underlined text links that users could click. The design was heavily influenced by print media, focusing on information over aesthetics. The concept of usability was not yet fully recognized, leading to designs that could confuse users, especially those unfamiliar with web navigation.',
       },
     },
     "2000": {
@@ -703,7 +703,7 @@ var compoenents = {
         </button>
     </div>`,
       explanation: {
-        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+        details: 'The 2000s saw significant advancements in web design, leading to more sophisticated navigation menus. The introduction of CSS allowed designers to style menus with colors, backgrounds, and fonts, enhancing visual appeal and usability. Drop-down menus gained popularity, providing a way to display subcategories without cluttering the interface. Flash was also used to create animated menus that added a layer of interactivity. However, reliance on Flash created accessibility issues, particularly for users on mobile devices or those using screen readers. This era marked the beginning of user-centered design, with designers starting to consider how users interacted with navigation and how to improve their experience.',
       },
     },
     "2010": {
@@ -721,7 +721,7 @@ var compoenents = {
         </div>
     </div>`,
       explanation: {
-        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+        details: 'The 2010s brought a major shift toward responsive and mobile-first design principles, significantly impacting navigation menus. With the rise of smartphones and tablets, designers began to prioritize mobile usability, leading to the popularization of the hamburger menu. This design pattern allowed for a cleaner interface by hiding navigation options until users tapped on the icon. The introduction of CSS3 and JavaScript frameworks made it easier to create responsive, fluid menus that adapted seamlessly to different screen sizes. Furthermore, usability testing became more common, leading to the adoption of clearer labels, logical hierarchies, and enhanced visual feedback (such as hover effects) to improve user experience. The focus was on creating intuitive navigation systems that guided users without overwhelming them. ',
       },
     },
     "2020": {
@@ -787,7 +787,7 @@ var compoenents = {
     </div>
   </div>`,
       explanation: {
-        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+        details: 'In the 2020s, navigation menus have continued to evolve, with an increased emphasis on personalization and contextual awareness. Designers are leveraging AI and machine learning to create dynamic menus that adapt based on user behavior, preferences, and location. This allows for a more tailored experience, as menus can prioritize frequently accessed items or suggest content relevant to the user. Micro-interactions have become common, providing subtle feedback as users interact with the navigation elements. Additionally, voice-activated navigation and gesture controls are gaining traction, making navigation more accessible and intuitive, particularly in mobile and smart device contexts. The overall goal is to create seamless and engaging experiences that facilitate easy exploration of content',
       },
     },
     "2030": {
@@ -837,11 +837,11 @@ var compoenents = {
     </div>
   </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'Looking toward the 2030s, navigation menus are expected to become increasingly immersive and interactive, especially with advancements in augmented reality (AR) and virtual reality (VR) technologies. Navigation may shift from traditional menus to spatial interfaces where users can explore content in three-dimensional spaces. Gestural navigation, voice commands, and even neural interfaces could allow users to interact with content without the need for physical controls. Contextual awareness will likely reach new heights, with navigation systems adapting in real-time based on environmental factors, user context, and emotional responses. The focus will be on creating intuitive and fluid experiences that allow users to navigate seamlessly across digital and physical environments, enhancing overall usability and engagement in an increasingly interconnected world.',
       },
     },
   },
-  
+
 
   "Icons and Imagery": {
     title: 'scroll',
@@ -854,7 +854,7 @@ var compoenents = {
     <p style="font-size: 20px; color: #666;">Limited color palettes and low fidelity were common.</p>
 </div>`,
       explanation: {
-        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+        details: 'In the 1990s, icons and imagery were simplistic, often due to limited graphic design tools and the low bandwidth of early internet connections. Icons were primarily represented in pixelated bitmap graphics, relying heavily on basic shapes and colors to convey meaning. Websites often featured large, low-resolution images as background elements or decorative flourishes, but these could significantly slow down loading times. The design aesthetic focused on functionality over aesthetics, leading to a common use of recognizable symbols (like the floppy disk for saving) and basic clipart that lacked sophistication. This era emphasized clarity, but the limited graphical capabilities meant that icons often felt generic and utilitarian.',
       },
     },
     "2000": {
@@ -866,7 +866,7 @@ var compoenents = {
     <p style="font-size: 20px; color: #444;">Flash graphics were prominent but began to decline with the rise of mobile devices.</p>
 </div>`,
       explanation: {
-        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+        details: 'The 2000s saw advancements in graphic design software and web technologies, enabling designers to create more refined icons and imagery. The rise of CSS and improved browser capabilities allowed for better image rendering and enhanced visual styles. Icons became more visually appealing, often incorporating gradients, shadows, and reflections to add depth. The trend of using vector graphics emerged, allowing for scalable icons without loss of quality. Imagery began to shift from purely decorative to functional, with a stronger focus on enhancing user experience. Designers started to prioritize usability by creating intuitive icon sets that clearly communicated their functions, leading to a more cohesive and polished visual language across websites and applications.',
       },
     },
     "2010": {
@@ -878,7 +878,7 @@ var compoenents = {
     <p style="font-size: 20px; color: #333;">High-quality icons became standard for responsive web design.</p>
 </div>`,
       explanation: {
-        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+        details: 'In the 2010s, the use of flat design became a dominant trend, moving away from skeuomorphic styles that mimicked real-world objects. This shift resulted in simpler, more minimalist icons with bold colors and clean lines. Imagery was often used strategically to complement content and enhance storytelling, leading to the popularization of high-quality photography and custom illustrations. Icons were standardized across platforms, creating familiarity and improving usability. The rise of mobile devices further influenced icon and imagery design, with a focus on touch targets and clarity at smaller sizes. Responsive design became essential, requiring icons and imagery to adapt seamlessly across various devices and screen resolutions.',
       },
     },
     "2020": {
@@ -891,7 +891,7 @@ var compoenents = {
     <p style="font-size: 20px; color: #444;">Lottie files provide smooth transitions with minimal performance impact.</p>
 </div>`,
       explanation: {
-        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+        details: 'In the 2020s, icons and imagery are increasingly integrated into the overall user experience, with a strong emphasis on personalization and branding. The use of 3D graphics and immersive visuals became more prevalent, providing depth and realism in digital interfaces. Icons evolved into dynamic elements, often incorporating animations and micro-interactions that responded to user behavior. Imagery is frequently customized to reflect user preferences, cultural contexts, and brand identities, enhancing emotional connections. Accessibility also became a crucial consideration, leading to the development of inclusive iconography and imagery that caters to diverse user needs, including those with visual impairments. Designers prioritize creating intuitive visual hierarchies that guide users effortlessly through their digital experiences.',
       },
     },
     "2030": {
@@ -902,7 +902,7 @@ var compoenents = {
     <p style="font-size: 20px; color: #333;">The evolution will focus on personalization and contextual relevance in design.</p>
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'Looking forward to the 2030s, icons and imagery are expected to evolve into even more immersive and adaptive forms, particularly with advancements in augmented reality (AR) and virtual reality (VR). Icons may become spatially aware, allowing users to interact with them in 3D environments, potentially using gestures or voice commands. The line between icons and imagery might blur as dynamic, context-sensitive visuals adapt to user actions and preferences in real-time. AI-driven design systems could automate the creation of personalized icon sets and imagery that resonate with individual users based on their behaviors and interactions. The future of icons and imagery will likely focus on creating seamless, interactive experiences that enhance user engagement while maintaining clarity and usability across various platforms and devices.',
       },
     },
   },
@@ -998,7 +998,7 @@ var compoenents = {
   },
 
 
-  Popups:{
+  Popups: {
     title: 'Popups',
     "1990": {
       code: `<div style="font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 20px;">
@@ -1012,7 +1012,7 @@ var compoenents = {
     </div>
 </div>`,
       explanation: {
-        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+        details: 'Popups emerged in the 1990s as a method to display additional information without leaving the current webpage. However, they were often intrusive, used primarily for advertisements and unrelated content. Early popups were basic, relying on simple HTML and JavaScript, and frequently disrupted the user experience, leading to frustration. Designers and developers had limited control over appearance, and users quickly grew accustomed to closing these interruptions. ',
       },
     },
     "2000": {
@@ -1027,7 +1027,7 @@ var compoenents = {
     </div>
 </div>`,
       explanation: {
-        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+        details: 'In the 2000s, popups continued to be popular for ads, notifications, and subscription prompts. Browser advancements allowed for more styling control, but excessive popups led to a rise in ad-blocking software. Modals, a less intrusive form of popup that appeared within the same page, became popular as an alternative, allowing for better design customization. Modals were commonly used for login prompts, sign-ups, and confirmations, providing a more focused and controlled experience without navigating away from the main content.',
       },
     },
     "2010": {
@@ -1054,7 +1054,7 @@ var compoenents = {
     </div>
 </div>`,
       explanation: {
-        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+        details: ' The 2010s brought significant improvements to popup UX as designers emphasized user-centered design and non-intrusive interactions. Popups became contextual and purpose-driven, commonly used for actions like cookie consent, email subscriptions, or offers based on user activity. Exit-intent popups emerged, triggered only when a user showed intent to leave the site, minimizing interruptions. The use of animations and smooth transitions made popups feel more integrated into the user experience, and design shifted toward responsive, mobile-friendly layouts that prioritized clarity and ease of dismissal.',
       },
     },
     "2020": {
@@ -1079,7 +1079,7 @@ var compoenents = {
     </div>
 </div>`,
       explanation: {
-        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+        details: 'In the 2020s, popups became even more subtle and user-focused, with AI and machine learning enabling smart popups that appear based on behavioral triggers rather than arbitrary timing. Dark mode compatibility became standard, ensuring consistency across user settings. Microinteractions, like subtle animations, made popups feel natural, while designs were optimized for accessibility, allowing for easy dismissal and minimizing interruption. Popups adapted dynamically to different screen sizes and user contexts, becoming valuable, personalized tools for engagement rather than distractions.',
       },
     },
     "2030": {
@@ -1133,7 +1133,7 @@ var compoenents = {
     </style>
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'Popups in the 2030s are expected to evolve into immersive, context-aware experiences, especially in augmented reality (AR) and virtual reality (VR) environments. Rather than traditional popups, users might experience information overlays that respond to voice commands, gestures, or eye movements, adapting to the spatial environment and user actions. AI-driven personalization will allow popups to appear only when genuinely beneficial, delivering timely, useful information in a seamless manner. These intelligent overlays will be responsive and almost invisible, merging naturally with digital and physical experiences for a highly intuitive and non-intrusive user interface.',
       },
     },
   },
@@ -1153,7 +1153,7 @@ var compoenents = {
     </footer>
 </div>`,
       explanation: {
-        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+        details: ' Footers in the 1990s were purely functional, often minimal in content and design. Early footers typically included only basic copyright information and contact details, with little attention to styling. Web design was text-heavy, and footers served as a simple, utilitarian end to the page. Links were sometimes placed in footers, but design options were limited by basic HTML and CSS capabilities, making footers plain and non-interactive. ',
       },
     },
     "2000": {
@@ -1186,7 +1186,7 @@ var compoenents = {
     </footer>
 </div>`,
       explanation: {
-        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+        details: 'As web design grew more sophisticated in the 2000s, footers began to incorporate additional elements, such as navigation links, privacy policies, and social media icons. E-commerce websites often used footers to provide customer service information, return policies, and trust badges. CSS allowed for greater customization, enabling structured layouts with columns and icons. Footer design became an important component of a website’s structure, providing essential links and secondary navigation in a more organized, visually appealing manner.',
       },
     },
     "2010": {
@@ -1216,7 +1216,7 @@ var compoenents = {
     </footer>
 </div>`,
       explanation: {
-        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+        details: 'In the 2010s, footers evolved further to include a blend of utility and branding elements. Companies used footers to reinforce brand identity, adding brand logos, social media links, and subscription forms for newsletters. With the mobile revolution, responsive design made it essential for footers to adapt to various screen sizes, leading to collapsible and mobile-friendly layouts. Footer content expanded to include more navigational elements, CTA buttons, and concise brand information, emphasizing usability and accessibility across devices.',
       },
     },
     "2020": {
@@ -1291,7 +1291,7 @@ var compoenents = {
 
 </div>`,
       explanation: {
-        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+        details: ' Footers in the 2020s became a focal point for user engagement, often designed with a balance of interactive elements and minimalist aesthetics. Brands began using footer sections for targeted content, such as location-based options, personalized links, and live chat options. Dark mode compatibility became common, and accessibility features were prioritized, with clear labels and keyboard navigation options. Footers often served as a condensed site map, with dropdown menus and organized sections to enhance navigation without overwhelming the user. Data security information, such as cookie preferences and consent forms, also became standard.',
       },
     },
     "2030": {
@@ -1336,7 +1336,7 @@ var compoenents = {
     </style>
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: "Looking toward the 2030s, footers are expected to become adaptive, intelligent components of the user experience, especially as AI and AR/VR environments expand. Footers might adapt in real-time based on user preferences, behavior, or even location, displaying only the most relevant information. In immersive digital spaces, footers may appear as overlays or contextual toolbars, providing interactive features like voice commands, gesture navigation, and personalized shortcuts. With increasing importance placed on seamless, responsive design, footers are likely to transform into dynamic, UI elements that integrate naturally into the user's journey, becoming less like a static end-of-page and more of an interactive, personalized touchpoint.",
       },
     },
   },
@@ -1595,12 +1595,12 @@ var compoenents = {
 
       </div>`,
       explanation: {
-        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+        details: 'Input in the 1990s was primarily based on physical devices, such as keyboards and mouse. Graphical user interfaces (GUIs) became popular, shifting user interaction away from command-line inputs toward point-and-click actions. Interfaces were often designed with fixed buttons and menus, with users relying on precise clicks to navigate software and web pages. The design focus was on usability, providing clear visual cues for actions, as designers aimed to make digital environments intuitive for new users.',
       },
     },
     "2000": {
       code:
-      `
+        `
       <div>
         <label for="inputname" class="block text-gray-800 font-semibold text-sm">Input Name</label>
         <div class="mt-2">
@@ -1612,12 +1612,12 @@ var compoenents = {
       
       `,
       explanation: {
-        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+        details: 'The 2000s saw a rise in touch-based input as early smartphones, like the first iPhone, introduced touchscreens as a new interaction medium. Mouse and keyboard input remained dominant on desktops, but mobile devices shifted to finger-based interactions. This shift drove designers to rethink interface layouts, adding larger buttons and more minimalistic designs to accommodate finger taps. Keyboard inputs were now virtual on mobile devices, leading to new approaches for UX/UI in web and app design, with an emphasis on simplicity and readability.',
       },
     },
     "2010": {
-      code: 
-      `
+      code:
+        `
         <input
           class="bg-[#222630] px-4 py-3 outline-none w-[280px] text-white rounded-lg border-2 transition-colors duration-100 border-solid focus:border-[#596A95] border-[#2B3040]"
           name="text"
@@ -1626,7 +1626,7 @@ var compoenents = {
         />
       `,
       explanation: {
-        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+        details: ' With the expansion of mobile and tablet devices, the 2010s popularized gesture-based interactions, such as swiping, pinching, and scrolling. Voice input began to emerge with the introduction of digital assistants like Siri and Alexa, enabling hands-free commands. Designers had to consider both touchscreen and voice input, ensuring interfaces were adaptable and intuitive for a range of interactions. Touchless gestures and voice commands influenced UX design by providing alternative ways to navigate, expanding accessibility and making hands-free interaction possible.',
       },
     },
     "2020": {
@@ -1649,7 +1649,7 @@ var compoenents = {
 </section>
 `,
       explanation: {
-        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+        details: 'Input in the 2020s is highly varied, with voice, touch, and gesture inputs becoming more integrated and natural. The rise of AI-powered digital assistants, smart speakers, and smart home devices made voice commands mainstream, while touchless gestures and facial recognition offered new forms of input. For designers, this required adaptive interfaces that could work seamlessly with multiple input types. As dark mode and screen customization became common, user interfaces needed to account for diverse preferences, device types, and environments, enhancing user autonomy and flexibility.',
       },
     },
     "2030": {
@@ -1671,11 +1671,11 @@ var compoenents = {
     </div>
 </section>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'The 2030s are expected to bring futuristic, immersive input methods, including brain-computer interfaces (BCIs) and augmented reality (AR) gestures. Users might interact with digital content through thought-based commands, eye tracking, and more advanced AR/VR gestures. The blending of digital and physical spaces will require interfaces to be context-aware, adapting to environmental cues, user gestures, and preferences. UX/UI design will focus on creating smooth, invisible interactions that seamlessly integrate with users’ physical environments, offering personalized, responsive experiences in a fully immersive, adaptive interface.',
       },
     },
   },
- "Background Patterns and Effects": {
+  "Background Patterns and Effects": {
     title: "Background patterns and Effects",
     "1990": {
       code: `<div>
@@ -1685,7 +1685,7 @@ var compoenents = {
 
 </div>`,
       explanation: {
-        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+        details: "In the 1990s, web design was characterized by its experimental nature, often leading to busy and cluttered backgrounds. Designers frequently used repeating background patterns, such as tiled images and gradients, to fill space. These patterns often included bright colors and playful designs, reflecting the era’s playful experimentation with design. However, the low bandwidth of internet connections meant that large images could slow down loading times, leading to the use of simpler, smaller patterns. The lack of CSS meant that many backgrounds were implemented using HTML attributes, which limited design flexibility. Overall, background patterns were often distracting and contributed to a chaotic visual experience.",
       },
     },
     "2000": {
@@ -1696,7 +1696,7 @@ var compoenents = {
     <div id="copyBox" style="display:none"></div>
   </div>`,
       explanation: {
-        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+        details: 'The 2000s brought improvements in both design tools and browser capabilities, leading to more sophisticated use of background patterns and effects. Designers began to favor cleaner aesthetics, moving away from overly busy backgrounds toward more subtle textures and gradients. The rise of CSS allowed for better control over backgrounds, enabling designers to create more visually appealing and user-friendly experiences. Backgrounds were often used to establish brand identity, with companies incorporating custom textures or gradients that complemented their overall design. While some websites continued to use tiled patterns, the focus shifted toward creating a more cohesive and polished look, with an emphasis on legibility and usability. ',
       },
     },
     "2010": {
@@ -1716,7 +1716,7 @@ var compoenents = {
     </div>
 </div>`,
       explanation: {
-        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+        details: "The 2010s marked a significant shift in the approach to backgrounds in web design. Flat design became the dominant trend, leading to the use of solid colors and minimalistic patterns that emphasized simplicity and clarity. The use of large, full-screen backgrounds gained popularity, allowing for immersive visual experiences that captured users' attention. Background images began to feature high-quality photography or subtle gradients, providing depth without overwhelming content. Designers also started to utilize responsive design principles, ensuring that backgrounds adapted seamlessly to various screen sizes and devices. Effects like parallax scrolling became common, creating an illusion of depth by allowing background elements to move at a different speed than foreground elements, enhancing the overall user experience."
       },
     },
     "2020": {
@@ -1728,7 +1728,7 @@ var compoenents = {
 </div>
 `,
       explanation: {
-        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+        details: 'In the 2020s, background patterns and effects have evolved into dynamic and interactive elements that enhance user engagement. The use of video backgrounds and animations became popular, providing a more immersive experience while still maintaining a focus on usability. Designers increasingly adopted micro-interactions, where background effects responded to user actions, such as scrolling or hovering. Gradients made a strong comeback, often paired with vibrant colors to create visually striking designs. Accessibility considerations became crucial, with designers ensuring that background patterns did not hinder text legibility or overall user experience. The rise of CSS Grid and Flexbox allowed for more complex layouts, enabling designers to create unique background patterns that complemented the content without detracting from it.',
       },
     },
     "2030": {
@@ -1739,12 +1739,12 @@ var compoenents = {
   </div>
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'Looking ahead to the 2030s, background patterns and effects are expected to become even more integrated into the overall user experience, particularly with advancements in reality (AR) and virtual reality (VR). Backgrounds may transform into interactive environments that to user interactions in real-time, creating a more immersive experience. Patterns might be adaptive, changing based on user preferences, behaviors, or even environmental factors such as location and time of day. AI-driven design tools could automate the generation of personalized backgrounds tailored to individual user needs. The focus will likely shift towards creating seamless, context-aware backgrounds that enhance storytelling and user engagement while ensuring accessibility and usability across various platforms and devices. Overall, the future of background patterns and effects will prioritize user experience, creating visually captivating environments that enhance digital interactions.',
       },
     },
   },
   Animations: {
-    title: 'homepages',
+    title: 'Animation',
     "1990": {
       code: `<div style="margin: 0; padding: 0; overflow: hidden; background-color: #000; font-family: 'Arial', sans-serif;">
     <div style="width: 300px; height: 100px; margin: 50px auto; padding: 20px; border: 3px solid #ffcc00; text-align: center; color: #fff; position: relative; overflow: hidden;">
@@ -1768,7 +1768,7 @@ var compoenents = {
 </div>
 `,
       explanation: {
-        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+        details: 'In the 1990s, animation on the web was in its infancy, primarily due to technological limitations and low bandwidth. Designers often relied on animated GIFs to create movement on websites, using them for everything from simple decorative elements to loading indicators. These animations were typically rudimentary, featuring basic loops and low-resolution graphics. The focus was often on novelty rather than functionality, and many websites used animations excessively, leading to cluttered and distracting user experiences. While some animations served a purpose (like visual feedback), most were simply eye-catching and contributed to a chaotic aesthetic.',
       },
     },
     "2000": {
@@ -1803,7 +1803,7 @@ var compoenents = {
     </style>
 </div>`,
       explanation: {
-        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+        details: 'The 2000s brought about advancements in web technologies, including Flash, which allowed for more complex animations and interactivity. Designers began to incorporate animated elements more strategically, using them to enhance user engagement rather than just for decorative purposes. Flash enabled smoother transitions, animations, and interactive interfaces, allowing for richer storytelling and engaging experiences. However, reliance on Flash also led to performance issues and accessibility challenges, as it was not universally supported across all devices, especially with the rise of mobile browsing. As a result, while animation became more prevalent, it was not always effectively implemented.',
       },
     },
     "2010": {
@@ -1828,7 +1828,7 @@ var compoenents = {
     </style>
 </div>`,
       explanation: {
-        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+        details: 'The 2010s marked a significant turning point for animation in UX/UI design, as the focus shifted toward enhancing user experience. CSS3 and JavaScript frameworks (like jQuery) allowed for the creation of lightweight, performant animations without the need for Flash. Designers began to embrace micro-interactions—subtle animations that provided feedback for user actions (e.g., buttons changing color on hover, loading spinners, or notifications sliding in). The emphasis was on creating a seamless and intuitive user experience, with animations guiding users through interfaces and enhancing navigation. Animation became an essential part of storytelling, helping to convey information, establish relationships between elements, and maintain user engagement without overwhelming the user.',
       },
     },
     "2020": {
@@ -1853,7 +1853,7 @@ var compoenents = {
     </style>
 </div>`,
       explanation: {
-        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+        details: 'In the 2020s, animation continues to evolve as a vital aspect of UX/UI design, with a focus on personalization and interactivity. The integration of AI and machine learning allows for the creation of adaptive animations that respond to user behavior in real-time, providing a more personalized experience. Designers are increasingly using animations to create engaging narratives, guiding users through complex processes with smooth transitions and visual cues. Furthermore, the rise of immersive technologies such as AR and VR has led to new forms of animation that enhance user interactions in three-dimensional spaces. Animation is now recognized not only for its aesthetic value but also for its ability to enhance usability and accessibility, ensuring that it serves a clear purpose in guiding and informing users. ',
       },
     },
     "2030": {
@@ -1883,11 +1883,11 @@ var compoenents = {
     </style>
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: "Looking ahead to the 2030s, animation in UX/UI is expected to reach new heights of interactivity and immersion. Advances in technology will enable hyper-realistic animations that adapt to the user's environment, preferences, and emotional responses. Animations may leverage biometric data (like facial expressions or gestures) to create dynamic, personalized experiences that feel intuitive and seamless. Additionally, the use of AI will likely automate the generation of animations, optimizing them for different contexts and user interactions. The focus will be on creating not just visually appealing animations but also enhancing the overall user experience by making interactions more fluid, engaging, and responsive to individual user needs. As we move toward an increasingly interconnected digital landscape, the role of animation in guiding, informing, and enhancing user interactions will continue to grow, blurring the lines between digital and physical experiences",
       },
     },
   },
-"Tooltips": {
+  "Tooltips": {
     title: "Tooltips",
     "1990": {
       code: `<div style="background-color: #121212; color: #fff; font-family: Arial, sans-serif; padding: 20px; display: flex; flex-direction: column; align-items: center;">
@@ -2087,7 +2087,7 @@ var compoenents = {
         <h2 style="font-size: 1.2em;">Feel the Retro!</h2>
     </div>`,
       explanation: {
-        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+        details: 'In the 1990s, transitions in web design were minimal, primarily due to the limitations of technology and browser capabilities. Websites often featured abrupt changes between pages or sections, leading to a disjointed user experience. The use of HTML and basic CSS meant that designers had limited tools to create smooth transitions. Any attempts at movement were often achieved through animated GIFs or the use of <marquee> tags for scrolling text, which could be distracting and not particularly user-friendly. Overall, transitions were more a byproduct of design limitations than a deliberate design choice, resulting in a static and sometimes jarring experience.',
       },
     },
     "2000": {
@@ -2153,7 +2153,7 @@ var compoenents = {
         <h2 style="font-size: 1.2em;">The New Millennium!</h2>
     </div>`,
       explanation: {
-        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+        details: 'The 2000s saw significant improvements in web technology, particularly with the introduction of Flash, which allowed for more fluid transitions and animations. Designers began to incorporate animated transitions to create more engaging user experiences, using techniques like fades, slides, and zooms to transition between content and states. However, the reliance on Flash came with its drawbacks, including accessibility issues and poor performance on mobile devices. As websites became more interactive, transitions were increasingly utilized to guide users through complex workflows, though many still felt more like flashy effects rather than thoughtfully designed experiences.',
       },
     },
     "2010": {
@@ -2218,7 +2218,7 @@ var compoenents = {
         <h2 style="font-size: 1.2em;">Simplicity is Key!</h2>
     </div>`,
       explanation: {
-        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+        details: ' The 2010s marked a turning point in the approach to transitions in UX/UI design, as the focus shifted toward enhancing usability and improving the overall user experience. With the rise of CSS3 and JavaScript, designers gained access to powerful tools for creating smooth and lightweight transitions without relying on Flash. Transitions became an essential part of the design language, used to provide visual feedback and create a sense of continuity as users navigated through interfaces. Common techniques included easing functions that made transitions feel more natural, as well as layering effects that allowed elements to appear and disappear seamlessly. This era emphasized the importance of micro-interactions—small, purposeful transitions that enhance usability, such as button states changing on hover or notifications sliding into view. ',
       },
     },
     "2020": {
@@ -2284,7 +2284,7 @@ var compoenents = {
     </div>
 `,
       explanation: {
-        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+        details: 'In the 2020s, transitions in UX/UI have become more sophisticated and integral to the overall design experience. Designers increasingly leverage advanced CSS techniques and frameworks like React and Vue.js to create complex, animated transitions that are both visually appealing and functional. Transitions are now used strategically to enhance storytelling, convey relationships between elements, and provide context for user actions. As immersive technologies such as augmented reality (AR) and virtual reality (VR) gain traction, transitions will also evolve to facilitate more interactive experiences that blend digital and physical interactions. Designers are prioritizing not only aesthetic appeal but also accessibility, ensuring that transitions are inclusive and enhance the experience for all users.',
       },
     },
     "2030": {
@@ -2349,7 +2349,7 @@ var compoenents = {
         <h2 style="font-size: 1.2em;">Innovate & Inspire!</h2>
     </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: "Looking toward the 2030s, transitions in UX/UI design are expected to become even more dynamic and responsive. As artificial intelligence and machine learning continue to advance, transitions may adapt in real-time based on user behavior, preferences, and context. The integration of biometric data could allow for transitions that respond to users' emotions or physical movements, creating a highly personalized experience. Furthermore, with the continued growth of AR and VR, transitions may involve complex spatial interactions, allowing users to move seamlessly between digital layers and environments. Overall, the future of transitions will focus on creating intuitive, engaging, and fluid experiences that enhance user satisfaction and facilitate seamless interactions across an increasingly interconnected digital landscape.",
       },
     },
   },
@@ -2361,7 +2361,7 @@ var compoenents = {
     <p style="font-family: Arial, sans-serif; color: #333;">This is a simple description for the card content. Basic HTML structure.</p>
 </div>`,
       explanation: {
-        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+        details: 'In the 1990s, card-like components were primarily used in physical software interfaces rather than on the web. Early web design was focused on basic layouts and lists, so card-based designs were rare. When cards were used, they appeared mostly in print or CD-ROM software for organizing information in a grid format. Web technologies were limited, so designers primarily relied on text links and list views to present information rather than card layouts.',
       },
     },
     "2000": {
@@ -2371,7 +2371,7 @@ var compoenents = {
     <p style="font-family: Arial, sans-serif; color: #333;">This card includes an image and basic styling to enhance its look.</p>
 </div>`,
       explanation: {
-        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+        details: 'As web design matured in the 2000s, cards began to appear on websites, particularly on e-commerce platforms where items needed to be clearly organized and distinguishable. Early card designs were simplistic, using rectangular blocks to separate product images, names, and prices. With the rise of CSS, designers started adding borders, shadows, and basic hover effects to distinguish cards, making content more visually accessible and user-friendly. However, cards remained functional and minimal, serving to display information without much interactivity.',
       },
     },
     "2010": {
@@ -2388,7 +2388,7 @@ var compoenents = {
 
 </div>`,
       explanation: {
-        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+        details: 'The 2010s saw the popularization of the card UI, driven by mobile and responsive design needs. Platforms like Pinterest and Google’s Material Design introduced card components as an effective way to organize and scale content across various screen sizes. Cards became interactive, featuring animations, hover effects, and clickable areas. They were used for everything from articles to product listings and user profiles. This decade emphasized cards as modular, flexible components, ideal for displaying rich media content in a concise, visually appealing format.',
       },
     },
     "2020": {
@@ -2669,7 +2669,7 @@ var compoenents = {
   </div>
 </div>`,
       explanation: {
-        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+        details: 'In the 2020s, card design became even more adaptive and visually engaging. Designers began integrating microinteractions, such as swipe gestures and animated transitions, to enhance interactivity and usability. Cards often included live content, such as real-time updates, and were customized for dark mode to match user preferences. AI-driven elements allowed cards to display personalized information, adapting content to users’ needs and behaviors. Cards became an essential UX/UI component, blending form and function to provide users with relevant, easily accessible information.',
       },
     },
     "2030": {
@@ -2691,7 +2691,7 @@ var compoenents = {
 
 </div>`,
       explanation: {
-        details: 'button is awesomely designed',
+        details: 'Looking ahead to the 2030s, card UIs are expected to evolve further with augmented and virtual reality (AR/VR) experiences. Cards may become three-dimensional and context-sensitive, adapting to their surroundings and providing users with immersive, interactive layers of information. Users might manipulate cards through gestures, voice commands, or even thought-based inputs. These “intelligent” cards could adjust based on real-time user preferences and behavioral patterns, ensuring seamless, personalized interactions in virtual spaces. With advances in AI, cards are likely to anticipate user needs, becoming an and responsive part of digital environments.',
       },
     },
   },
@@ -3171,7 +3171,7 @@ var compoenents = {
       },
     },
   },
-"Progress Bars": {
+  "Progress Bars": {
     title: "Progress Bars",
     "1990": {
       code: `<div style="background-color: #121212; color: #fff; font-family: Arial, sans-serif; padding: 20px;">
