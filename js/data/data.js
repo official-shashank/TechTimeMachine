@@ -84,27 +84,39 @@ var compoenents = {
   "Typography": {
     title: 'typography',
     "1990": {
-      code: `    <div class="bg-gray-600 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 mb-6">
-    <!-- 1990s Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14v10H5V8zM2 8a1 1 0 011-1h18a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V8zM12 4l-2 2m4 0l-2-2" />
-    </svg>
-    <h2 class="text-2xl font-sans mb-4">1990s</h2>
-    <p class="font-sans text-5xl">Retro & Bold Designs</p>
+      code: `    <div style="background-color: #eaeaea; color: #333; font-family: 'Times New Roman', Times, serif; margin: 20px; text-align: center;">
+    <h1 style="font-size: 36px; color: #2c3e50;">1990s Typography</h1>
+    <p style="font-size: 20px;">In the 1990s, most websites relied on basic system fonts such as <strong>Times New Roman</strong>, <strong>Arial</strong>, and <strong>Courier</strong>. Web designers often used simple styling for headings, paragraphs, and links, which resulted in a uniform but limited typographic experience.</p>
+    <h2 style="font-size: 28px; color: #2980b9;">Key Features:</h2>
+    <ul style="font-size: 18px; color: #8e44ad; list-style-type: square; padding: 0;">
+        <li>Basic system fonts</li>
+        <li>Minimal styling options</li>
+        <li>Consistent across browsers</li>
+    </ul>
   </div>`,
       explanation: {
         details: 'A webpage using only system-default fonts like Times New Roman and basic styling for headings, paragraphs, and links. ',
       },
     },
     "2000": {
-      code: ` <div class="bg-gray-700 text-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 mb-6">
-    <!-- 2000s Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17h4.5M3 6h18M8 20h8M5 6v9a1 1 0 001 1h12a1 1 0 001-1V6M10 11h4" />
-    </svg>
-    <h2 class="text-2xl font-sans mb-4">2000s</h2>
-    <p class="font-sans text-5xl mt-6">The Rise of Web 2.0</p>
-  </div>`,
+      code: ` <div style="font-family: 'IBM Plex Sans', sans-serif; margin: 20px; line-height: 1.6;">
+    <p style="font-size: 16px;">
+        Here is some text that should show up by default in Plex Sans. Here is another sentence with 
+        <strong>some text in a strong tag</strong> and some <em>other text that should be italicized</em> 
+        and even some that should be <strong><em>bold and italic</em></strong>. Whew!
+    </p>
+    <p style="font-family: 'IBM Plex Serif', serif; font-size: 16px;">
+        Here is the same text, but in Plex Serif and all we did was change the font-family. Here is another 
+        sentence with <strong>some text in a strong tag</strong> and some <em>other text that should be italicized</em> 
+        and even some that should be <strong><em>bold and italic</em></strong>. Whew!
+    </p>
+    <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 100;">A nice headline in a very thin weight</h1>
+    <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 100; font-size: 16px;">
+        Here is the same text, but in Plex Sans and shifted to lighter weights, and again all we did was change 
+        the font-family. Here is another sentence with <strong>some text in a strong tag</strong> and some <em>other text 
+        that should be italicized</em> and even some that should be <strong><em>bold and italic</em></strong>. Whew!
+    </p>
+</div>`,
       explanation: {
         details: 'A page using @font-face to load custom fonts for headings and body text, reflecting the rise of typographic diversity. ',
       },
@@ -238,27 +250,85 @@ var compoenents = {
       },
     },
     "2020": {
-      code: `<div class="demo-section" style="margin-bottom: 50px;">
-              
-              <div style="font-size: 1.5rem; color: white; text-align: center; margin-bottom: 20px; animation: blink 1s infinite;">
-                  Loading...
-              </div>
-              <!-- Optional: Embed classic GIF -->
-              <img src="https://i.gifer.com/ZZ5H.gif" alt="90s spinning globe" width="100" style="display: block; margin: 0 auto;">
-          </div>`,
+      code: `<div style="width: 100%; height: 100vh; overflow-x: hidden;">
+
+    <div style="width: 100%; height: 100vh; background-color: white; color: black; text-align: center; display: flex; align-items: center; justify-content: center; font-family: 'Poppins', sans-serif;">
+        <h1><a href='https://citeal.web.app' target='_blank' style="color: black;">Citeal</a>, my very first app</h1>
+    </div>
+
+    <div style="width: 100%; height: 100vh; background-color: white; color: black; text-align: center; display: flex; align-items: center; justify-content: center; font-family: 'Poppins', sans-serif;">
+        <h1 style="animation: revealing 1.5s ease; margin: 0px;">It has hit <i>v2.0</i>, Check it out to support me</h1>
+    </div>
+
+    <style>
+        @keyframes revealing {
+            from {
+                color: gray;
+                margin-left: 100vw;
+                filter: blur(50px);
+                opacity: 0.5;
+            }
+            to {
+                margin: 0px;
+                filter: blur(0px);
+                opacity: 1;
+            }
+        }
+    </style>
+
+</div>`,
       explanation: {
         details: 'button is awesomely designed',
       },
     },
     "2030": {
-      code: `<div class="demo-section" style="margin-bottom: 50px;">
-              
-              <div style="font-size: 1.5rem; color: white; text-align: center; margin-bottom: 20px; animation: blink 1s infinite;">
-                  Loading...
-              </div>
-              <!-- Optional: Embed classic GIF -->
-              <img src="https://i.gifer.com/ZZ5H.gif" alt="90s spinning globe" width="100" style="display: block; margin: 0 auto;">
-          </div>`,
+      code: `<div style="margin: 0; padding: 0; width: 100%; height: 100%; font-family: Arial, sans-serif;">
+
+    <article style="padding: 20px; max-width: 800px; margin: auto;">
+        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+             style="width: 100%; height: auto; border-radius: 8px;" />
+        
+        <div style="margin-top: 20px; line-height: 1.6; color: #333;">
+            <h1 style="font-size: 24px; margin-bottom: 10px;">We all know everyone only skims articles these days.</h1>
+            
+            <p>I'm baby kickstarter authentic farm-to-table fam whatever. Unicorn keytar food truck neutral milk hotel kogi you probably haven't heard of them distillery gastropub paleo seitan actually quinoa try-hard.</p>
+            
+            <p>Gochujang bitters vexillologist, pop-up sriracha shabby chic ascot flannel tattooed fanny pack. 
+                <mark style="background-color: yellow;">But there’s a lot of good stuff in the article body.</mark> Quinoa subway tile tacos af listicle prism.</p>
+            
+            <p>Biodiesel pop-up fam ramps vegan microdosing woke. YOLO gentrify celiac hot chicken big mood fanny pack.</p>
+            
+            <p>Succulents shoreditch crucifix, pork belly intelligentsia thundercats bespoke taxidermy hoodie plaid mustache solarpunk biodiesel. 
+                <mark style="background-color: yellow;">How do we get anyone to read it?</mark> Taxidermy echo park occupy blackbird spyplane pitchfork, food truck small batch.</p>
+            
+            <p>Man bun lomo put a bird on it fit raw denim tumeric gastropub yes plz gorpcore listicle cloud bread brunch heirloom typewriter green juice. 
+                Pickled cliche next level, affogato butcher tilde four loko.</p>
+            
+            <p>Vegan keytar chambray air plant asymmetrical, kale chips biodiesel seitan literally street art skateboard kickstarter locavore bruh franzen.</p>
+            
+            <h2 style="font-size: 20px; margin-top: 20px; margin-bottom: 10px;">Headlines are often the only parts that get read.</h2>
+            
+            <p>Kickstarter thundercats kale chips waistcoat bodega boys asymmetrical raclette bespoke church-key flannel flexitarian. 
+                <mark style="background-color: yellow;">Maybe we can call some attention to other parts of the story.</mark> Swag neutra edison bulb, wolf forage put a bird on it tofu fanny pack.</p>
+            
+            <p>Pug godard mustache deep v jawn 3 wolf moon sus. Schlitz asymmetrical everyday carry DSA ramps raclette.</p>
+            
+            <p>Live-edge Brooklyn ramps prism. Chicharrones retro sustainable messenger bag bruh vibecession try-hard gastropub viral iceland polaroid VHS. 
+                <mark style="background-color: yellow;">The details are what make a story great, after all.</mark> Occupy tumblr heirloom hot chicken, cliche Brooklyn pickled XOXO actually bushwick everyday carry swag ennui tattooed food truck.</p>
+            
+            <p>Pug letterpress readymade, migas retro gatekeep listicle ugh cronut gastropub venmo everyday carry. Chicharrones vinyl gastropub scenester blog beard truffaut trust fund. 
+                <mark style="background-color: yellow;">We just have to convince folks to notice.</mark> Crucifix pitchfork swag vegan pinterest taxidermy hashtag mumblecore freegan normcore yr hella iceland butcher.</p>
+            
+            <p>Brunch swag fingerstache, bushwick pop-up banjo schlitz 3 wolf moon stumptown edison bulb bodega boys. Hell of cliche polaroid, cloud bread whatever distillery VHS glossier tofu grailed. 
+                Distillery mustache skateboard, locavore celiac big mood salvia tonx. Banjo JOMO tote bag flexitarian seitan readymade. Biodiesel trust fund pork belly, XOXO jawn venmo mukbang fashion axe.</p>
+            
+            <p><mark style="background-color: yellow;">Let’s give ’em a little nudge.</mark></p>
+            
+            <p>Tofu messenger bag Brooklyn, godard palo santo microdosing coloring book meggings keffiyeh. Gentrify gochujang direct trade franzen.</p>
+        </div>
+    </article>
+
+</div>`,
       explanation: {
         details: 'button is awesomely designed',
       },
@@ -595,14 +665,42 @@ var compoenents = {
       },
     },
     "2000": {
-      code: ` <div style="font-family: Arial, sans-serif; position: relative; display: inline-block;">
-        <button style="padding: 10px 15px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Menu</button>
-        <div style="display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;">
-            <a href="#home" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">Home</a>
-            <a href="#about" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">About</a>
-            <a href="#services" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">Services</a>
-            <a href="#contact" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">Contact</a>
+      code: ` <div class="sc1" style="font-family: 'Verdana', sans-serif; background-color: #e4e4e4; margin: 0; padding: 0;">
+        <header style="background-color: #4682b4; color: white; text-align: center; padding: 15px 0;">
+            <h1 style="margin: 0; font-size: 2.5em;">Scroll-Based Animation Showcase</h1>
+        </header>
+
+        <div class="content" style="padding: 20px; line-height: 1.6; max-width: 800px; margin: auto; background: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">
+            <h2>Welcome to the 2000s Style Web</h2>
+            <p style="margin: 20px 0;">
+                This is a simple page to demonstrate scroll effects reminiscent of the 2000s web design. Scroll down to see the "Scroll to Top" button in action!
+            </p>
+
+            <p style="margin: 20px 0;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Cras purus odio, vestibulum in suscipit at, pharetra a odio. Sed aliquam, nunc in bibendum ultrices, nisi nulla scelerisque enim, at tristique dolor nulla ac nulla. In tincidunt, urna nec porttitor vehicula, quam nisi pharetra massa, a scelerisque nisi lacus sit amet nulla. Duis non sodales magna. Etiam malesuada ut libero at efficitur.
+            </p>
+
+            <p style="margin: 20px 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p style="margin: 20px 0;">Morbi facilisis nisi eu sollicitudin volutpat.</p>
+            <p style="margin: 20px 0;">Phasellus quis nisi sed magna feugiat bibendum ut quis metus.</p>
+            <p style="margin: 20px 0;">Praesent vel elit eu dolor feugiat varius vel at purus.</p>
+            <p style="margin: 20px 0;">In vitae nisi non est tempor interdum ac sit amet eros.</p>
+            <p style="margin: 20px 0;">Mauris ultricies sapien vitae nibh blandit, et venenatis felis pretium.</p>
+            <p style="margin: 20px 0;">Sed vestibulum dolor ac suscipit malesuada.</p>
+            <p style="margin: 20px 0;">Duis vel massa ac enim blandit tempor.</p>
+            <p style="margin: 20px 0;">Curabitur semper ligula sed nisi cursus, nec pulvinar risus consequat.</p>
+            <p style="margin: 20px 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p style="margin: 20px 0;">Morbi facilisis nisi eu sollicitudin volutpat.</p>
+            <p style="margin: 20px 0;">Phasellus quis nisi sed magna feugiat bibendum ut quis metus.</p>
+            <p style="margin: 20px 0;">Praesent vel elit eu dolor feugiat varius vel at purus.</p>
+            <p style="margin: 20px 0;">In vitae nisi non est tempor interdum ac sit amet eros.</p>
+            <p style="margin: 20px 0;">Mauris ultricies sapien vitae nibh blandit, et venenatis felis pretium.</p>
+            <p style="margin: 20px 0;">Sed vestibulum dolor ac suscipit malesuada.</p>
         </div>
+
+        <button class="scroll-to-top" id="scrollToTopBtn" style="position: fixed; bottom: 20px; right: 20px; display: none; background-color: #4682b4; color: white; border: none; border-radius: 5px; padding: 10px; cursor: pointer; font-size: 1em; box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); transition: background-color 0.3s ease;">
+            ↑ Scroll to Top
+        </button>
     </div>`,
       explanation: {
         details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
@@ -627,48 +725,117 @@ var compoenents = {
       },
     },
     "2020": {
-      code: `<div class="menu" style="font-family: Arial, sans-serif; background-color: rgba(76, 175, 80, 0.9); position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; transform: translateX(-100%); transition: transform 0.3s ease-in-out; z-index: 1000;">
+      code: `<div class="bg-white p-6 shadow-lg">
+    <div class="text-center mb-4">
+      <h1 class="text-2xl font-bold">The New York Times</h1>
+    </div>
 
-        <div class="menu-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: white;">
-            <ul class="menu-links" style="list-style: none; padding: 0;">
-                <li style="margin: 20px 0;">
-                    <a href="#home" 
-                       style="color: white; text-decoration: none; font-size: 2em; transition: color 0.3s;" 
-                       onmouseover="this.style.color='#ffc107'" 
-                       onmouseout="this.style.color='white'">Home</a>
-                </li>
-                <li style="margin: 20px 0;">
-                    <a href="#about" 
-                       style="color: white; text-decoration: none; font-size: 2em; transition: color 0.3s;" 
-                       onmouseover="this.style.color='#ffc107'" 
-                       onmouseout="this.style.color='white'">About</a>
-                </li>
-                <li style="margin: 20px 0;">
-                    <a href="#services" 
-                       style="color: white; text-decoration: none; font-size: 2em; transition: color 0.3s;" 
-                       onmouseover="this.style.color='#ffc107'" 
-                       onmouseout="this.style.color='white'">Services</a>
-                </li>
-                <li style="margin: 20px 0;">
-                    <a href="#contact" 
-                       style="color: white; text-decoration: none; font-size: 2em; transition: color 0.3s;" 
-                       onmouseover="this.style.color='#ffc107'" 
-                       onmouseout="this.style.color='white'">Contact</a>
-                </li>
-            </ul>
+    <div class="border-t border-b border-gray-300 py-4">
+      <div class="grid grid-cols-3 gap-4">
+        <!-- Column 1 -->
+        <div class="space-y-2">
+          <h2 class="font-bold">News</h2>
+          <ul class="space-y-1">
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Home Page</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">World</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">U.S.</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Politics</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Election 2020</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">New York</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Business</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Tech</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Science</a></li>
+          </ul>
         </div>
-    </div>`,
+        
+        <!-- Column 2 -->
+        <div class="space-y-2">
+          <ul class="space-y-1">
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Climate</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Sports</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Obituaries</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">The Upshot</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Español</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">中文网</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Today’s Paper</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Corrections</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="space-y-2">
+          <h2 class="font-bold">Opinion</h2>
+          <ul class="space-y-1">
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Today’s Opinion</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Op-Ed</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Contributors</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Letters</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Columnists</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Editorials</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Sunday Review</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:text-lg transition-all duration-300 transform">Video: Opinion</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-4 text-center">
+      <div class="flex justify-center">
+        <input type="text" placeholder="Search" class="border rounded px-2 py-1 mr-2">
+        <button class="bg-blue-500 px-4 py-1 text-sm  hover:text-gray-500 hover:text-lg transition-all duration-300 transform">GO</button>
+      </div>
+    </div>
+  </div>`,
       explanation: {
         details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
       },
     },
     "2030": {
-      code: `<div style="font-family: 'Arial', sans-serif; background-color: #f3e5f5; color: #222; text-align: center; padding: 20px;">
-    <h1 style="font-size: 50px; color: #6a1b9a;">2030s: Future Icons and Imagery Projection</h1>
-    <p style="font-size: 24px; color: #444;">By the 2030s, we will see adaptive, AI-driven icons that change based on user preferences and context.</p>
-    <p style="font-size: 20px; color: #333;">Expect interactive icons that enhance accessibility and user engagement.</p>
-    <p style="font-size: 20px; color: #333;">The evolution will focus on personalization and contextual relevance in design.</p>
-</div>`,
+      code: `<div class="w-64 bg-gray-800 h-full p-4">
+
+    <!-- User Accounts Section -->
+    <div class="space-y-6">
+      <div class="flex items-center space-x-4 p-2 hover:bg-gray-700 rounded">
+        <div class="bg-blue-500 h-8 w-8 rounded-full"></div>
+        <span class="font-medium">All Accounts</span>
+      </div>
+
+      <!-- Inbox Section -->
+      <div class="flex items-center justify-between p-2 hover:bg-gray-700 rounded">
+        <div class="flex items-center space-x-4">
+          <div class="bg-blue-500 h-8 w-8 rounded-full flex items-center justify-center text-white">📥</div>
+          <span>Inbox</span>
+        </div>
+        <span class="text-xs text-gray-400 bg-gray-700 rounded-full px-2 py-1">38</span>
+      </div>
+
+      <!-- Other Sections -->
+      <ul class="space-y-2">
+        <li class="flex items-center space-x-4 p-2 hover:bg-gray-700 rounded">
+          <div class="bg-gray-500 h-8 w-8 rounded-full flex items-center justify-center text-white">📄</div>
+          <span>Drafts</span>
+        </li>
+        <li class="flex items-center space-x-4 p-2 hover:bg-gray-700 rounded">
+          <div class="bg-gray-500 h-8 w-8 rounded-full flex items-center justify-center text-white">📦</div>
+          <span>Archive</span>
+        </li>
+        <li class="flex items-center space-x-4 p-2 hover:bg-gray-700 rounded">
+          <div class="bg-gray-500 h-8 w-8 rounded-full flex items-center justify-center text-white">📤</div>
+          <span>Sent</span>
+        </li>
+       
+      </ul>
+    </div>
+
+    <!-- Footer Menu Icons -->
+    <div class="mt-6 space-y-6">
+      <div class="flex justify-center space-x-4">
+        <div class="bg-gray-600 h-10 w-10 rounded-full flex items-center justify-center text-white hover:bg-gray-500 transition">⚙️</div>
+        <div class="bg-gray-600 h-10 w-10 rounded-full flex items-center justify-center text-white hover:bg-gray-500 transition">🔔</div>
+        <div class="bg-gray-600 h-10 w-10 rounded-full flex items-center justify-center text-white hover:bg-gray-500 transition">📬</div>
+      </div>
+    </div>
+  </div>`,
       explanation: {
         details: 'button is awesomely designed',
       },
@@ -676,7 +843,7 @@ var compoenents = {
   },
 
 
-  icon_and_imagery: {
+  "Icons and Imagery": {
     title: 'scroll',
     "1990": {
       code: `div style="font-family: 'Arial', sans-serif; background-color: #f9f9f9; color: #333; text-align: center; padding: 20px;">
@@ -831,8 +998,8 @@ var compoenents = {
   },
 
 
-  tooltip: {
-    title: 'tooltip',
+  Popups:{
+    title: 'Popups',
     "1990": {
       code: `<div style="font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 20px;">
     <h1 style="color: #333;">1990s: Browser-Default Tooltips</h1>
@@ -971,7 +1138,7 @@ var compoenents = {
     },
   },
 
-  footer: {
+  Footers: {
     title: 'Footer',
     "1990": {
       code: `<div>
@@ -1294,7 +1461,2185 @@ var compoenents = {
         details: 'button is awesomely designed',
       },
     },
-  }
+  },
+
+
+  homepages: {
+    title: 'homepages',
+    "1990": {
+      code: `<div style="font-family: Arial, sans-serif; background-color: yellow; color: black;">
+    <h1 style="text-align: center;">1990s: The Beginning</h1>
+    
+    <table style="width: 100%; border: 1px solid black;">
+        <tr>
+            <td style="padding: 20px;">
+                <h2 style="font-family: 'Comic Sans MS';">Welcome to the 90s Website!</h2>
+                <p style="font-size: 18px; color: blue;">This website is under construction!</p>
+                <img src="https://example.com/under_construction.gif" alt="Under Construction" style="display: block; margin: 0 auto; width: 200px;">
+            </td>
+        </tr>
+    </table>
+    
+    <form style="margin: 20px;">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" style="padding: 5px; border: 1px solid gray;">
+        <input type="button" value="Submit" style="padding: 5px; background-color: gray; color: white;">
+    </form>
+
+</div>`,
+      explanation: {
+        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+      },
+    },
+    "2000": {
+      code: ` <div style="font-family: Arial, sans-serif; background-color: lightblue; color: black;">
+    <h1 style="text-align: center;">2000s: CSS and Flash Era</h1>
+
+    <div style="text-align: center;">
+        <img src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/3a75e3d1-c38b-4e1c-8323-28ff8221b64c/edwinmurat.jpg" alt="Flash Animation Example" style="width: 300px;">
+    </div>
+
+    <div style="width: 100%; background-color: darkgray; padding: 10px; margin-top: 20px; text-align: center;">
+        <a href="#" style="color: white; text-decoration: none; padding: 10px; display: inline-block;">Home</a>
+        <a href="#" style="color: white; text-decoration: none; padding: 10px; display: inline-block;">About</a>
+        <a href="#" style="color: white; text-decoration: none; padding: 10px; display: inline-block;">Contact</a>
+    </div>
+
+    <form style="margin: 20px;">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" style="padding: 5px; border: 1px solid gray;">
+        <input type="submit" value="Submit" style="padding: 5px; background-color: green; color: white;">
+    </form>
+</div>`,
+      explanation: {
+        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+      },
+    },
+    "2010": {
+      code: `<div style="font-family: Arial, sans-serif; background-color: white; color: black;">
+    <h1 style="text-align: center;">2010s: Responsive and Flat UI</h1>
+
+    <div style="background-color: lightgray; padding: 20px; text-align: center;">
+        <h2 style="font-family: sans-serif;">Flat UI Form</h2>
+        <form style="margin: 20px;">
+            <input type="text" placeholder="Your Name" style="padding: 10px; width: 100%; border: none; margin-bottom: 10px;">
+            <input type="email" placeholder="Your Email" style="padding: 10px; width: 100%; border: none; margin-bottom: 10px;">
+            <input type="submit" value="Submit" style="padding: 10px; width: 100%; background-color: blue; color: white; border: none;">
+        </form>
+    </div>
+
+    <div style="margin-top: 20px; text-align: center;">
+        <p>Resize the browser to see responsive design in action!</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5XzjFvWTPanU0ij-LKfYmkuNnipyQ9svLzA&s" alt="Responsive Layout" style="width: 50%; max-width: 600px;">
+    </div>
+</div>`,
+      explanation: {
+        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+      },
+    },
+    "2020": {
+      code: `<div class="menu" style="font-family: Arial, sans-serif; background-color: rgba(76, 175, 80, 0.9); position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; transform: translateX(-100%); transition: transform 0.3s ease-in-out; z-index: 1000;">
+
+        <div class="menu-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: white;">
+            <ul class="menu-links" style="list-style: none; padding: 0;">
+                <li style="margin: 20px 0;">
+                    <a href="#home" 
+                       style="color: white; text-decoration: none; font-size: 2em; transition: color 0.3s;" 
+                       onmouseover="this.style.color='#ffc107'" 
+                       onmouseout="this.style.color='white'">Home</a>
+                </li>
+                <li style="margin: 20px 0;">
+                    <a href="#about" 
+                       style="color: white; text-decoration: none; font-size: 2em; transition: color 0.3s;" 
+                       onmouseover="this.style.color='#ffc107'" 
+                       onmouseout="this.style.color='white'">About</a>
+                </li>
+                <li style="margin: 20px 0;">
+                    <a href="#services" 
+                       style="color: white; text-decoration: none; font-size: 2em; transition: color 0.3s;" 
+                       onmouseover="this.style.color='#ffc107'" 
+                       onmouseout="this.style.color='white'">Services</a>
+                </li>
+                <li style="margin: 20px 0;">
+                    <a href="#contact" 
+                       style="color: white; text-decoration: none; font-size: 2em; transition: color 0.3s;" 
+                       onmouseover="this.style.color='#ffc107'" 
+                       onmouseout="this.style.color='white'">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>`,
+      explanation: {
+        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+      },
+    },
+    "2030": {
+      code: `<div style="font-family: 'Arial', sans-serif; background-color: #f3e5f5; color: #222; text-align: center; padding: 20px;">
+    <h1 style="font-size: 50px; color: #6a1b9a;">2030s: Future Icons and Imagery Projection</h1>
+    <p style="font-size: 24px; color: #444;">By the 2030s, we will see adaptive, AI-driven icons that change based on user preferences and context.</p>
+    <p style="font-size: 20px; color: #333;">Expect interactive icons that enhance accessibility and user engagement.</p>
+    <p style="font-size: 20px; color: #333;">The evolution will focus on personalization and contextual relevance in design.</p>
+</div>`,
+      explanation: {
+        details: 'button is awesomely designed',
+      },
+    },
+  },
+  Inputs: {
+    title: 'Input',
+    "1990": {
+      code: `<section class="py-20 bg-gray-300">
+    <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl font-bold mb-4">1990s: Simple HTML Forms</h1>
+        <p class="text-lg mb-6">Forms were plain and unstyled, with default browser input styles.</p>
+        <div class="bg-white p-8 rounded shadow-lg">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="border p-1 mb-2 block w-full" style="background-color: #ffffff; color: #000; border: 1px solid #000;"><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="border p-1 mb-2 block w-full" style="background-color: #ffffff; color: #000; border: 1px solid #000;"><br>
+
+                <button type="submit" class="border px-4 py-2 bg-gray-400" style="background-color: #cccccc; border: 1px solid #000;">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>`,
+      explanation: {
+        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+      },
+    },
+    "2000": {
+      code: ` <div style="font-family: Arial, sans-serif; background-color: lightblue; color: black;">
+    <h1 style="text-align: center;">2000s: CSS and Flash Era</h1>
+
+    <div style="text-align: center;">
+        <img src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/3a75e3d1-c38b-4e1c-8323-28ff8221b64c/edwinmurat.jpg" alt="Flash Animation Example" style="width: 300px;">
+    </div>
+
+    <div style="width: 100%; background-color: darkgray; padding: 10px; margin-top: 20px; text-align: center;">
+        <a href="#" style="color: white; text-decoration: none; padding: 10px; display: inline-block;">Home</a>
+        <a href="#" style="color: white; text-decoration: none; padding: 10px; display: inline-block;">About</a>
+        <a href="#" style="color: white; text-decoration: none; padding: 10px; display: inline-block;">Contact</a>
+    </div>
+
+    <form style="margin: 20px;">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" style="padding: 5px; border: 1px solid gray;">
+        <input type="submit" value="Submit" style="padding: 5px; background-color: green; color: white;">
+    </form>
+</div>`,
+      explanation: {
+        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+      },
+    },
+    "2010": {
+      code: `<div style="font-family: Arial, sans-serif; background-color: white; color: black;">
+    <h1 style="text-align: center;">2010s: Responsive and Flat UI</h1>
+
+    <div style="background-color: lightgray; padding: 20px; text-align: center;">
+        <h2 style="font-family: sans-serif;">Flat UI Form</h2>
+        <form style="margin: 20px;">
+            <input type="text" placeholder="Your Name" style="padding: 10px; width: 100%; border: none; margin-bottom: 10px;">
+            <input type="email" placeholder="Your Email" style="padding: 10px; width: 100%; border: none; margin-bottom: 10px;">
+            <input type="submit" value="Submit" style="padding: 10px; width: 100%; background-color: blue; color: white; border: none;">
+        </form>
+    </div>
+
+    <div style="margin-top: 20px; text-align: center;">
+        <p>Resize the browser to see responsive design in action!</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5XzjFvWTPanU0ij-LKfYmkuNnipyQ9svLzA&s" alt="Responsive Layout" style="width: 50%; max-width: 600px;">
+    </div>
+</div>`,
+      explanation: {
+        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+      },
+    },
+    "2020": {
+      code: `<section class="py-20 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white">
+    <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-5xl font-bold mb-4">2020s: Colorful and Modern Forms</h1>
+        <p class="text-xl mb-6">Bright colors, gradients, and animations make forms pop while keeping them modern and user-friendly.</p>
+        <div class="bg-white text-gray-800 p-8 rounded-xl shadow-2xl">
+            <form>
+                <label for="name" class="block text-left text-lg font-semibold">Name:</label>
+                <input type="text" id="name" name="name" class="border-none focus:ring-4 focus:ring-pink-300 transition duration-300 ease-in-out bg-gray-100 p-3 mb-6 block w-full rounded-lg shadow-md focus:outline-none"><br>
+
+                <label for="email" class="block text-left text-lg font-semibold">Email:</label>
+                <input type="email" id="email" name="email" class="border-none focus:ring-4 focus:ring-purple-300 transition duration-300 ease-in-out bg-gray-100 p-3 mb-6 block w-full rounded-lg shadow-md focus:outline-none"><br>
+
+                <button type="submit" class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-red-500 text-white px-6 py-3 rounded-full font-bold uppercase tracking-wide shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+`,
+      explanation: {
+        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+      },
+    },
+    "2030": {
+      code: `<section class="py-20 bg-gray-800 text-white">
+    <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl font-bold mb-4">2030s: AR & AI Enhanced Forms</h1>
+        <p class="text-lg mb-6">Future forms may include AI-driven enhancements and augmented reality features for immersive experiences.</p>
+        <div class="bg-gray-900 p-8 rounded shadow-lg">
+            <form>
+                <label for="name" class="block text-left">Name:</label>
+                <input type="text" id="name" name="name" class="border p-2 mb-4 block w-full rounded bg-transparent text-white focus:outline-none focus:ring-2 focus:ring-blue-500"><br>
+
+                <label for="email" class="block text-left">Email:</label>
+                <input type="email" id="email" name="email" class="border p-2 mb-4 block w-full rounded bg-transparent text-white focus:outline-none focus:ring-2 focus:ring-blue-500"><br>
+
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>`,
+      explanation: {
+        details: 'button is awesomely designed',
+      },
+    },
+  },
+ "Background Patterns and Effects": {
+    title: "Background patterns and Effects",
+    "1990": {
+      code: `<div>
+    <div style="width: 100%; height: 80vh; background-color: #d0cca0; display: flex; justify-content: center; align-items: center; opacity: 0.2; background-image: linear-gradient(30deg, #70095d 12%, transparent 12.5%, transparent 87%, #70095d 87.5%, #70095d), linear-gradient(150deg, #70095d 12%, transparent 12.5%, transparent 87%, #70095d 87.5%, #70095d), linear-gradient(30deg, #70095d 12%, transparent 12.5%, transparent 87%, #70095d 87.5%, #70095d), linear-gradient(150deg, #70095d 12%, transparent 12.5%, transparent 87%, #70095d 87.5%, #70095d), linear-gradient(60deg, #70095d77 25%, transparent 25.5%, transparent 75%, #70095d77 75%, #70095d77), linear-gradient(60deg, #70095d77 25%, transparent 25.5%, transparent 75%, #70095d77 75%, #70095d77); background-size: 28px 49px; background-position: 0 0, 0 0, 14px 25px, 14px 25px, 0 0, 14px 25px;"></div>
+    
+   
+
+</div>`,
+      explanation: {
+        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+      },
+    },
+    "2000": {
+      code: ` <div id="app" style="height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center; background-image: repeating-linear-gradient(135deg, hsl(242, 31%, 80%) 0px, hsl(242, 31%, 80%) 3px, transparent 3px, transparent 122px), repeating-linear-gradient(225deg, hsl(242, 31%, 80%) 0px, hsl(242, 31%, 80%) 3px, transparent 3px, transparent 122px), linear-gradient(313deg, hsl(242, 31%, 70%), hsl(242, 31%, 70%));">
+    <h1 style="text-decoration: underline;">Gradient and Random Color Generator</h1>
+    <button @click="randomize">Randomize Gradient</button>
+    <button @click="copyCSS">Copy CSS</button>
+    <div id="copyBox" style="display:none"></div>
+  </div>`,
+      explanation: {
+        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+      },
+    },
+    "2010": {
+      code: `<div style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: 'Shrikhand', cursive; position: relative; overflow: hidden;">
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 2;">
+        <h1 style="font-size: 4rem; letter-spacing: .2rem; color: rgb(25, 52, 82); font-weight: 600; margin: 1rem 5rem; text-shadow: 1px 1px 0 rgb(77,162,252), -1px -1px 0 rgb(77,162,252), 1px -1px 0 rgb(77,162,252), -1px 1px 0 rgb(77,162,252), 4px 4px 1px rgba(44,88,137,.5), -4px 4px 1px rgba(44,88,137,.5), 4px -4px 1px rgba(44,88,137,.5), -4px -4px 1px rgba(44,88,137,.5);">
+            &ldquo;Thundering<br />Typhoons!&rdquo;
+        </h1>
+        <h2 style="font-size: 2rem; color: rgb(25, 52, 82); font-weight: 600; margin: 1rem 5rem; text-shadow: 1px 1px 0 rgb(77,162,252), -1px -1px 0 rgb(77,162,252), 1px -1px 0 rgb(77,162,252), -1px 1px 0 rgb(77,162,252), 4px 4px 1px rgba(44,88,137,.5), -4px 4px 1px rgba(44,88,137,.5), 4px -4px 1px rgba(44,88,137,.5), -4px -4px 1px rgba(44,88,137,.5);">
+            &mdash; Captain Haddock
+        </h2>
+    </div>
+    <div style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; background-color: rgb(35, 74, 116); z-index: 1;">
+        <div style="background-color: rgb(35, 74, 116); padding: 3rem; overflow: hidden; position: absolute; left: -50%; top: -50%; height: 200%; width: 200%; transform: rotate(20deg);">
+            <div style="background: repeating-linear-gradient(45deg, rgb(27, 57, 89), rgb(27, 57, 89) 70px, rgb(31, 64, 100) 70px, rgb(31, 64, 100) 140px); position: absolute; top: 0; left: 0; height: 200%; width: 100%;"></div>
+        </div>
+    </div>
+</div>`,
+      explanation: {
+        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+      },
+    },
+    "2020": {
+      code: `<div style="margin: 0; height: 100vh; background-color: #FF69B4; background-image: radial-gradient(circle, #FFB6C1 20%, transparent 20%), radial-gradient(circle, #DB7093 20%, transparent 20%); background-size: 50px 50px; background-position: 0 0, 25px 25px; display: flex; justify-content: center; align-items: center;">
+  <div>
+    <h1 style="font-family: 'Comic Sans MS', cursive; font-size: 3rem; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">2020s Era</h1>
+    <p style="font-family: 'Comic Sans MS', cursive; font-size: 2rem; color: white; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);">Bold, Colorful, and Playful</p>
+  </div>
+</div>
+`,
+      explanation: {
+        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+      },
+    },
+    "2030": {
+      code: `<div style="margin: 0; height: 100vh; background-color: #00CED1; background-image: linear-gradient(45deg, #00ffcc 25%, transparent 25%, transparent 50%, #00ffcc 50%, #00ffcc 75%, transparent 75%, transparent), linear-gradient(45deg, #00ffcc 25%, transparent 25%, transparent 50%, #00ffcc 50%, #00ffcc 75%, transparent 75%, transparent); background-size: 50px 50px; background-position: 0 0, 25px 25px; display: flex; justify-content: center; align-items: center;">
+  <div>
+    <h1 style="font-family: 'Roboto', sans-serif; font-size: 3rem; color: #00ffcc; text-shadow: 0 0 10px rgba(0, 255, 204, 0.8);">2030s Era</h1>
+    <p style="font-family: 'Roboto', sans-serif; font-size: 2rem; color: #00ffcc; text-shadow: 0 0 6px rgba(0, 255, 204, 0.7);">Futuristic, Sleek, and Advanced</p>
+  </div>
+</div>`,
+      explanation: {
+        details: 'button is awesomely designed',
+      },
+    },
+  },
+  Animations: {
+    title: 'homepages',
+    "1990": {
+      code: `<div style="margin: 0; padding: 0; overflow: hidden; background-color: #000; font-family: 'Arial', sans-serif;">
+    <div style="width: 300px; height: 100px; margin: 50px auto; padding: 20px; border: 3px solid #ffcc00; text-align: center; color: #fff; position: relative; overflow: hidden;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: repeating-linear-gradient(135deg, #ff00ff 25%, transparent 25%, transparent 50%, #ff00ff 50%, #ff00ff 75%, transparent 75%); opacity: 0.3; animation: move 3s linear infinite;">
+        </div>
+        <h1 style="font-size: 1.5em; color: #ff00ff; animation: glow 1s infinite alternate; text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;">
+            90s Vibes!
+        </h1>
+        <h2 style="font-size: 1.2em; color: #00ffff;">Feel the Retro!</h2>
+    </div>
+    <style>
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff; }
+            100% { text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff; }
+        }
+        @keyframes move {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
+        }
+    </style>
+</div>
+`,
+      explanation: {
+        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+      },
+    },
+    "2000": {
+      code: ` <div style="margin: 0; padding: 0; height: 100vh; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+
+    <div class="container" style="width: 500px; height: 500px; border: 5px solid lightgray; background: royalblue; position: relative; margin: 5px; display: flex; justify-content: center; align-items: center;">
+        <div class="shape" style="position: absolute; background-color: burlywood; width: 350px; height: 350px; rotate: 45deg; border-radius: 10%; animation: shape 3s steps(1) infinite;">
+        </div>
+    </div>
+
+    <div class="container" style="width: 500px; height: 500px; border: 5px solid lightgray; background: royalblue; position: relative; margin: 5px; display: flex; justify-content: center; align-items: center;">
+        <div class="circle-with-steps" style="position: absolute; background-color: burlywood; width: 400px; height: 400px; animation: circle-with-steps 3s steps(4) infinite alternate;">
+        </div>
+    </div>
+
+    <style>
+        /* Circle with Steps Animation */
+        @keyframes circle-with-steps {
+            from { }
+            80% { border-radius: 50%; }
+            to { border-radius: 50%; }
+        }
+
+        /* Shape Animation */
+        @keyframes shape {
+            from { }
+            25% { border-radius: 50%; width: 400px; height: 400px; }
+            50% { height: 330px; width: 480px; rotate: 0deg; }
+            75% { border-radius: 140px 140px 140px 30px; height: 350px; width: 350px; rotate: 135deg; }
+            to { border-radius: 140px 140px 140px 30px; }
+        }
+    </style>
+</div>`,
+      explanation: {
+        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+      },
+    },
+    "2010": {
+      code: `<div style="background-color: #000; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+    <h1 style="
+        display: inline-block; 
+        background-image: linear-gradient(90deg, #1d4adb 0%, #bbb4ff 43.5%, #1a30ff 89.5%); 
+        background-size: 300%; 
+        -webkit-background-clip: text; 
+        background-clip: text; 
+        -webkit-text-fill-color: transparent; 
+        text-fill-color: transparent; 
+        animation: Gradient 5s ease infinite;
+    ">Animated gradient text</h1>
+    <style>
+        /* Animation Keyframes */
+        @keyframes Gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</div>`,
+      explanation: {
+        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+      },
+    },
+    "2020": {
+      code: `<div style="margin: 0; background-color: #000; color: #fff; font-family: 'Courier New', monospace; overflow-x: hidden;">
+    <div class="marquee" style="overflow: hidden; white-space: nowrap; box-shadow: 0 0 10px #fff;">
+        <div class="marquee__group" style="display: inline-block; animation: marquee 15s linear infinite;">
+            <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ3MzQ&ixlib=rb-1.2.1&q=80&w=400" alt="" style="height: 200px; margin-right: 10px;">
+            <img src="https://images.unsplash.com/photo-1583511666445-775f1f2116f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ3MzQ&ixlib=rb-1.2.1&q=80&w=400" alt="" style="height: 200px; margin-right: 10px;">
+            <img src="https://images.unsplash.com/photo-1586917383423-c25e88ac05ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ3NzU&ixlib=rb-1.2.1&q=80&w=400" alt="" style="height: 200px; margin-right: 10px;">
+            <img src="https://images.unsplash.com/photo-1560743173-567a3b5658b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ3NzU&ixlib=rb-1.2.1&q=80&w=400" alt="" style="height: 200px; margin-right: 10px;">
+            <img src="https://images.unsplash.com/photo-1603232644140-bb47da511b92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ4MDE&ixlib=rb-1.2.1&q=80&w=400" alt="" style="height: 200px; margin-right: 10px;">
+            <img src="https://images.unsplash.com/photo-1603232644140-bb47da511b92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ4MDE&ixlib=rb-1.2.1&q=80&w=400" alt="" style="height: 200px; margin-right: 10px;">
+            <img src="https://images.unsplash.com/photo-1603232644140-bb47da511b92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ4MDE&ixlib=rb-1.2.1&q=80&w=400" alt="" style="height: 200px; margin-right: 10px;">
+        </div>
+    </div>
+
+    <style>
+        @keyframes marquee {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+    </style>
+</div>`,
+      explanation: {
+        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+      },
+    },
+    "2030": {
+      code: `<div style="display: flex; justify-content: center; align-items: center; height: 100vh; background-image: linear-gradient(to top, #09203f 0%, #537895 100%); margin: 0; padding: 0; box-sizing: border-box;">
+    <div style="display: flex; gap: 30px;">
+        <a class="icon instagram" aria-label="Instagram" href="https://www.instagram.com/spidey._.01/" target="_blank" style="position: relative; height: 80px; width: 80px; background-image: url('https://cdn-icons-png.freepik.com/512/2111/2111463.png?ga=GA1.1.2025074602.1718813500'); background-size: cover; border-radius: 50%; animation: wave 4s ease-in-out infinite; transition: transform 0.3s ease, background-image 0.3s ease;">
+        </a>
+        <a class="icon x" aria-label="X" href="https://x.com/megh_bari" target="_blank" style="position: relative; height: 80px; width: 80px; background-image: url('https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?t=st=1720022408~exp=1720023008~hmac=4fe274d9aaff4ab640fb81d9b4b3ff00cf8c80c719f4ff3c8ef0454de9140c53'); background-size: cover; border-radius: 50%; animation: wave 4s ease-in-out infinite; animation-delay: 1.5s; transition: transform 0.3s ease, background-image 0.3s ease;">
+        </a>
+        <a class="icon codepen" aria-label="codepen" href="https://codepen.io/megh-bari" target="_blank" style="position: relative; height: 80px; width: 80px; background-image: url('https://www.iconbolt.com/iconsets/phosphor-regular/codepen-logo.png'); background-size: cover; border-radius: 50%; animation: wave 4s ease-in-out infinite; animation-delay: 2s; transition: transform 0.3s ease, background-image 0.3s ease;">
+        </a>
+        <a class="icon linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/megh-bari-2b0700314/" target="_blank" style="position: relative; height: 80px; width: 80px; background-image: url('https://cdn-icons-png.freepik.com/512/61/61133.png'); background-size: cover; border-radius: 50%; animation: wave 4s ease-in-out infinite; animation-delay: 2.5s; transition: transform 0.3s ease, background-image 0.3s ease;">
+        </a>
+        <a class="icon github" aria-label="GitHub" href="https://github.com/megh-bari" target="_blank" style="position: relative; height: 80px; width: 80px; background-image: url('https://cdn-icons-png.freepik.com/512/25/25634.png'); background-size: cover; border-radius: 50%; animation: wave 4s ease-in-out infinite; animation-delay: 3s; transition: transform 0.3s ease, background-image 0.3s ease;">
+        </a>
+    </div>
+    <style>
+        /* Keyframes for the wave animation */
+        @keyframes wave {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</div>`,
+      explanation: {
+        details: 'button is awesomely designed',
+      },
+    },
+  },
+"Tooltips": {
+    title: "Tooltips",
+    "1990": {
+      code: `<div style="background-color: #121212; color: #fff; font-family: Arial, sans-serif; padding: 20px; display: flex; flex-direction: column; align-items: center;">
+
+    <h1 style="text-align: center;">Era Tooltips</h1>
+
+    <!-- 1990s Tooltip -->
+    <div style="position: relative; display: inline-block; cursor: pointer; margin: 20px; padding: 10px; background: #ff4d4d; color: #fff; border-radius: 5px; font-weight: bold;">
+        Hover over me (1990s)
+        <div style="visibility: hidden; width: 220px; background-color: #000; color: #ff4d4d; text-align: center; border-radius: 10px; padding: 10px; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -110px; opacity: 0; transition: visibility 0s, opacity 0.5s linear; box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);">
+            🎉 Bright Colors and Bold Patterns!
+        </div>
+    </div>
+    <script>
+        // JavaScript to handle tooltip visibility on hover
+        const tooltips = document.querySelectorAll('div[style*="position: relative"]');
+
+        tooltips.forEach(tooltip => {
+            const tooltipText = tooltip.querySelector('div[style*="visibility: hidden"]');
+            tooltip.onmouseover = function() {
+                tooltipText.style.visibility = 'visible';
+                tooltipText.style.opacity = '1';
+            };
+            tooltip.onmouseout = function() {
+                tooltipText.style.visibility = 'hidden';
+                tooltipText.style.opacity = '0';
+            };
+        });
+    </script>
+
+</div>`,
+      explanation: {
+        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+      },
+    },
+    "2000": {
+      code: ` <div style="position: relative; display: inline-block; margin: 20px;">
+    <span style="cursor: pointer; color: #00ccff; font-weight: bold;">Hover over me (2000s)</span>
+    <div style="visibility: hidden; width: 200px; background-color: #cc00ff; color: #fff; text-align: center; border-radius: 10px; padding: 10px; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -100px; opacity: 0; transition: visibility 0s, opacity 0.5s linear; border: 2px solid #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">
+        💻 Tech-Savvy & Cool 🌐
+    </div>
+</div>
+<script>
+    const tooltip2 = document.querySelectorAll('span')[1];
+    tooltip2.onmouseover = function() {
+        tooltip2.nextElementSibling.style.visibility = 'visible';
+        tooltip2.nextElementSibling.style.opacity = '1';
+    }
+    tooltip2.onmouseout = function() {
+        tooltip2.nextElementSibling.style.visibility = 'hidden';
+        tooltip2.nextElementSibling.style.opacity = '0';
+    }
+</script>`,
+      explanation: {
+        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+      },
+    },
+    "2010": {
+      code: `<div style="position: relative; display: inline-block; margin: 20px;">
+    <span style="background-color: #ffcc00; color: white; padding: 10px; border-radius: 10px; border: 2px solid #fff; cursor: pointer; animation: bounce 1s infinite; transition: transform 0.2s;">
+        2010s
+    </span>
+    <div style="visibility: hidden; width: 150px; background-color: #ff6600; color: #fff; text-align: center; border-radius: 10px; padding: 10px; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -75px; transition: visibility 0s, opacity 0.5s linear; opacity: 0; animation: fadeIn 0.5s;">
+        🌈 Minimalism & Flat Design 🖥️
+    </div>
+</div>
+<script>
+    const tooltip3 = document.querySelectorAll('span')[2];
+    tooltip3.onmouseover = function() {
+        tooltip3.nextElementSibling.style.visibility = 'visible';
+        tooltip3.nextElementSibling.style.opacity = '1';
+    }
+    tooltip3.onmouseout = function() {
+        tooltip3.nextElementSibling.style.visibility = 'hidden';
+        tooltip3.nextElementSibling.style.opacity = '0';
+    }
+</script>
+`,
+      explanation: {
+        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+      },
+    },
+    "2020": {
+      code: `<div style="position: relative; display: inline-block; margin: 20px;">
+    <span style="background-color: #00ff00; color: white; padding: 10px; border-radius: 10px; border: 2px solid #fff; cursor: pointer; animation: bounce 1s infinite; transition: transform 0.2s;">
+        2020s
+    </span>
+    <div style="visibility: hidden; width: 150px; background-color: #00ccff; color: #000; text-align: center; border-radius: 10px; padding: 10px; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -75px; transition: visibility 0s, opacity 0.5s linear; opacity: 0; animation: slideIn 0.5s;">
+        🌟 Bold & Bright Colors 🌈
+    </div>
+</div>
+<script>
+    const tooltip4 = document.querySelectorAll('span')[3];
+    tooltip4.onmouseover = function() {
+        tooltip4.nextElementSibling.style.visibility = 'visible';
+        tooltip4.nextElementSibling.style.opacity = '1';
+    }
+    tooltip4.onmouseout = function() {
+        tooltip4.nextElementSibling.style.visibility = 'hidden';
+        tooltip4.nextElementSibling.style.opacity = '0';
+    }
+</script>
+
+`,
+      explanation: {
+        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+      },
+    },
+    "2030": {
+      code: `<div style="position: relative; display: inline-block; margin: 20px;">
+    <span style="background-color: #6600ff; color: white; padding: 10px; border-radius: 10px; border: 2px solid #fff; cursor: pointer; animation: bounce 1s infinite; transition: transform 0.2s;">
+        2030s
+    </span>
+    <div style="visibility: hidden; width: 150px; background-color: #ff00cc; color: #fff; text-align: center; border-radius: 10px; padding: 10px; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -75px; transition: visibility 0s, opacity 0.5s linear; opacity: 0; animation: fadeIn 0.5s;">
+        🚀 Futuristic & Innovative 🔮
+    </div>
+</div>
+<script>
+    const tooltip5 = document.querySelectorAll('span')[4];
+    tooltip5.onmouseover = function() {
+        tooltip5.nextElementSibling.style.visibility = 'visible';
+        tooltip5.nextElementSibling.style.opacity = '1';
+    }
+    tooltip5.onmouseout = function() {
+        tooltip5.nextElementSibling.style.visibility = 'hidden';
+        tooltip5.nextElementSibling.style.opacity = '0';
+    }
+</script>
+ `,
+      explanation: {
+        details: 'button is awesomely designed',
+      },
+    },
+  },
+
+  "Transitions": {
+    title: "Background patterns and Effects",
+    "1990": {
+      code: ` 
+          <style>
+        /* Keyframes for animations */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+      
+      <div style="width: 300px; height: 100px; margin: 20px auto; padding: 20px; border: 3px solid #ffcc00; text-align: center; background-color: #ff00ff; animation: bounce 1s infinite; transition: background-color 0.5s;">
+        <h1 style="font-size: 1.5em; color: #00ffff;">1990s Vibes!</h1>
+        <h2 style="font-size: 1.2em;">Feel the Retro!</h2>
+    </div>`,
+      explanation: {
+        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+      },
+    },
+    "2000": {
+      code: ` 
+       <style>
+        /* Keyframes for animations */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+      
+      
+      <div style="width: 300px; height: 100px; margin: 20px auto; padding: 20px; border: 3px solid #00ccff; text-align: center; background-color: #cc00ff; animation: fadeIn 1s; transition: transform 0.5s;">
+        <h1 style="font-size: 1.5em; color: #ffcc00;">2000s Cool!</h1>
+        <h2 style="font-size: 1.2em;">The New Millennium!</h2>
+    </div>`,
+      explanation: {
+        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+      },
+    },
+    "2010": {
+      code: `
+        <style>
+        /* Keyframes for animations */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+      
+      <div style="width: 300px; height: 100px; margin: 20px auto; padding: 20px; border: 3px solid #ff6600; text-align: center; background-color: #ffcc00; animation: slideIn 1s; transition: border 0.5s;">
+        <h1 style="font-size: 1.5em; color: #ff6600;">2010s Trend!</h1>
+        <h2 style="font-size: 1.2em;">Simplicity is Key!</h2>
+    </div>`,
+      explanation: {
+        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+      },
+    },
+    "2020": {
+      code: `
+        <style>
+        /* Keyframes for animations */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+      
+      <div style="width: 300px; height: 100px; margin: 20px auto; padding: 20px; border: 3px solid #00ff00; text-align: center; background-color: #00ccff; animation: zoomIn 1s; transition: color 0.5s;">
+        <h1 style="font-size: 1.5em; color: #00ff00;">2020s Style!</h1>
+        <h2 style="font-size: 1.2em; color: #fff;">Bold & Bright!</h2>
+    </div>
+`,
+      explanation: {
+        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+      },
+    },
+    "2030": {
+      code: `
+        <style>
+        /* Keyframes for animations */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+      
+      <div style="width: 300px; height: 100px; margin: 20px auto; padding: 20px; border: 3px solid #ff00cc; text-align: center; background-color: #6600ff; animation: rotate 2s infinite; transition: transform 0.5s;">
+        <h1 style="font-size: 1.5em; color: #ffcc00;">2030s Future!</h1>
+        <h2 style="font-size: 1.2em;">Innovate & Inspire!</h2>
+    </div>`,
+      explanation: {
+        details: 'button is awesomely designed',
+      },
+    },
+  },
+  "Cards": {
+    title: "Cards",
+    "1990": {
+      code: `<div style="width: 300px; border: 1px solid #ccc; padding: 15px; margin: 10px;">
+    <h2 style="font-family: Arial, sans-serif;">1990s Card Title</h2>
+    <p style="font-family: Arial, sans-serif; color: #333;">This is a simple description for the card content. Basic HTML structure.</p>
+</div>`,
+      explanation: {
+        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+      },
+    },
+    "2000": {
+      code: ` <div style="width: 300px; border: 1px solid #ccc; padding: 15px; margin: 10px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkqjthdjANsPfQLCpLry8Op4UDexxsRrPIvQ&s" alt="Image" style="width: 100%; border-radius: 5px;">
+    <h2 style="font-family: Arial, sans-serif;">2000s Card Title</h2>
+    <p style="font-family: Arial, sans-serif; color: #333;">This card includes an image and basic styling to enhance its look.</p>
+</div>`,
+      explanation: {
+        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+      },
+    },
+    "2010": {
+      code: `<div style="display: grid; height: 100vh; overflow: hidden; position: relative; place-content: center; background-color: #010c15; font-family: 'Kode Mono Variable', monospace; margin: 0; padding: 0; box-sizing: border-box;">
+
+<main class="container" style="width: 100%; min-height: 100vh; gap: 3rem; display: flex; align-items: center; justify-content: center;">
+    <div class="card animated" style="--size: 300px; --radius: 0.75rem; margin: 0 auto; padding: 2rem; width: var(--size); background: #1c1f2b; text-align: center; position: relative; border-radius: var(--radius);">
+        <h1 style="margin: 0; color: #26d0ce;">Nice Border</h1>
+        <p style="color: #ffffff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices tortor sem, et faucibus elit feugiat a. In dapibus euismod eros, eget facilisis neque accumsan eget.</p>
+        <div style="content: ''; z-index: -1; width: 100%; height: 100%; position: absolute; translate: -50% -50%; inset-block-start: 50%; inset-inline-start: 50%; border: 8px solid transparent; border-radius: var(--radius);"></div>
+        <div style="content: ''; z-index: -1; width: 100%; height: 100%; position: absolute; translate: -50% -50%; inset-block-start: 50%; inset-inline-start: 50%; border: 8px solid rgba(38, 208, 206, 0.6); border-radius: var(--radius);"></div>
+    </div>
+</main>
+
+</div>`,
+      explanation: {
+        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+      },
+    },
+    "2020": {
+      code: `<div>
+    <div class="Abt-pg">
+        <img alt="Tecky AaryaN" class="Abt-img" src="https://blogger.googleusercontent.com/img/a/AVvXsEhsw7PUP_5frj-mDVttDrduB9YN2e3b1OtO_UswtTwFc2dURIs_nY3qlZEkXNhwguwTEiWc1Fc_MsFP0mqoKOuFfiK0WxvV8dt5cUIi4lko3m_myOE_OhwXN9q4jQhALElk5aOpDIQqmhRfYA2FzhS1Rp0JUdHrxlFpwaY-qpMIUpZyfN6vHTWzJfd-jWQ=s1453" title="Tecky AaryaN" />
+      </div>
+
+      <style>
+        @import url("https://fonts.googleapis.com/css?family=Open+Sans|Rock+Salt|Shadows+Into+Light|Cedarville+Cursive");
+        .Abt-pg {
+          text-align: center;
+        }
+
+        .Abt-img {
+          text-align: center;
+          width: 180px;
+          height: 180px!important;
+          margin: 30px auto!important;
+          animation: ripple 0.6s linear infinite;
+          border-radius: 100px!important;
+        }
+
+        @keyframes ripple {
+          0% {
+            box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.1), 0 0 0 20px rgba(255, 0, 0, 0.1), 0 0 0 40px rgba(255, 0, 0, 0.1), 0 0 0 60px rgba(255, 0, 0, 0.1);
+          }
+
+          100% {
+            box-shadow: 0 0 0 20px rgba(255, 0, 0, 0.1), 0 0 0 40px rgba(255, 0, 0, 0.1), 0 0 0 60px rgba(255, 0, 0, 0.1), 0 0 0 80px rgba(255, 0, 0, 0.1);
+          }
+        }
+
+        .st-nm {
+          color: #555eed;
+          word-spacing: -8px;
+        }
+
+        .pTtl {
+          display: none;
+        }
+
+        .pBd h1 {
+          margin: 1.4em 0 20px;
+        }
+
+        .signature {
+          font-family: "Cedarville Cursive", cursive;
+          font-size: 1.4em;
+        }
+
+        .Abt-footer {
+          margin-top: 65px!important;
+          font-style: italic;
+          font-family: cursive;
+        }
+      </style>
+
+      <style>
+        /*<![CDATA[*/
+        /* About Author Page=*/
+        .aAthrP {
+          font-size: 0.9rem;
+          color: #08102b;
+        }
+
+        .aAthrP svg {
+          width: 18px;
+          height: 18px;
+          fill: none!important;
+          stroke: #fefefe;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-width: 1.5;
+          margin-right: 7px;
+        }
+
+        .webSts svg {
+          stroke: #08102b;
+        }
+
+        .aAdm {
+          padding: 60px 0 20px 0;
+        }
+
+        .aAdm .aAdmC {
+          justify-content: center;
+          position: relative;
+          display: flex;
+          max-width: 95%;
+          margin: auto;
+          padding: 80px 30px 95px 30px;
+          background-color: #fff;
+          box-shadow: 0 10px 40px rgba(149, 157, 165, .2);
+          border-radius: 20px;
+        }
+
+        .aAdmC img {
+          position: absolute;
+          top: -60px;
+          background-color: #ffeaef;
+          width: 120px;
+          height: 120px;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+          padding: 0;
+          border: 7px solid #fff;
+          border-radius: 50%;
+          pointer-events: none;
+        }
+
+        .aAdmD {
+          text-align: center;
+        }
+
+        .aAdmD p {
+          margin: 0;
+          line-height: 1.7em;
+        }
+
+        .aAdmB {
+          text-align: center;
+          position: absolute;
+          bottom: 30px;
+          left: 0;
+          right: 0;
+        }
+
+        .aAdmB .btn {
+          display: inline-flex;
+          align-items: center;
+          margin: 0;
+          padding: 10px 15px;
+          outline: 0;
+          border: 0;
+          border-radius: 50px;
+          line-height: 20px;
+          color: #fefefe;
+          background-color: #ff0000;
+          font-size: 13px;
+          font-family: inherit;
+          text-decoration: none;
+          white-space: nowrap;
+          overflow: hidden;
+          max-width: 100%;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .aAdmB .btn:hover {
+          opacity: .8;
+          transform: scale(0.97);
+        }
+
+        .webStsH {
+          margin: 15px auto;
+          text-align: center;
+          font-size: 1.7rem;
+          font-weight: 700;
+          font-family: inherit;
+        }
+
+        .webSts {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin: 12px auto;
+        }
+
+        .webStsC {
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          padding: 8px;
+          width: 95%;
+          margin: 12px auto;
+          box-shadow: 0 5px 20px rgba(149, 157, 165, .2);
+          border-radius: 20px;
+        }
+
+        .webStsC .stats {
+          height: 80px;
+          width: 200px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin: 0 35px;
+        }
+
+        .webStsC .statsNa {
+          display: inline-flex;
+          align-items: center;
+          font-size: 16px;
+        }
+
+        .webStsC .statsNu {
+          font-family: inherit;
+          font-size: 30px;
+          margin-top: 6px;
+          font-weight: normal;
+        }
+
+        .drkM .aAthrP {
+          color: #fefefe;
+        }
+
+        .drkM .aAdmC {
+          background-color: #252526;
+          box-shadow: 0 10px 40px rgba(0, 0, 0, .2);
+        }
+
+        .drkM .aAdmC img {
+          background-image: linear-gradient(to top right, #363636, #717171);
+          border-color: #252526;
+          box-shadow: 0 10px 40px rgba(0, 0, 0, .2);
+        }
+
+        .drkM .aAdmB .btn {
+          background-color: #ff0000;
+        }
+
+        .drkM .webStsC {
+          background-color: #252526;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+        }
+
+        .drkM .webSts svg {
+          stroke: #fefefe;
+        }
+
+        @media screen and (min-width: 641px) {
+          .aAdm .aAdmC {
+            max-width: 97%;
+          }
+
+          .webSts {
+            flex-direction: row;
+          }
+
+          .webStsC {
+            max-width: 46%;
+            margin: 12px;
+          }
+        }
+        /*]]>*/
+      </style>
+
+      <script>
+        /*<![CDATA[*/
+        function webStats(json) {
+          document.write(parseInt(json.feed.openSearch$totalResults.$t, 10))
+        }
+        /*]]>*/
+      </script>
+
+      <!--[ About Author Page ]-->
+      <div class="aAthrP">
+        <!--[ About Author ]-->
+        <div class="aAdm">
+          <div class="aAdmC">
+            <!--[ Author Description ]-->
+            <div class="aAdmD">
+              <p>We must be willing to get rid of the life we've planned, so as to have the life that is waiting for us.</p>
+            </div>
+            <!--[ Author Button ]-->
+            <div class="aAdmB">
+              <a class="btn" href="#">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>`,
+      explanation: {
+        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+      },
+    },
+    "2030": {
+      code: `<div class="bg-gray-900 flex items-center justify-center min-h-screen">
+
+    <div class="max-w-md w-full p-8 border border-primary rounded-xl shadow-xl backdrop-blur-md bg-gray-800/50 text-white transition-all duration-500 transform hover:scale-105 hover:bg-gray-700/60">
+        <img src="https://t3.ftcdn.net/jpg/04/78/81/32/360_F_478813213_eCDJfwddSyZEfoo1nZo6QZIKUKFGD3jU.jpg" alt="Image" class="rounded-xl mb-4">
+        <h2 class="text-3xl font-bold text-primary mb-2">Futuristic Card Title</h2>
+        <p class="text-lg text-secondary mb-4">This card incorporates glassmorphism, interactive buttons, and social icons for a modern user experience.</p>
+        <div class="flex space-x-4">
+            <button class="bg-primary text-gray-900 py-2 px-4 rounded-lg hover:bg-secondary hover:text-white transition-all duration-500">Learn More</button>
+            <button class="bg-gray-600 py-2 px-4 rounded-lg">Share</button>
+        </div>
+        <div class="mt-4">
+            <a href="#" class="text-primary hover:text-secondary mr-2">🔗</a>
+            <a href="#" class="text-primary hover:text-secondary">🌐</a>
+        </div>
+    </div>
+
+</div>`,
+      explanation: {
+        details: 'button is awesomely designed',
+      },
+    },
+  },
+
+  "Sliders / Carousels": {
+    title: "Sliders / Carousels",
+    "1990": {
+      code: `<div style="background-color: #121212; color: #fff; font-family: Arial, sans-serif; padding: 20px; text-align: center;">
+
+<h1 style="margin-bottom: 20px;">Decade Slider</h1>
+
+<div style="position: relative; width: 80%; max-width: 600px; margin: auto; overflow: hidden; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);">
+    <div id="slides" style="display: flex; transition: transform 0.5s ease; opacity: 1;">
+        <!-- 1990s Slide -->
+        <div class="slide" style="min-width: 100%; box-sizing: border-box; padding: 40px; background: #ff4d4d; border-radius: 10px; opacity: 0; animation: fade 0.5s forwards;">
+            <h2>1990s</h2>
+            <p>🎉 Bright Colors and Bold Patterns!</p>
+        </div>
+        
+
+<script>
+    let slideIndex = 0;
+
+    function showSlide(index) {
+        const slides = document.getElementById('slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+        
+        // Reset opacity for all slides
+        document.querySelectorAll('.slide').forEach((slide) => {
+            slide.style.opacity = '0';
+        });
+
+        if (index >= totalSlides) {
+            slideIndex = 0;
+        } else if (index < 0) {
+            slideIndex = totalSlides - 1;
+        } else {
+            slideIndex = index;
+        }
+        
+        slides.style.transform = 'translateX(' + (-slideIndex * 100) + '%)';
+        // Set opacity of current slide to 1
+        slides.children[slideIndex].style.opacity = '1';
+    }
+
+    function changeSlide(n) {
+        showSlide(slideIndex + n);
+    }
+
+    // Show the first slide initially
+    showSlide(slideIndex);
+</script>
+
+<style>
+    @keyframes fade {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>
+
+</div>`,
+      explanation: {
+        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+      },
+    },
+    "2000": {
+      code: `<div style="background-color: #121212; color: #fff; font-family: Arial, sans-serif; padding: 20px; text-align: center;">
+
+<h1 style="margin-bottom: 20px;">Decade Slider</h1>
+
+<div style="position: relative; width: 80%; max-width: 600px; margin: auto; overflow: hidden; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);">
+    <div id="slides" style="display: flex; transition: transform 0.5s ease; opacity: 1;">
+         <div class="slide" style="min-width: 100%; box-sizing: border-box; padding: 40px; background: #00ccff; border-radius: 10px; opacity: 0; animation: fade 0.5s forwards;">
+            <h2>2000s</h2>
+            <p>💻 Tech Influenced and Sleek Designs!</p>
+        </div>
+        
+
+<script>
+    let slideIndex = 0;
+
+    function showSlide(index) {
+        const slides = document.getElementById('slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+        
+        // Reset opacity for all slides
+        document.querySelectorAll('.slide').forEach((slide) => {
+            slide.style.opacity = '0';
+        });
+
+        if (index >= totalSlides) {
+            slideIndex = 0;
+        } else if (index < 0) {
+            slideIndex = totalSlides - 1;
+        } else {
+            slideIndex = index;
+        }
+        
+        slides.style.transform = 'translateX(' + (-slideIndex * 100) + '%)';
+        // Set opacity of current slide to 1
+        slides.children[slideIndex].style.opacity = '1';
+    }
+
+    function changeSlide(n) {
+        showSlide(slideIndex + n);
+    }
+
+    // Show the first slide initially
+    showSlide(slideIndex);
+</script>
+
+<style>
+    @keyframes fade {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>
+
+</div>`,
+      explanation: {
+        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+      },
+    },
+    "2010": {
+      code: `<div class="slide" style="min-width: 100%; box-sizing: border-box; padding: 40px; background: #ff9900; border-radius: 10px; opacity: 0; animation: fade 0.5s forwards;">
+            <h2>2010s</h2>
+            <p>🌈 Minimalistic and Flat Aesthetics!</p>
+        </div>
+        
+
+<script>
+    let slideIndex = 0;
+
+    function showSlide(index) {
+        const slides = document.getElementById('slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+        
+        // Reset opacity for all slides
+        document.querySelectorAll('.slide').forEach((slide) => {
+            slide.style.opacity = '0';
+        });
+
+        if (index >= totalSlides) {
+            slideIndex = 0;
+        } else if (index < 0) {
+            slideIndex = totalSlides - 1;
+        } else {
+            slideIndex = index;
+        }
+        
+        slides.style.transform = 'translateX(' + (-slideIndex * 100) + '%)';
+        // Set opacity of current slide to 1
+        slides.children[slideIndex].style.opacity = '1';
+    }
+
+    function changeSlide(n) {
+        showSlide(slideIndex + n);
+    }
+
+    // Show the first slide initially
+    showSlide(slideIndex);
+</script>
+
+<style>
+    @keyframes fade {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>
+
+</div>`,
+      explanation: {
+        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+      },
+    },
+    "2020": {
+      code: `<div>
+    <div class="Abt-pg">
+        <img alt="Tecky AaryaN" class="Abt-img" src="https://blogger.googleusercontent.com/img/a/AVvXsEhsw7PUP_5frj-mDVttDrduB9YN2e3b1OtO_UswtTwFc2dURIs_nY3qlZEkXNhwguwTEiWc1Fc_MsFP0mqoKOuFfiK0WxvV8dt5cUIi4lko3m_myOE_OhwXN9q4jQhALElk5aOpDIQqmhRfYA2FzhS1Rp0JUdHrxlFpwaY-qpMIUpZyfN6vHTWzJfd-jWQ=s1453" title="Tecky AaryaN" />
+      </div>
+
+      <style>
+        @import url("https://fonts.googleapis.com/css?family=Open+Sans|Rock+Salt|Shadows+Into+Light|Cedarville+Cursive");
+        .Abt-pg {
+          text-align: center;
+        }
+
+        .Abt-img {
+          text-align: center;
+          width: 180px;
+          height: 180px!important;
+          margin: 30px auto!important;
+          animation: ripple 0.6s linear infinite;
+          border-radius: 100px!important;
+        }
+
+        @keyframes ripple {
+          0% {
+            box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.1), 0 0 0 20px rgba(255, 0, 0, 0.1), 0 0 0 40px rgba(255, 0, 0, 0.1), 0 0 0 60px rgba(255, 0, 0, 0.1);
+          }
+
+          100% {
+            box-shadow: 0 0 0 20px rgba(255, 0, 0, 0.1), 0 0 0 40px rgba(255, 0, 0, 0.1), 0 0 0 60px rgba(255, 0, 0, 0.1), 0 0 0 80px rgba(255, 0, 0, 0.1);
+          }
+        }
+
+        .st-nm {
+          color: #555eed;
+          word-spacing: -8px;
+        }
+
+        .pTtl {
+          display: none;
+        }
+
+        .pBd h1 {
+          margin: 1.4em 0 20px;
+        }
+
+        .signature {
+          font-family: "Cedarville Cursive", cursive;
+          font-size: 1.4em;
+        }
+
+        .Abt-footer {
+          margin-top: 65px!important;
+          font-style: italic;
+          font-family: cursive;
+        }
+      </style>
+
+      <style>
+        /*<![CDATA[*/
+        /* About Author Page=*/
+        .aAthrP {
+          font-size: 0.9rem;
+          color: #08102b;
+        }
+
+        .aAthrP svg {
+          width: 18px;
+          height: 18px;
+          fill: none!important;
+          stroke: #fefefe;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-width: 1.5;
+          margin-right: 7px;
+        }
+
+        .webSts svg {
+          stroke: #08102b;
+        }
+
+        .aAdm {
+          padding: 60px 0 20px 0;
+        }
+
+        .aAdm .aAdmC {
+          justify-content: center;
+          position: relative;
+          display: flex;
+          max-width: 95%;
+          margin: auto;
+          padding: 80px 30px 95px 30px;
+          background-color: #fff;
+          box-shadow: 0 10px 40px rgba(149, 157, 165, .2);
+          border-radius: 20px;
+        }
+
+        .aAdmC img {
+          position: absolute;
+          top: -60px;
+          background-color: #ffeaef;
+          width: 120px;
+          height: 120px;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+          padding: 0;
+          border: 7px solid #fff;
+          border-radius: 50%;
+          pointer-events: none;
+        }
+
+        .aAdmD {
+          text-align: center;
+        }
+
+        .aAdmD p {
+          margin: 0;
+          line-height: 1.7em;
+        }
+
+        .aAdmB {
+          text-align: center;
+          position: absolute;
+          bottom: 30px;
+          left: 0;
+          right: 0;
+        }
+
+        .aAdmB .btn {
+          display: inline-flex;
+          align-items: center;
+          margin: 0;
+          padding: 10px 15px;
+          outline: 0;
+          border: 0;
+          border-radius: 50px;
+          line-height: 20px;
+          color: #fefefe;
+          background-color: #ff0000;
+          font-size: 13px;
+          font-family: inherit;
+          text-decoration: none;
+          white-space: nowrap;
+          overflow: hidden;
+          max-width: 100%;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .aAdmB .btn:hover {
+          opacity: .8;
+          transform: scale(0.97);
+        }
+
+        .webStsH {
+          margin: 15px auto;
+          text-align: center;
+          font-size: 1.7rem;
+          font-weight: 700;
+          font-family: inherit;
+        }
+
+        .webSts {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin: 12px auto;
+        }
+
+        .webStsC {
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          padding: 8px;
+          width: 95%;
+          margin: 12px auto;
+          box-shadow: 0 5px 20px rgba(149, 157, 165, .2);
+          border-radius: 20px;
+        }
+
+        .webStsC .stats {
+          height: 80px;
+          width: 200px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin: 0 35px;
+        }
+
+        .webStsC .statsNa {
+          display: inline-flex;
+          align-items: center;
+          font-size: 16px;
+        }
+
+        .webStsC .statsNu {
+          font-family: inherit;
+          font-size: 30px;
+          margin-top: 6px;
+          font-weight: normal;
+        }
+
+        .drkM .aAthrP {
+          color: #fefefe;
+        }
+
+        .drkM .aAdmC {
+          background-color: #252526;
+          box-shadow: 0 10px 40px rgba(0, 0, 0, .2);
+        }
+
+        .drkM .aAdmC img {
+          background-image: linear-gradient(to top right, #363636, #717171);
+          border-color: #252526;
+          box-shadow: 0 10px 40px rgba(0, 0, 0, .2);
+        }
+
+        .drkM .aAdmB .btn {
+          background-color: #ff0000;
+        }
+
+        .drkM .webStsC {
+          background-color: #252526;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+        }
+
+        .drkM .webSts svg {
+          stroke: #fefefe;
+        }
+
+        @media screen and (min-width: 641px) {
+          .aAdm .aAdmC {
+            max-width: 97%;
+          }
+
+          .webSts {
+            flex-direction: row;
+          }
+
+          .webStsC {
+            max-width: 46%;
+            margin: 12px;
+          }
+        }
+        /*]]>*/
+      </style>
+
+      <script>
+        /*<![CDATA[*/
+        function webStats(json) {
+          document.write(parseInt(json.feed.openSearch$totalResults.$t, 10))
+        }
+        /*]]>*/
+      </script>
+
+      <!--[ About Author Page ]-->
+      <div class="aAthrP">
+        <!--[ About Author ]-->
+        <div class="aAdm">
+          <div class="aAdmC">
+            <!--[ Author Description ]-->
+            <div class="aAdmD">
+              <p>We must be willing to get rid of the life we've planned, so as to have the life that is waiting for us.</p>
+            </div>
+            <!--[ Author Button ]-->
+            <div class="aAdmB">
+              <a class="btn" href="#">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>`,
+      explanation: {
+        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+      },
+    },
+    "2030": {
+      code: `<div class="bg-gray-900 flex items-center justify-center min-h-screen">
+
+    <div class="max-w-md w-full p-8 border border-primary rounded-xl shadow-xl backdrop-blur-md bg-gray-800/50 text-white transition-all duration-500 transform hover:scale-105 hover:bg-gray-700/60">
+        <img src="https://t3.ftcdn.net/jpg/04/78/81/32/360_F_478813213_eCDJfwddSyZEfoo1nZo6QZIKUKFGD3jU.jpg" alt="Image" class="rounded-xl mb-4">
+        <h2 class="text-3xl font-bold text-primary mb-2">Futuristic Card Title</h2>
+        <p class="text-lg text-secondary mb-4">This card incorporates glassmorphism, interactive buttons, and social icons for a modern user experience.</p>
+        <div class="flex space-x-4">
+            <button class="bg-primary text-gray-900 py-2 px-4 rounded-lg hover:bg-secondary hover:text-white transition-all duration-500">Learn More</button>
+            <button class="bg-gray-600 py-2 px-4 rounded-lg">Share</button>
+        </div>
+        <div class="mt-4">
+            <a href="#" class="text-primary hover:text-secondary mr-2">🔗</a>
+            <a href="#" class="text-primary hover:text-secondary">🌐</a>
+        </div>
+    </div>
+
+</div>`,
+      explanation: {
+        details: 'button is awesomely designed',
+      },
+    },
+  },
+"Progress Bars": {
+    title: "Progress Bars",
+    "1990": {
+      code: `<div style="background-color: #121212; color: #fff; font-family: Arial, sans-serif; padding: 20px;">
+
+<h1 style="text-align: center; margin-bottom: 40px;"></h1>
+
+<!-- 1990s Progress Bar -->
+<div style="margin-bottom: 20px;">
+    <p style="margin: 0;">1990s</p>
+    <div style="background-color: #333; width: 100%; height: 30px; border-radius: 5px; overflow: hidden;">
+        <div style="background-color: #ff4d4d; width: 10%; height: 100%; animation: progress90 2s ease-out;"></div>
+    </div>
+</div>
+
+<style>
+    @keyframes progress90 {
+        0% { width: 0%; }
+        100% { width: 10%; }
+    }
+
+    @keyframes progress00 {
+        0% { width: 0%; }
+        100% { width: 40%; }
+    }
+
+    @keyframes progress10 {
+        0% { width: 0%; }
+        100% { width: 70%; }
+    }
+
+    @keyframes progress20 {
+        0% { width: 0%; }
+        100% { width: 90%; }
+    }
+
+    @keyframes progress30 {
+        0% { width: 0%; }
+        100% { width: 100%; }
+    }
+</style>
+
+</div>`,
+      explanation: {
+        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+      },
+    },
+    "2000": {
+      code: ` <div style="background-color: #121212; color: #fff; font-family: Arial, sans-serif; padding: 20px;">
+
+<h1 style="text-align: center; margin-bottom: 40px;"></h1>
+
+<!-- 2000s Progress Bar -->
+<div style="margin-bottom: 20px;">
+    <p style="margin: 0;">2000s</p>
+    <div style="background-color: #333; width: 100%; height: 30px; border-radius: 5px; overflow: hidden;">
+        <div style="background-color: #00ccff; width: 40%; height: 100%; animation: progress00 2s ease-out;"></div>
+    </div>
+</div>
+
+<style>
+    @keyframes progress90 {
+        0% { width: 0%; }
+        100% { width: 10%; }
+    }
+
+    @keyframes progress00 {
+        0% { width: 0%; }
+        100% { width: 40%; }
+    }
+
+    @keyframes progress10 {
+        0% { width: 0%; }
+        100% { width: 70%; }
+    }
+
+    @keyframes progress20 {
+        0% { width: 0%; }
+        100% { width: 90%; }
+    }
+
+    @keyframes progress30 {
+        0% { width: 0%; }
+        100% { width: 100%; }
+    }
+</style>
+
+</div>`,
+      explanation: {
+        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+      },
+    },
+    "2010": {
+      code: `<div style="background-color: #121212; color: #fff; font-family: Arial, sans-serif; padding: 20px;">
+
+<h1 style="text-align: center; margin-bottom: 40px;"></h1>
+
+<div style="margin-bottom: 20px;">
+    <p style="margin: 0;">2010s</p>
+    <div style="background-color: #333; width: 100%; height: 30px; border-radius: 5px; overflow: hidden;">
+        <div style="background-color: #ff9900; width: 70%; height: 100%; animation: progress10 2s ease-out;"></div>
+    </div>
+</div>
+
+<style>
+    @keyframes progress90 {
+        0% { width: 0%; }
+        100% { width: 10%; }
+    }
+
+    @keyframes progress00 {
+        0% { width: 0%; }
+        100% { width: 40%; }
+    }
+
+    @keyframes progress10 {
+        0% { width: 0%; }
+        100% { width: 70%; }
+    }
+
+    @keyframes progress20 {
+        0% { width: 0%; }
+        100% { width: 90%; }
+    }
+
+    @keyframes progress30 {
+        0% { width: 0%; }
+        100% { width: 100%; }
+    }
+</style>
+
+</div>`,
+      explanation: {
+        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+      },
+    },
+    "2020": {
+      code: `<div>
+    <div class="Abt-pg">
+        <img alt="Tecky AaryaN" class="Abt-img" src="https://blogger.googleusercontent.com/img/a/AVvXsEhsw7PUP_5frj-mDVttDrduB9YN2e3b1OtO_UswtTwFc2dURIs_nY3qlZEkXNhwguwTEiWc1Fc_MsFP0mqoKOuFfiK0WxvV8dt5cUIi4lko3m_myOE_OhwXN9q4jQhALElk5aOpDIQqmhRfYA2FzhS1Rp0JUdHrxlFpwaY-qpMIUpZyfN6vHTWzJfd-jWQ=s1453" title="Tecky AaryaN" />
+      </div>
+
+      <style>
+        @import url("https://fonts.googleapis.com/css?family=Open+Sans|Rock+Salt|Shadows+Into+Light|Cedarville+Cursive");
+        .Abt-pg {
+          text-align: center;
+        }
+
+        .Abt-img {
+          text-align: center;
+          width: 180px;
+          height: 180px!important;
+          margin: 30px auto!important;
+          animation: ripple 0.6s linear infinite;
+          border-radius: 100px!important;
+        }
+
+        @keyframes ripple {
+          0% {
+            box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.1), 0 0 0 20px rgba(255, 0, 0, 0.1), 0 0 0 40px rgba(255, 0, 0, 0.1), 0 0 0 60px rgba(255, 0, 0, 0.1);
+          }
+
+          100% {
+            box-shadow: 0 0 0 20px rgba(255, 0, 0, 0.1), 0 0 0 40px rgba(255, 0, 0, 0.1), 0 0 0 60px rgba(255, 0, 0, 0.1), 0 0 0 80px rgba(255, 0, 0, 0.1);
+          }
+        }
+
+        .st-nm {
+          color: #555eed;
+          word-spacing: -8px;
+        }
+
+        .pTtl {
+          display: none;
+        }
+
+        .pBd h1 {
+          margin: 1.4em 0 20px;
+        }
+
+        .signature {
+          font-family: "Cedarville Cursive", cursive;
+          font-size: 1.4em;
+        }
+
+        .Abt-footer {
+          margin-top: 65px!important;
+          font-style: italic;
+          font-family: cursive;
+        }
+      </style>
+
+      <style>
+        /*<![CDATA[*/
+        /* About Author Page=*/
+        .aAthrP {
+          font-size: 0.9rem;
+          color: #08102b;
+        }
+
+        .aAthrP svg {
+          width: 18px;
+          height: 18px;
+          fill: none!important;
+          stroke: #fefefe;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-width: 1.5;
+          margin-right: 7px;
+        }
+
+        .webSts svg {
+          stroke: #08102b;
+        }
+
+        .aAdm {
+          padding: 60px 0 20px 0;
+        }
+
+        .aAdm .aAdmC {
+          justify-content: center;
+          position: relative;
+          display: flex;
+          max-width: 95%;
+          margin: auto;
+          padding: 80px 30px 95px 30px;
+          background-color: #fff;
+          box-shadow: 0 10px 40px rgba(149, 157, 165, .2);
+          border-radius: 20px;
+        }
+
+        .aAdmC img {
+          position: absolute;
+          top: -60px;
+          background-color: #ffeaef;
+          width: 120px;
+          height: 120px;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+          padding: 0;
+          border: 7px solid #fff;
+          border-radius: 50%;
+          pointer-events: none;
+        }
+
+        .aAdmD {
+          text-align: center;
+        }
+
+        .aAdmD p {
+          margin: 0;
+          line-height: 1.7em;
+        }
+
+        .aAdmB {
+          text-align: center;
+          position: absolute;
+          bottom: 30px;
+          left: 0;
+          right: 0;
+        }
+
+        .aAdmB .btn {
+          display: inline-flex;
+          align-items: center;
+          margin: 0;
+          padding: 10px 15px;
+          outline: 0;
+          border: 0;
+          border-radius: 50px;
+          line-height: 20px;
+          color: #fefefe;
+          background-color: #ff0000;
+          font-size: 13px;
+          font-family: inherit;
+          text-decoration: none;
+          white-space: nowrap;
+          overflow: hidden;
+          max-width: 100%;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .aAdmB .btn:hover {
+          opacity: .8;
+          transform: scale(0.97);
+        }
+
+        .webStsH {
+          margin: 15px auto;
+          text-align: center;
+          font-size: 1.7rem;
+          font-weight: 700;
+          font-family: inherit;
+        }
+
+        .webSts {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin: 12px auto;
+        }
+
+        .webStsC {
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          padding: 8px;
+          width: 95%;
+          margin: 12px auto;
+          box-shadow: 0 5px 20px rgba(149, 157, 165, .2);
+          border-radius: 20px;
+        }
+
+        .webStsC .stats {
+          height: 80px;
+          width: 200px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin: 0 35px;
+        }
+
+        .webStsC .statsNa {
+          display: inline-flex;
+          align-items: center;
+          font-size: 16px;
+        }
+
+        .webStsC .statsNu {
+          font-family: inherit;
+          font-size: 30px;
+          margin-top: 6px;
+          font-weight: normal;
+        }
+
+        .drkM .aAthrP {
+          color: #fefefe;
+        }
+
+        .drkM .aAdmC {
+          background-color: #252526;
+          box-shadow: 0 10px 40px rgba(0, 0, 0, .2);
+        }
+
+        .drkM .aAdmC img {
+          background-image: linear-gradient(to top right, #363636, #717171);
+          border-color: #252526;
+          box-shadow: 0 10px 40px rgba(0, 0, 0, .2);
+        }
+
+        .drkM .aAdmB .btn {
+          background-color: #ff0000;
+        }
+
+        .drkM .webStsC {
+          background-color: #252526;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+        }
+
+        .drkM .webSts svg {
+          stroke: #fefefe;
+        }
+
+        @media screen and (min-width: 641px) {
+          .aAdm .aAdmC {
+            max-width: 97%;
+          }
+
+          .webSts {
+            flex-direction: row;
+          }
+
+          .webStsC {
+            max-width: 46%;
+            margin: 12px;
+          }
+        }
+        /*]]>*/
+      </style>
+
+      <script>
+        /*<![CDATA[*/
+        function webStats(json) {
+          document.write(parseInt(json.feed.openSearch$totalResults.$t, 10))
+        }
+        /*]]>*/
+      </script>
+
+      <!--[ About Author Page ]-->
+      <div class="aAthrP">
+        <!--[ About Author ]-->
+        <div class="aAdm">
+          <div class="aAdmC">
+            <!--[ Author Description ]-->
+            <div class="aAdmD">
+              <p>We must be willing to get rid of the life we've planned, so as to have the life that is waiting for us.</p>
+            </div>
+            <!--[ Author Button ]-->
+            <div class="aAdmB">
+              <a class="btn" href="#">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>`,
+      explanation: {
+        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+      },
+    },
+    "2030": {
+      code: `<div class="bg-gray-900 flex items-center justify-center min-h-screen">
+
+    <div class="max-w-md w-full p-8 border border-primary rounded-xl shadow-xl backdrop-blur-md bg-gray-800/50 text-white transition-all duration-500 transform hover:scale-105 hover:bg-gray-700/60">
+        <img src="https://t3.ftcdn.net/jpg/04/78/81/32/360_F_478813213_eCDJfwddSyZEfoo1nZo6QZIKUKFGD3jU.jpg" alt="Image" class="rounded-xl mb-4">
+        <h2 class="text-3xl font-bold text-primary mb-2">Futuristic Card Title</h2>
+        <p class="text-lg text-secondary mb-4">This card incorporates glassmorphism, interactive buttons, and social icons for a modern user experience.</p>
+        <div class="flex space-x-4">
+            <button class="bg-primary text-gray-900 py-2 px-4 rounded-lg hover:bg-secondary hover:text-white transition-all duration-500">Learn More</button>
+            <button class="bg-gray-600 py-2 px-4 rounded-lg">Share</button>
+        </div>
+        <div class="mt-4">
+            <a href="#" class="text-primary hover:text-secondary mr-2">🔗</a>
+            <a href="#" class="text-primary hover:text-secondary">🌐</a>
+        </div>
+    </div>
+
+</div>`,
+      explanation: {
+        details: 'button is awesomely designed',
+      },
+    },
+  },
+
+
+
 
 }
 
