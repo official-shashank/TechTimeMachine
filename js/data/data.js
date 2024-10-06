@@ -95,7 +95,7 @@ var compoenents = {
     </ul>
   </div>`,
       explanation: {
-        details: 'A webpage using only system-default fonts like Times New Roman and basic styling for headings, paragraphs, and links. ',
+        details: 'Typography in the 1990s was bold and experimental, capturing the rebellious, grunge-inspired spirit of the era. Influenced by alternative music, punk culture, and DIY aesthetics, designers embraced distressed and chaotic styles, often using hand-drawn fonts and layered layouts in print media. While the web was still in its early stages, and limited to a few safe fonts, print typography flourished, with unconventional, imperfect styles dominating album covers, posters, and magazines ',
       },
     },
     "2000": {
