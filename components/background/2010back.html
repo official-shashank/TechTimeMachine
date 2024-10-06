@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thundering Typhoons!</title>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+</head>
+<div style="display: flex; justify-content: center; align-items: center; height: 100%; margin: 0; font-family: 'Shrikhand', cursive;">
+    <div class="body" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; z-index: 2;">
+        <h1 style="font-size: 4rem; letter-spacing: .2rem; color: rgb(25, 52, 82); font-weight: 600; margin: 1rem 5rem; text-shadow: 1px 1px 0 rgb(77,162,252), -1px -1px 0 rgb(77,162,252), 1px -1px 0 rgb(77,162,252), -1px 1px 0 rgb(77,162,252), 4px 4px 1px rgba(44,88,137,.5), -4px 4px 1px rgba(44,88,137,.5), 4px -4px 1px rgba(44,88,137,.5), -4px -4px 1px rgba(44,88,137,.5);">
+            &ldquo;Thundering<br />Typhoons!&rdquo;
+        </h1>
+        <h2 style="font-size: 2rem; color: rgb(25, 52, 82); font-weight: 600; margin: 1rem 5rem; text-shadow: 1px 1px 0 rgb(77,162,252), -1px -1px 0 rgb(77,162,252), 1px -1px 0 rgb(77,162,252), -1px 1px 0 rgb(77,162,252), 4px 4px 1px rgba(44,88,137,.5), -4px 4px 1px rgba(44,88,137,.5), 4px -4px 1px rgba(44,88,137,.5), -4px -4px 1px rgba(44,88,137,.5);">
+            &mdash; Captain Haddock
+        </h2>
+    </div>
+    <div class="pen" style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; background-color: rgb(35, 74, 116);">
+        <div class="panel" style="background-color: rgb(35, 74, 116); padding: 3rem; overflow: hidden; position: relative; left: -200%; top: -500%; margin: 0 auto; height: 1000%; width: 400%; transform: rotate(20deg);">
+            <div class="scroll" style="background: repeating-linear-gradient(45deg, rgb(27, 57, 89), rgb(27, 57, 89) 70px, rgb(31, 64, 100) 70px, rgb(31, 64, 100) 140px); position: absolute; top: 0; left: 0; height: 400%; width: 100%; animation: animateBackground 5s linear infinite;"></div>
+        </div>
+    </div>
+    <style>
+        @keyframes animateBackground {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(0, -396px, 0); }
+        }
+    </style>
+</div>
+</html>

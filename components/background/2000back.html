@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined Gradient and Script Example</title>
+</head>
+<div>
+  <div id="app" style="height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center; background-image: repeating-linear-gradient(135deg, hsl(242, 31%, 80%) 0px, hsl(242, 31%, 80%) 3px, transparent 3px, transparent 122px), repeating-linear-gradient(225deg, hsl(242, 31%, 80%) 0px, hsl(242, 31%, 80%) 3px, transparent 3px, transparent 122px), linear-gradient(313deg, hsl(242, 31%, 70%), hsl(242, 31%, 70%));">
+    <h1 style="text-decoration: underline;">Gradient and Random Color Generator</h1>
+    <button @click="randomize">Randomize Gradient</button>
+    <button @click="copyCSS">Copy CSS</button>
+    <div id="copyBox" style="display:none"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script>
+    function selectText(node) {
+      node = document.getElementById(node);
+      if (document.body.createTextRange) {
+        const range = document.body.createTextRange();
+        range.moveToElementText(node);
+        range.select();
+      } else if (window.getSelection) {
+        const selection = window.getSelection();
+        const range = document.createRange();
+        range.selectNodeContents(node);
+        selection.removeAllRanges();
+        selection.addRange(range);
+      } else {
+        console.warn("Could not select text in node: Unsupported browser.");
+      }
+    }
+
+    function getRandomInt(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function sample(arr) {
+      return arr[getRandomInt(0, arr.length - 1)];
+    }
+
+    function randomColorStringRGB(transparency = 1, grayscale = false) {
+      let r = getRandomInt(0, 256);
+      let g = getRandomInt(0, 256);
+      let b = getRandomInt(0, 256);
+      if (grayscale) {
+        g = r;
+        b = r;
+      }
+      if (transparency == 1) return `rgb(${r}, ${g}, ${b})`;
+      return `rgba(${r}, ${g}, ${b}, ${transparency})`;
+    }
+
+    var vm = new Vue({
+      el: "#app",
+      data: {
+        gridSize: 2,
+        gridColor: '#333',
+        fillSize: 40,
+        fillColor: 'white',
+        gradient: '',
+        angle: 0,
+        showColor: true,
+        chaos: false,
+        tiny: false,
+        thick: false,
+      },
+      created() {
+        this.randomize();
+        this.generateGradient();
+      },
+      methods: {
+        generateGradient() {
+          let gridSize = this.gridSize;
+          let fillSize = this.fillSize;
+          let angle = this.angle;
+          let fillColor = this.fillColor;
+          let gridColor = this.gridColor;
+          this.gradient = `repeating-linear-gradient(${this.angle}deg, ${gridColor} 0px, ${gridColor} ${gridSize}px,  transparent ${gridSize}px, transparent ${gridSize + fillSize}px), repeating-linear-gradient(${this.angle + 90}deg, ${gridColor} 0px, ${gridColor} ${gridSize}px,  transparent ${gridSize}px, transparent ${gridSize + fillSize}px), linear-gradient(${getRandomInt(0, 360)}deg, ${fillColor}, ${fillColor})`;
+        },
+        stackGradient() {
+          let gridSize = this.gridSize;
+          let fillSize = this.fillSize;
+          let angle = this.angle;
+          let gridColor = this.gridColor;
+          this.gradient = `repeating-linear-gradient(${this.angle}deg, ${gridColor} 0px, ${gridColor} ${gridSize}px,  transparent ${gridSize}px, transparent ${gridSize + fillSize}px), repeating-linear-gradient(${this.angle + 90}deg, ${gridColor} 0px, ${gridColor} ${gridSize}px,  transparent ${gridSize}px, transparent ${gridSize + fillSize}px), ${this.gradient}`;
+        },
+        randomize() {
+          this.randomizeParameters();
+          this.randomizeColors();
+          this.generateGradient();
+          if (this.chaos) {
+            let randomizeAngle = getRandomInt(0, 3);
+            for (let i = 0; i < getRandomInt(1, 3); i++) {
+              this.randomizeParameters();
+              this.randomizeColors();
+              if (randomizeAngle == 0) this.angle = getRandomInt(0, 360);
+              this.stackGradient();
+            }
+          }
+        },
+        randomizeParameters() {
+          this.gridSize = getRandomInt(1, 20);
+          this.fillSize = getRandomInt(5, 170);
+          if (this.tiny) {
+            this.gridSize = getRandomInt(1, 4);
+            this.fillSize = getRandomInt(5, 40);
+          } else if (this.thick) {
+            this.gridSize = getRandomInt(20, 40);
+            this.fillSize = getRandomInt(8, 90);
+          }
+          this.angle = sample([0, 45, 90, 135, 180]);
+        },
+        randomizeColors() {
+          let h = getRandomInt(0, 360);
+          let s = getRandomInt(0, 100);
+          let v = getRandomInt(0, 100);
+          let v2 = getRandomInt(0, 100);
+          if (!this.showColor) {
+            s = 0;
+          }
+          this.gridColor = `hsl(${h},${s}%,${v}%)`;
+          this.fillColor = `hsl(${h},${s}%,${v2}%)`;
+        },
+        copyCSS() {
+          let copyBox = document.querySelector('#copyBox');
+          copyBox.style['display'] = 'block';
+          copyBox.innerHTML = this.gradient;
+          selectText('copyBox');
+          document.execCommand('copy');
+          copyBox.style['display'] = 'none';
+          toastr.success('CSS Copied to Clipboard');
+        }
+      },
+      watch: {
+        thick: function(newVal) {
+          if (newVal) this.tiny = false;
+        },
+        tiny: function(newVal) {
+          if (newVal) this.thick = false;
+        }
+      },
+      computed: {
+        styleObj() {
+          return {
+            backgroundImage: this.gradient
+          };
+        }
+      }
+    });
+  </script>
+</div>
+</html>

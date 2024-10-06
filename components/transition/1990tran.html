@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1990s Transition Example</title>
+</head>
+<body style="background-color: #c0c0c0; font-family: Arial, sans-serif; text-align: center; padding-top: 50px;">
+    <h1 style="color: #00008B;">Welcome to the 1990s</h1>
+    <button style="
+        background-color: #FF4500; 
+        color: white; 
+        padding: 15px 25px; 
+        border: none; 
+        border-radius: 5px; 
+        font-size: 20px; 
+        cursor: pointer; 
+        transition: background-color 0.5s ease;">
+        Hover Over Me!
+    </button>
+
+    <script>
+        const button = document.querySelector('button');
+        button.addEventListener('mouseover', () => {
+            button.style.backgroundColor = '#32CD32'; // Change to green on hover
+        });
+
+        button.addEventListener('mouseout', () => {
+            button.style.backgroundColor = '#FF4500'; // Change back to original color
+        });
+    </script>
+</body>
+</html>
