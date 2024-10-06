@@ -1,4 +1,4 @@
-var editorLayout=`
+var editorLayout = `
 <div class="max-w-7xl mx-auto">
           <div class="flex justify-start mb-8">
             <h1 id="title" class=" relative text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-600">
@@ -36,24 +36,17 @@ var editorLayout=`
               <div class="bg-gray-700 p-6 mt-6 rounded-lg">
                 <h3 class="text-lg font-semibold text-white mb-4">Component Explanation</h3>
                 <div class="text-gray-300 mb-4">
-                    <h4 class="font-bold">Before:</h4>
+                    
                     <p id="previousExplanation">Explanation of the previous component will go here...</p>
                 </div>
-                <div class="text-gray-300">
-                    <h4 class="font-bold">Now:</h4>
-                    <p id="currentExplanation">Explanation of the current component will go here...</p>
-                </div>
+             
             </div>
     
-            <!-- Prev/Next Buttons -->
-            <div class="mt-6 flex justify-between">
-                <button class="custom-btn py-2 px-4 rounded-lg">Prev</button>
-                <button class="custom-btn py-2 px-4 rounded-lg">Next</button>
-            </div>
+         
         </div>
 `
 
-var footer=`                                                <footer class="w-full py-14">
+var footer = `<footer class="w-full py-14">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto">
                 <a href="https://pagedone.io/" class="flex justify-center ">
@@ -116,5 +109,3 @@ var footer=`                                                <footer class="w-ful
             </div>
         </div>
     </footer>`
-
-

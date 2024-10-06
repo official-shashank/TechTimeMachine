@@ -674,7 +674,7 @@ var compoenents = {
       },
     },
   },
-
+  
 
   icon_and_imagery: {
     title: 'scroll',
@@ -1294,7 +1294,129 @@ var compoenents = {
         details: 'button is awesomely designed',
       },
     },
-  }
+  },
+  "Inputs": {
+    title: 'homepages',
+    "1990": {
+      code: `<div class="decade-1990s mb-8">
+    <h2 class="text-2xl font-bold mb-4">1990s Input Design</h2>
+    <input type="text" placeholder="Enter your name" class="w-full border border-gray-400 p-2 text-sm bg-white text-black">
+</div>`,
+      explanation: {
+        details: 'A navigation bar that is constructed with a simple HTML table with basic links. ',
+      },
+    },
+    "2000": {
+      code: ` <div class="decade-2000s mb-8">
+    <h2 class="text-2xl font-bold mb-4">2000s Input Design</h2>
+    <input type="text" placeholder="Enter your name" class="w-full border border-gray-400 p-2 text-sm shadow-md bg-white text-black">
+</div>`,
+      explanation: {
+        details: 'A CSS dropdown menu that appears when hovering over a "Menu" button. ',
+      },
+    },
+    "2010": {
+      code: `<div class="decade-2010s mb-8">
+    <h2 class="text-2xl font-bold mb-4">2010s Input Design</h2>
+    <input type="text" placeholder="Enter your name" class="w-full border border-gray-300 p-3 rounded-lg focus:border-accent-color focus:ring-2 focus:ring-accent-color bg-white text-gray-700">
+</div>`,
+      explanation: {
+        details: 'A responsive hamburger menu that collapses for mobile and expands for desktop, using modern CSS and JavaScript. ',
+      },
+    },
+    "2020": {
+      code: `<div class="decade-2020s mb-8">
+    <h2 class="text-2xl font-bold mb-4">2020s Input Design</h2>
+    <input type="text" placeholder="Enter your name" class="w-full border-none p-3 rounded-lg bg-white bg-opacity-50 backdrop-blur-md shadow-md focus:outline-none focus:ring-2 focus:ring-accent-color text-gray-800 placeholder-gray-500">
+</div>`,
+      explanation: {
+        details: 'A fullscreen navigation menu that slides in when clicking the hamburger icon, with smooth CSS transitions. ',
+      },
+    },
+    "2030": {
+      code: `<div class="decade-2030s mb-8">
+    <h2 class="text-2xl font-bold mb-4">2030s Input Design</h2>
+    <input type="text" placeholder="Enter your name" class="w-full border-none p-4 rounded-lg bg-transparent border-b-2 border-gray-300 focus:border-b-4 focus:border-accent-color transition-all duration-300 ease-in-out text-gray-100 placeholder-gray-500">
+</div>`,
+      explanation: {
+        details: 'button is awesomely designed',
+      },
+    },
+  },
+  "Cards": {
+    title: 'cards',
+    "1990": {
+      code: `<div class="decade-1990s mb-8">
+    <h2 class="text-2xl font-bold mb-4">1990s Card Design</h2>
+    <div class="w-full border border-gray-400 p-4 bg-white text-black">
+        <h3 class="text-lg font-bold">1990s Card Title</h3>
+        <p class="text-sm mt-2">
+            Cards in the 1990s were simple, flat, and often had minimal styling. They were often used with no background colors and plain borders.
+        </p>
+    </div>
+</div>`,
+      explanation: {
+        details: '1990s: Cards were simple, flat, and lacked any real design depth. Plain borders, white backgrounds, and basic text.',
+      },
+    },
+    "2000": {
+      code: ` <div class="decade-2000s mb-8">
+    <h2 class="text-2xl font-bold mb-4">2000s Card Design</h2>
+    <div class="w-full border border-gray-300 shadow-md p-4 bg-white text-black rounded-lg">
+        <h3 class="text-lg font-bold">2000s Card Title</h3>
+        <p class="text-sm mt-2">
+            In the 2000s, card designs began incorporating box shadows and rounded corners for a more polished, professional look.
+        </p>
+    </div>
+</div>`,
+      explanation: {
+        details: '2000s: Introduction of shadows, rounded corners, and subtle use of depth to make designs feel more modern.',
+      },
+    },
+    "2010": {
+      code: `<div class="decade-2010s mb-8">
+    <h2 class="text-2xl font-bold mb-4">2010s Card Design</h2>
+    <div class="w-full border border-gray-200 p-6 bg-white text-gray-700 rounded-lg hover:shadow-lg transition-shadow duration-300 ease-in-out">
+        <h3 class="text-lg font-bold">2010s Card Title</h3>
+        <p class="text-sm mt-2">
+            The 2010s saw the rise of flat design with bright colors, hover effects, and more interactive UI elements like cards.
+        </p>
+    </div>
+</div>`,
+      explanation: {
+        details: '2010s: Flat design with bright colors, emphasis on hover effects for user interaction, and smooth transitions.',
+      },
+    },
+    "2020": {
+      code: `<div class="decade-2020s mb-8">
+    <h2 class="text-2xl font-bold mb-4">2020s Card Design</h2>
+    <div class="w-full p-6 bg-white bg-opacity-50 backdrop-blur-md shadow-lg rounded-lg text-gray-800">
+        <h3 class="text-lg font-bold">2020s Card Title</h3>
+        <p class="text-sm mt-2">
+            The 2020s embraced trends like glassmorphism, featuring translucent backgrounds, soft shadows, and more depth with minimalistic designs.
+        </p>
+    </div>
+</div>`,
+      explanation: {
+        details: '2020s: Glassmorphism with translucent backgrounds, soft shadows, and subtle depth effects that give a modern, sophisticated look.',
+      },
+    },
+    "2030": {
+      code: `<div class="decade-2030s mb-8">
+    <h2 class="text-2xl font-bold mb-4">2030s Card Design</h2>
+    <div class="w-full p-8 bg-transparent border-b-2 border-gray-400 hover:border-b-4 hover:border-accent-color transition-all duration-300 ease-in-out text-gray-100">
+        <h3 class="text-lg font-bold">2030s Card Title</h3>
+        <p class="text-sm mt-2">
+            The 2030s card design is speculative, featuring ultra-minimalism, animated borders, and smooth transitions for a futuristic feel.
+        </p>
+    </div>
+</div>`,
+      explanation: {
+        details: '2030s: Ultra-minimalism with futuristic features like animated border effects, transitioning colors, and a focus on simplicity.',
+      },
+    },
+  },
+  
 
 }
 
