@@ -846,7 +846,7 @@ var compoenents = {
   "Icons and Imagery": {
     title: 'scroll',
     "1990": {
-      code: `div style="font-family: 'Arial', sans-serif; background-color: #f9f9f9; color: #333; text-align: center; padding: 20px;">
+      code: `<div style="font-family: 'Arial', sans-serif; background-color: #f9f9f9; color: #333; text-align: center; padding: 20px;">
     <h1 style="font-size: 36px; color: #ff3366;">1990s: Bitmap Icons and Low-Resolution Graphics</h1>
     <p style="font-size: 20px; color: #666;">In the 1990s, web design was characterized by pixelated icons and low-resolution GIF images.</p>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpTcUH4LLjSVfkKEXJ30BBRyAhfT4s_YZO3g&s" alt="90s Icon" style="width: 150px; height: 150px; image-rendering: pixelated; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
