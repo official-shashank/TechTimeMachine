@@ -49,7 +49,7 @@ function handleLogin(event) {
     alert(`Welcome back, ${user.name}!`);
 
     // Redirect to a protected page after login
-    window.location.href = '/componentsLayout.html';
+    window.location.href = '/index.html';
   } else {
     alert('Invalid email or password.');
   }
@@ -74,12 +74,16 @@ function logout() {
 
 
 
+
+
 async function loaddata() {
   codeEditor = document.getElementById('codeEditor')
   output = document.getElementById('output')
   // console.log(contentToBeShown["1990"]['code'])
   codeEditor.value = contentToBeShown['1990']['code']
   output.innerHTML = contentToBeShown['1990']['code']
+
+  document.getElementById("previousExplanation").innerText=contentToBeShown['1990']['explanation']['details']
 }
 
 document.getElementById('btn1')?.addEventListener('click', loaddata)
@@ -95,33 +99,31 @@ function buttonContentChange(){
     console.log("laod data btn2")
     codeEditor.value = contentToBeShown['2000']['code']
     output.innerHTML = contentToBeShown['2000']['code']
+    document.getElementById("previousExplanation").innerText=contentToBeShown['2000']['explanation']['details']
   })
   
   document.getElementById('btn3')?.addEventListener('click', function () {
    codeEditor.value = contentToBeShown['2010']['code']
     output.innerHTML = contentToBeShown['2010']['code']
+    document.getElementById("previousExplanation").innerText=contentToBeShown['2010']['explanation']['details']
   })
   
   document.getElementById('btn4')?.addEventListener('click', function () {
     codeEditor.value = contentToBeShown['2020']['code']
     output.innerHTML = contentToBeShown['2020']['code']
+    document.getElementById("previousExplanation").innerText=contentToBeShown['2020']['explanation']['details']
   })
   
   document.getElementById('btn5')?.addEventListener('click', function () {
    codeEditor.value = contentToBeShown['2030']['code']
     output.innerHTML = contentToBeShown['2030']['code']
+    document.getElementById("previousExplanation").innerText=contentToBeShown['2030']['explanation']['details']
   })
   
 }
 
 
-// document.getElementById('prevBtn').addEventListener('click', function () {
-//   alert('Prev button clicked')
-// })
 
-// document.getElementById('nextBtn').addEventListener('click', function () {
-//   alert('Next button clicked')
-// })
 
 // sidebar content desplay
 
@@ -143,8 +145,9 @@ links.forEach((link) => {
 
    
     contentToBeShown = compoenents[this.text]
-    btnStateManage()
-    await loaddata()
+    btnStateManage();
+    await loaddata();
+    buttonNextPrev();
     // console.log(contentToBeShown)
   })
 })
@@ -243,25 +246,16 @@ lightbox.addEventListener('click', e => {
 });
 
 
+// // accordian section
+// const accordions = document.querySelectorAll('.accordion-section');
 
-
-
-
-
-
-
-
-
-// accordian section
-const accordions = document.querySelectorAll('.accordion-section');
-
-    accordions.forEach((accordion) => {
-      const header = accordion.querySelector('.flex');
-      const content = accordion.querySelector('.accordion-content');
-      const icon = accordion.querySelector('svg');
+//     accordions.forEach((accordion) => {
+//       const header = accordion.querySelector('.flex');
+//       const content = accordion.querySelector('.accordion-content');
+//       const icon = accordion.querySelector('svg');
       
-      header.addEventListener('click', () => {
-        content.classList.toggle('hidden');
-        icon.classList.toggle('rotate-180');
-      });
-    });
+//       header.addEventListener('click', () => {
+//         content.classList.toggle('hidden');
+//         icon.classList.toggle('rotate-180');
+//       });
+//     });
