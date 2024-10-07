@@ -64,18 +64,7 @@ The **Tech Time Machine** is a showcase of the evolution of UI/UX design across 
 
 ---
 
-## 📂 Directory Structure  
-```bash
-TechTimeMachine/
-├─ public/
-├─ src/
-│  ├─ assets/
-│  ├─ components/
-│  ├─ styles/
-│  ├─ index.html
-│  ├─ main.js
-└─ tailwind.config.js
-🎥 Video Walkthrough of the Project
+
 
 A short video demonstrating the key features of the Tech Time Machine.
 
