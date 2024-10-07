@@ -1,5 +1,8 @@
 # 🌐 **Tech Time Machine - Evolution of UI/UX Design**
 
+![image](https://github.com/user-attachments/assets/9f6db133-4f61-4141-a178-a3ec7c28f90e)
+
+
 ## Introduction  
 The **Tech Time Machine** is a showcase of the evolution of UI/UX design across different decades, from the 1990s to the 2030s. It highlights major design trends, iconic visual elements, and innovations that shaped the way users interact with websites. The project provides an interactive experience for users to explore web designs of each era with detailed components, hover effects, and responsive layouts.
 
